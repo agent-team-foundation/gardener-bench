@@ -107,6 +107,7 @@ OUTCOME_LABELS = {
     "merged_after_revision": "Merged after revision",
     "maintainer_rejected": "Maintainer rejected",
     "author_withdrawn": "Author withdrawn",
+    "governance_closed": "Governance closed",
     "pending": "Still open",
 }
 
@@ -538,6 +539,7 @@ def build_dashboard(data_dir, repo, output_path):
       <div class="stat"><div class="n">{acc.get('scorable',0)}</div><div class="l">Scorable PRs</div></div>
       <div class="stat"><div class="n" style="color:#6e7781">{acc.get('pending',0)}</div><div class="l">Pending</div></div>
       <div class="stat"><div class="n" style="color:#6e7781">{acc.get('withdrawn',0)}</div><div class="l">Withdrawn</div></div>
+      <div class="stat"><div class="n" style="color:#6e7781">{acc.get('governance_closed',0)}</div><div class="l">Governance closed</div></div>
     </div>
   </div>
 

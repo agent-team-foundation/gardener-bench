@@ -20,11 +20,11 @@
     "user": "rudyjellis"
   },
   {
-    "comments": 2,
+    "comments": 3,
     "created_at": "2026-04-09T08:23:37Z",
     "is_pr": true,
     "n": 3186,
-    "state": "open",
+    "state": "closed",
     "title": "fix: apply 30-minute default timeout when timeoutSec is 0",
     "url": "https://github.com/paperclipai/paperclip/pull/3186",
     "user": "googlarz"
@@ -74,7 +74,7 @@
     "created_at": "2026-04-09T10:04:01Z",
     "is_pr": true,
     "n": 3196,
-    "state": "open",
+    "state": "closed",
     "title": "fix(server): avoid PATCH hang when status+comment combined",
     "url": "https://github.com/paperclipai/paperclip/pull/3196",
     "user": "sparkeros"
@@ -84,27 +84,27 @@
     "created_at": "2026-04-09T10:36:37Z",
     "is_pr": true,
     "n": 3198,
-    "state": "open",
+    "state": "closed",
     "title": "fix: validate assigneeAgentId issue filters before querying",
     "url": "https://github.com/paperclipai/paperclip/pull/3198",
     "user": "googlarz"
   },
   {
-    "comments": 2,
+    "comments": 3,
     "created_at": "2026-04-09T10:52:37Z",
     "is_pr": true,
     "n": 3199,
-    "state": "open",
+    "state": "closed",
     "title": "fix: include routine_execution issues in agent inbox-lite",
     "url": "https://github.com/paperclipai/paperclip/pull/3199",
     "user": "googlarz"
   },
   {
-    "comments": 2,
+    "comments": 3,
     "created_at": "2026-04-09T10:52:38Z",
     "is_pr": true,
     "n": 3200,
-    "state": "open",
+    "state": "closed",
     "title": "fix: cancel orphaned queued runs when issue is reassigned or closed",
     "url": "https://github.com/paperclipai/paperclip/pull/3200",
     "user": "googlarz"
@@ -160,7 +160,7 @@
     "user": "starlein"
   },
   {
-    "comments": 2,
+    "comments": 3,
     "created_at": "2026-04-09T13:57:25Z",
     "is_pr": true,
     "n": 3214,
@@ -184,7 +184,7 @@
     "created_at": "2026-04-09T14:21:07Z",
     "is_pr": true,
     "n": 3218,
-    "state": "open",
+    "state": "closed",
     "title": "fix(heartbeat): kill orphaned agent processes after server restart",
     "url": "https://github.com/paperclipai/paperclip/pull/3218",
     "user": "bartrtl"
@@ -215,7 +215,7 @@
     "is_pr": false,
     "n": 3228,
     "state": "open",
-    "title": "提议集成字节跳动 Trae 与 Paperclip 智能体编排平台",
+    "title": "\u63d0\u8bae\u96c6\u6210\u5b57\u8282\u8df3\u52a8 Trae \u4e0e Paperclip \u667a\u80fd\u4f53\u7f16\u6392\u5e73\u53f0",
     "url": "https://github.com/paperclipai/paperclip/issues/3228",
     "user": "papperrollinggery"
   },
@@ -244,7 +244,7 @@
     "created_at": "2026-04-09T17:51:08Z",
     "is_pr": true,
     "n": 3232,
-    "state": "open",
+    "state": "closed",
     "title": "fix(ui): persist cleared agent env bindings on save",
     "url": "https://github.com/paperclipai/paperclip/pull/3232",
     "user": "officialasishkumar"
@@ -275,12 +275,12 @@
     "is_pr": false,
     "n": 3236,
     "state": "open",
-    "title": "Feature request: Board inbox filtering — hide agent run failures, show only actionable items",
+    "title": "Feature request: Board inbox filtering \u2014 hide agent run failures, show only actionable items",
     "url": "https://github.com/paperclipai/paperclip/issues/3236",
     "user": "pfergi42"
   },
   {
-    "comments": 3,
+    "comments": 6,
     "created_at": "2026-04-09T19:37:46Z",
     "is_pr": true,
     "n": 3237,
@@ -310,7 +310,7 @@
     "user": "krthik20050"
   },
   {
-    "comments": 5,
+    "comments": 6,
     "created_at": "2026-04-09T20:47:15Z",
     "is_pr": true,
     "n": 3240,
@@ -380,12 +380,12 @@
     "user": "pjhoberman"
   },
   {
-    "comments": 4,
+    "comments": 9,
     "created_at": "2026-04-10T00:52:30Z",
     "is_pr": true,
     "n": 3250,
     "state": "open",
-    "title": "feat(memory): add mempalace integration with memory adapter framework",
+    "title": "feat(memory): add memory adapter framework and example mempalace integration",
     "url": "https://github.com/paperclipai/paperclip/pull/3250",
     "user": "davison"
   },
@@ -495,7 +495,7 @@
     "is_pr": true,
     "n": 3262,
     "state": "open",
-    "title": "feat: Company Files — scoped knowledge base with UI, API, and agent integration",
+    "title": "feat: Company Files \u2014 scoped knowledge base with UI, API, and agent integration",
     "url": "https://github.com/paperclipai/paperclip/pull/3262",
     "user": "vinccirom"
   },
@@ -564,8 +564,8 @@
     "created_at": "2026-04-10T04:52:07Z",
     "is_pr": true,
     "n": 3269,
-    "state": "open",
-    "title": "fix(hermes-local): inject authToken as PAPERCLIP_API_KEY for authenti…",
+    "state": "closed",
+    "title": "fix(hermes-local): inject authToken as PAPERCLIP_API_KEY for authenti\u2026",
     "url": "https://github.com/paperclipai/paperclip/pull/3269",
     "user": "redhelix"
   },
@@ -574,7 +574,7 @@
     "created_at": "2026-04-10T05:27:09Z",
     "is_pr": false,
     "n": 3270,
-    "state": "open",
+    "state": "closed",
     "title": "Can still be used with Claude subscription?",
     "url": "https://github.com/paperclipai/paperclip/issues/3270",
     "user": "xorkh"
@@ -650,11 +650,11 @@
     "user": "kbecking"
   },
   {
-    "comments": 3,
+    "comments": 4,
     "created_at": "2026-04-10T07:24:04Z",
     "is_pr": true,
     "n": 3278,
-    "state": "open",
+    "state": "closed",
     "title": "feat(goals): add acceptance criteria and target date",
     "url": "https://github.com/paperclipai/paperclip/pull/3278",
     "user": "googlarz"
@@ -670,11 +670,11 @@
     "user": "helpingwithtech"
   },
   {
-    "comments": 2,
+    "comments": 3,
     "created_at": "2026-04-10T08:24:49Z",
     "is_pr": true,
     "n": 3280,
-    "state": "open",
+    "state": "closed",
     "title": "feat(goals): automatic verification loop for acceptance criteria",
     "url": "https://github.com/paperclipai/paperclip/pull/3280",
     "user": "googlarz"
@@ -690,7 +690,7 @@
     "user": "stericishere"
   },
   {
-    "comments": 1,
+    "comments": 2,
     "created_at": "2026-04-10T09:04:17Z",
     "is_pr": false,
     "n": 3282,
@@ -744,17 +744,17 @@
     "created_at": "2026-04-10T09:46:53Z",
     "is_pr": true,
     "n": 3288,
-    "state": "open",
+    "state": "closed",
     "title": "Improve New Issue Dialog validation UX with inline warnings and button feedback",
     "url": "https://github.com/paperclipai/paperclip/pull/3288",
     "user": "jackz-jones"
   },
   {
-    "comments": 6,
+    "comments": 7,
     "created_at": "2026-04-10T10:00:45Z",
     "is_pr": true,
     "n": 3289,
-    "state": "open",
+    "state": "closed",
     "title": "feat(agents): per-agent memory store with keyword search",
     "url": "https://github.com/paperclipai/paperclip/pull/3289",
     "user": "googlarz"
@@ -850,7 +850,7 @@
     "user": "roselloagents"
   },
   {
-    "comments": 3,
+    "comments": 4,
     "created_at": "2026-04-10T12:23:26Z",
     "is_pr": true,
     "n": 3299,
@@ -860,7 +860,7 @@
     "user": "aronprins"
   },
   {
-    "comments": 2,
+    "comments": 3,
     "created_at": "2026-04-10T12:34:48Z",
     "is_pr": true,
     "n": 3300,
@@ -870,7 +870,7 @@
     "user": "anhermon"
   },
   {
-    "comments": 1,
+    "comments": 2,
     "created_at": "2026-04-10T12:56:00Z",
     "is_pr": false,
     "n": 3301,
@@ -888,5 +888,15 @@
     "title": "Fix plugin page routes doubling company prefix on company switch",
     "url": "https://github.com/paperclipai/paperclip/pull/3302",
     "user": "harperaa"
+  },
+  {
+    "comments": 5,
+    "created_at": "2026-04-13T20:24:35Z",
+    "is_pr": true,
+    "n": 3599,
+    "state": "open",
+    "title": "Make routine dispatch failures visible",
+    "url": "https://github.com/paperclipai/paperclip/pull/3599",
+    "user": "qazsero"
   }
 ]

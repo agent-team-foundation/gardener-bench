@@ -1,14 +1,12 @@
 {
-  "repo": "paperclipai/paperclip",
-  "date": "2026-04-12",
-  "total_prs": 65,
-  "scorable": 3,
+  "total_prs": 66,
+  "scorable": 2,
   "correct": 2,
   "partial": 0,
-  "wrong": 1,
-  "unscorable": 62,
-  "pending": 49,
+  "wrong": 0,
+  "unscorable": 64,
+  "pending": 50,
   "withdrawn": 13,
-  "accuracy": 66.7,
-  "strict_accuracy": 66.7
+  "governance_closed": 1,
+  "accuracy": 100.0
 }

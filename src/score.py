@@ -73,6 +73,15 @@ def score_prs(data_dir):
         if state == "closed" and not merged:
             if closer == author:
                 close_reason = "author_withdrawn"
+            elif not changes_requested and not any(
+                r.get("state") in ("CHANGES_REQUESTED", "APPROVED")
+                for r in maintainer_reviews
+            ):
+                # Closed by maintainer without any code review feedback —
+                # governance/cleanup action, not a code quality rejection.
+                # Gardener evaluates code-tree alignment, not contributor
+                # trust or maintainer backlog decisions.
+                close_reason = "governance_closed"
             else:
                 close_reason = "maintainer_rejected"
 
@@ -83,11 +92,14 @@ def score_prs(data_dir):
             outcome = "merged_after_revision" if revised else "merged_clean"
         elif close_reason == "author_withdrawn":
             outcome = "author_withdrawn"
+        elif close_reason == "governance_closed":
+            outcome = "governance_closed"
         else:
             outcome = "maintainer_rejected"
 
         # Score
-        if outcome in ("pending", "author_withdrawn"):
+        # author_withdrawn, governance_closed, pending = unscorable
+        if outcome in ("pending", "author_withdrawn", "governance_closed"):
             score = "unscorable"
             score_reason = outcome
         elif verdict == "ALIGNED":
@@ -136,6 +148,7 @@ def score_prs(data_dir):
     wrong = sum(1 for r in scorable if r["score"] == "wrong")
     pending = sum(1 for r in results if r["outcome"] == "pending")
     withdrawn = sum(1 for r in results if r["outcome"] == "author_withdrawn")
+    governance = sum(1 for r in results if r["outcome"] == "governance_closed")
 
     accuracy = (correct + 0.5 * partial) / len(scorable) * 100 if scorable else 0
 
@@ -148,6 +161,7 @@ def score_prs(data_dir):
         "unscorable": len(results) - len(scorable),
         "pending": pending,
         "withdrawn": withdrawn,
+        "governance_closed": governance,
         "accuracy": round(accuracy, 1),
     }
 
