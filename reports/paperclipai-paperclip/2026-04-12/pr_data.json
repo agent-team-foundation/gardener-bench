@@ -4480,5 +4480,38 @@
         "sha": "90e906cf44932c0a8d381bb53a5d9d6b045e634d"
       }
     ]
+  },
+  "3601": {
+    "pr": {
+      "additions": 32,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T22:07:45Z",
+      "deletions": 9,
+      "merged": false,
+      "merged_at": null,
+      "n": 3601,
+      "review_comments": 3,
+      "state": "open",
+      "title": "Fix mobile onboarding permissions and signup handoff",
+      "updated_at": "2026-04-13T22:25:16Z",
+      "user": "jonslimak"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T22:10:54Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T22:06:34Z",
+        "message": "Fix mobile onboarding permissions and signup handoff",
+        "sha": "aa967986ffff4742b54598f3f693dd2a93dc3a4b"
+      }
+    ]
   }
 }

@@ -1613,5 +1613,22 @@
     "changes_requested": false,
     "approved": false,
     "revised": false
+  },
+  {
+    "n": 3601,
+    "verdict": "NEW_TERRITORY",
+    "outcome": "pending",
+    "close_reason": "",
+    "closer": "",
+    "score": "unscorable",
+    "score_reason": "pending",
+    "title": "Fix mobile onboarding permissions and signup handoff",
+    "author": "jonslimak",
+    "state": "open",
+    "merged": false,
+    "post_commits": 0,
+    "changes_requested": false,
+    "approved": false,
+    "revised": false
   }
 ]
