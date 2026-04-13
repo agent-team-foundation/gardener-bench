@@ -169,7 +169,7 @@ def build_dashboard(data_dir, repo, output_path):
             "body": body,
         })
 
-    parsed.sort(key=lambda r: r["created_at"])
+    parsed.sort(key=lambda r: r["created_at"], reverse=True)
 
     # Thread replies + engagement
     all_replies = defaultdict(list)
@@ -217,8 +217,8 @@ def build_dashboard(data_dir, repo, output_path):
     severities = Counter(r["severity"] for r in parsed)
     kinds = Counter(r["target_kind"] for r in parsed)
     unique_targets = len({r["target_n"] for r in parsed})
-    earliest = parsed[0]["created_at"] if parsed else "N/A"
-    latest = parsed[-1]["created_at"] if parsed else "N/A"
+    earliest = parsed[-1]["created_at"] if parsed else "N/A"
+    latest = parsed[0]["created_at"] if parsed else "N/A"
 
     threads_with_any_reply = sum(1 for r in parsed if all_replies.get(r["target_n"]))
     threads_with_engagement = sum(1 for r in parsed if engaging_replies.get(r["target_n"]))
