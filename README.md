@@ -1,6 +1,10 @@
 # gardener-bench
 
+[![Live Dashboard](https://img.shields.io/badge/dashboard-live-blue)](https://gardener-report.pages.dev)
+
 Verdict accuracy benchmarking and feedback dashboard for [repo-gardener](https://github.com/agent-team-foundation/repo-gardener).
+
+**Live dashboard:** https://gardener-report.pages.dev
 
 ## What this does
 
