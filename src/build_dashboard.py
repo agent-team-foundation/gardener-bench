@@ -384,7 +384,7 @@ def build_dashboard(data_dir, repo, output_path):
     <div class="meta">
       {verdict_chip} {sev_chip} {state_chip}{score_chip}
       <span class="muted">by <a href="https://github.com/{esc(r['target_author'])}" target="_blank">@{esc(r['target_author'])}</a></span>
-      <span class="muted">· {esc(r['created_at'])}</span>
+      <span class="muted">· <span class="ts">{esc(r['created_at'])}</span></span>
       <a class="comment-link" href="{esc(r['html_url'])}" target="_blank">→ gardener comment</a>
       {badge}
     </div>
@@ -413,94 +413,183 @@ def build_dashboard(data_dir, repo, output_path):
         for u, n in engager_counter.most_common(10)
     ) or "<li class='muted'>No human engagement detected.</li>"
 
+    # Format timestamps for display
+    def fmt_ts(ts):
+        """ISO timestamp -> human-readable."""
+        try:
+            dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+            return dt.strftime("%b %d, %Y %H:%M UTC")
+        except Exception:
+            return ts
+
+    earliest_fmt = fmt_ts(earliest)
+    latest_fmt = fmt_ts(latest)
+
     html_doc = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>gardener-bench — {repo}</title>
 <style>
   :root {{
     --fg: #1f2328; --muted: #656d76; --bg: #ffffff; --panel: #f6f8fa;
-    --border: #d0d7de; --accent: #0969da;
+    --border: #d0d7de; --accent: #0969da; --radius: 10px;
   }}
-  * {{ box-sizing: border-box; }}
-  body {{ font: 14px/1.5 -apple-system, "SF Pro Text", system-ui, Segoe UI, sans-serif;
-         color: var(--fg); background: var(--bg); margin: 0; padding: 24px; max-width: 1100px; margin: 0 auto; }}
-  h1 {{ margin: 0 0 4px 0; font-size: 24px; }}
-  h2 {{ margin: 24px 0 8px 0; font-size: 18px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }}
-  h4 {{ margin: 12px 0 4px 0; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }}
-  .sub {{ color: var(--muted); margin-bottom: 16px; }}
+  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+  body {{ font: 14px/1.6 -apple-system, "SF Pro Text", system-ui, "Segoe UI", sans-serif;
+         color: var(--fg); background: #f0f2f5; }}
+  .container {{ max-width: 1080px; margin: 0 auto; padding: 20px 24px 40px; }}
+
+  /* Header */
+  .header {{ background: linear-gradient(135deg, #1f2328 0%, #2d333b 100%); color: #fff;
+             padding: 32px 24px; margin: -20px -24px 24px; }}
+  .header h1 {{ font-size: 26px; font-weight: 700; margin-bottom: 6px; letter-spacing: -.3px; }}
+  .header .sub {{ color: rgba(255,255,255,.65); font-size: 13px; line-height: 1.5; }}
+  .header a {{ color: rgba(255,255,255,.85); text-decoration: underline; text-underline-offset: 2px; }}
+
+  h2 {{ margin: 28px 0 12px; font-size: 17px; font-weight: 600;
+       border-bottom: 2px solid var(--border); padding-bottom: 6px; }}
+  h4 {{ margin: 14px 0 6px; font-size: 11px; color: var(--muted); text-transform: uppercase;
+       letter-spacing: .6px; font-weight: 600; }}
   .muted {{ color: var(--muted); font-size: 12px; }}
-  .stats {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 16px 0; }}
-  .stat {{ background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }}
-  .stat .n {{ font-size: 24px; font-weight: 600; }}
-  .stat .l {{ font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }}
+
+  /* Stat cards — 4 per row desktop, 2 per row mobile */
+  .stats {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }}
+  .stat {{ background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px;
+           transition: box-shadow .15s; }}
+  .stat:hover {{ box-shadow: 0 2px 8px rgba(0,0,0,.06); }}
+  .stat .n {{ font-size: 28px; font-weight: 700; line-height: 1.1; }}
+  .stat .l {{ font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .6px;
+              margin-top: 2px; }}
   .stat.highlight {{ border-left: 4px solid #8250df; }}
-  .row-summary {{ background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 8px; }}
-  .chip {{ display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600;
-         color: #fff; text-transform: uppercase; letter-spacing: .4px; }}
-  .signal-chip {{ display: inline-block; padding: 1px 6px; border-radius: 8px; font-size: 9px; font-weight: 600;
+
+  /* Verdict/severity row */
+  .row-summary {{ background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+                  padding: 14px 18px; margin-bottom: 12px; }}
+
+  /* Chips */
+  .chip {{ display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 10px; font-weight: 700;
+         color: #fff; text-transform: uppercase; letter-spacing: .5px; white-space: nowrap; }}
+  .signal-chip {{ display: inline-block; padding: 2px 7px; border-radius: 8px; font-size: 9px; font-weight: 600;
          color: #fff; letter-spacing: .3px; vertical-align: middle; }}
-  .controls {{ position: sticky; top: 0; background: var(--bg); padding: 12px 0; border-bottom: 1px solid var(--border); z-index: 10; }}
-  .controls label {{ margin-right: 12px; font-size: 12px; color: var(--muted); }}
-  .controls select, .controls input {{ font: inherit; padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px; }}
-  .card {{ border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 12px 0; background: var(--bg); }}
-  .card header {{ margin-bottom: 8px; }}
-  .card-title {{ display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }}
-  .card-title .kind {{ color: var(--muted); font-size: 13px; }}
-  .card-title .title-link {{ font-size: 15px; font-weight: 600; color: var(--fg); text-decoration: none; }}
+
+  /* Filter controls */
+  .controls {{ position: sticky; top: 0; background: var(--bg); padding: 12px 16px; margin: 0 -16px;
+               border-bottom: 1px solid var(--border); border-radius: var(--radius) var(--radius) 0 0;
+               z-index: 10; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }}
+  .controls label {{ font-size: 12px; color: var(--muted); display: inline-flex; align-items: center; gap: 4px; }}
+  .controls select {{ font: inherit; font-size: 12px; padding: 5px 8px; border: 1px solid var(--border);
+                      border-radius: 6px; background: var(--bg); color: var(--fg); cursor: pointer; }}
+  .controls input[type="text"] {{ font: inherit; font-size: 12px; padding: 5px 10px; border: 1px solid var(--border);
+                                  border-radius: 6px; min-width: 140px; }}
+  .controls input[type="checkbox"] {{ accent-color: #8250df; }}
+
+  /* Cards */
+  .card {{ border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px;
+           margin: 10px 0; background: var(--bg); transition: box-shadow .15s; }}
+  .card:hover {{ box-shadow: 0 2px 12px rgba(0,0,0,.05); }}
+  .card header {{ margin-bottom: 10px; }}
+  .card-title {{ display: flex; align-items: baseline; gap: 8px; margin-bottom: 5px; flex-wrap: wrap; }}
+  .card-title .kind {{ color: var(--muted); font-size: 12px; font-weight: 500; }}
+  .card-title .title-link {{ font-size: 14px; font-weight: 600; color: var(--fg); text-decoration: none; }}
   .card-title .title-link:hover {{ text-decoration: underline; color: var(--accent); }}
-  .meta {{ display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 12px; }}
-  .meta .comment-link {{ color: var(--accent); text-decoration: none; margin-left: auto; }}
-  .meta .comment-link:hover {{ text-decoration: underline; }}
-  .reply-badge {{ padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }}
+  .meta {{ display: flex; gap: 6px 10px; align-items: center; flex-wrap: wrap; font-size: 11px; color: var(--muted); }}
+  .meta a {{ color: var(--accent); text-decoration: none; }}
+  .meta a:hover {{ text-decoration: underline; }}
+  .meta .comment-link {{ margin-left: auto; font-weight: 500; }}
+
+  /* Reply badges */
+  .reply-badge {{ padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 600; }}
   .reply-badge.engage {{ background: #f3e8ff; color: #8250df; }}
   .reply-badge.other-badge {{ background: #eee; color: #656d76; }}
+
   .prior-note {{ color: var(--muted); font-size: 11px; font-style: italic; margin-bottom: 6px; }}
-  .body {{ background: var(--panel); border-left: 3px solid #2da44e; padding: 10px 14px; border-radius: 4px; }}
+
+  /* Gardener comment body */
+  .body {{ background: var(--panel); border-left: 3px solid #2da44e; padding: 12px 16px;
+           border-radius: 6px; font-size: 13px; line-height: 1.6; max-height: 300px; overflow-y: auto; }}
   .body p {{ margin: 6px 0; }}
-  .body code {{ background: rgba(175,184,193,.3); padding: 1px 4px; border-radius: 3px; font-size: 12px; }}
-  .body pre {{ background: #1f2328; color: #f6f8fa; padding: 10px; border-radius: 6px; overflow-x: auto; }}
-  .body pre code {{ background: none; color: inherit; }}
+  .body code {{ background: rgba(175,184,193,.2); padding: 2px 5px; border-radius: 4px; font-size: 12px; }}
+  .body pre {{ background: #1f2328; color: #f6f8fa; padding: 12px; border-radius: 6px; overflow-x: auto;
+               font-size: 12px; margin: 8px 0; }}
+  .body pre code {{ background: none; color: inherit; padding: 0; }}
   .body a {{ color: var(--accent); }}
-  .engaging-section {{ margin-top: 10px; padding-left: 14px; border-left: 3px solid #8250df; }}
-  .reply.engaging {{ background: #f3e8ff; padding: 8px 12px; border-radius: 4px; margin: 6px 0; }}
-  .reply.other {{ background: #f6f8fa; padding: 8px 12px; border-radius: 4px; margin: 6px 0; }}
-  .other-replies {{ margin-top: 8px; }}
-  .other-replies summary {{ cursor: pointer; padding: 4px 0; }}
-  .reply-meta {{ font-size: 12px; color: var(--muted); margin-bottom: 4px; }}
+
+  /* Reply sections */
+  .engaging-section {{ margin-top: 12px; padding-left: 14px; border-left: 3px solid #8250df; }}
+  .reply.engaging {{ background: #f3e8ff; padding: 10px 14px; border-radius: 6px; margin: 8px 0; }}
+  .reply.other {{ background: var(--panel); padding: 10px 14px; border-radius: 6px; margin: 8px 0; }}
+  .other-replies {{ margin-top: 10px; }}
+  .other-replies summary {{ cursor: pointer; padding: 6px 0; font-size: 12px; }}
+  .reply-meta {{ font-size: 11px; color: var(--muted); margin-bottom: 4px; }}
+  .reply-body {{ font-size: 13px; }}
   .reply-body p {{ margin: 4px 0; }}
+
+  /* Lists */
   ul {{ margin: 4px 0; padding-left: 20px; }}
   a {{ color: var(--accent); }}
-  .two-col {{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }}
-  .methodology {{ background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; margin: 16px 0; font-size: 12px; color: var(--muted); }}
+
+  /* Two-column layout */
+  .two-col {{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }}
+
+  /* Methodology boxes */
+  .methodology {{ background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+                  padding: 16px 20px; margin: 16px 0; font-size: 12px; color: var(--muted); }}
   .methodology h4 {{ color: var(--fg); }}
   .methodology ul {{ font-size: 12px; }}
-  .accuracy-hero {{ display: flex; align-items: center; gap: 24px; margin: 16px 0; flex-wrap: wrap; }}
-  .gauge {{ width: 200px; flex-shrink: 0; }}
+  .methodology p {{ margin: 4px 0; }}
+
+  /* Accuracy hero */
+  .accuracy-hero {{ display: flex; align-items: center; gap: 28px; margin: 20px 0; flex-wrap: wrap; }}
+  .gauge {{ width: 180px; flex-shrink: 0; }}
   .gauge-svg {{ width: 100%; height: auto; }}
-  .accuracy-stats {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; flex: 1; min-width: 280px; }}
-  .accuracy-stats .stat {{ padding: 8px 12px; }}
-  .scoring-table, .confusion, .detail-table {{ width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px; }}
+  .accuracy-stats {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; flex: 1; min-width: 300px; }}
+  .accuracy-stats .stat {{ padding: 10px 14px; }}
+
+  /* Tables — responsive wrapper */
+  .table-wrap {{ overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0; }}
+  .scoring-table, .confusion, .detail-table {{ width: 100%; border-collapse: collapse; font-size: 12px;
+              white-space: nowrap; }}
   .scoring-table th, .scoring-table td,
   .confusion th, .confusion td,
-  .detail-table th, .detail-table td {{ border: 1px solid var(--border); padding: 6px 10px; text-align: left; }}
-  .scoring-table th, .confusion th, .detail-table th {{ background: var(--panel); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .3px; }}
-  .muted-row {{ opacity: 0.6; }}
+  .detail-table th, .detail-table td {{ border: 1px solid var(--border); padding: 8px 12px; text-align: left; }}
+  .scoring-table th, .confusion th, .detail-table th {{ background: var(--panel); font-weight: 600; font-size: 10px;
+              text-transform: uppercase; letter-spacing: .4px; }}
+  .detail-table td {{ white-space: normal; }}
+  .muted-row {{ opacity: 0.5; }}
+
+  /* ---- Mobile ---- */
   @media (max-width: 720px) {{
+    .container {{ padding: 12px 14px 32px; }}
+    .header {{ padding: 24px 14px; margin: -12px -14px 16px; }}
+    .header h1 {{ font-size: 22px; }}
+    .stats {{ grid-template-columns: repeat(2, 1fr); gap: 8px; }}
+    .stat .n {{ font-size: 22px; }}
     .two-col {{ grid-template-columns: 1fr; }}
-    .accuracy-hero {{ flex-direction: column; }}
-    .accuracy-stats {{ grid-template-columns: repeat(2, 1fr); }}
+    .accuracy-hero {{ flex-direction: column; align-items: stretch; }}
+    .gauge {{ width: 140px; margin: 0 auto; }}
+    .accuracy-stats {{ grid-template-columns: repeat(2, 1fr); min-width: unset; }}
+    .controls {{ gap: 6px 10px; padding: 10px 12px; margin: 0 -14px; border-radius: 0; }}
+    .controls label {{ font-size: 11px; }}
+    .controls select, .controls input[type="text"] {{ font-size: 11px; padding: 4px 6px; }}
+    .controls input[type="text"] {{ min-width: 100px; width: 100%; }}
+    .card {{ padding: 12px 14px; }}
+    .card-title .title-link {{ font-size: 13px; }}
+    .meta {{ font-size: 10px; }}
+    .body {{ font-size: 12px; padding: 10px 12px; max-height: 200px; }}
   }}
 </style>
 </head>
 <body>
-  <h1>gardener-bench</h1>
-  <div class="sub">
-    Repo: <a href="https://github.com/{repo}" target="_blank">{repo}</a> ·
-    Window: {earliest} &rarr; {latest} ·
-    Generated {datetime.now().strftime('%Y-%m-%d')} ·
-    <a href="https://github.com/agent-team-foundation/gardener-bench" target="_blank">source</a>
+<div class="container">
+  <div class="header">
+    <h1>gardener-bench</h1>
+    <div class="sub">
+      <a href="https://github.com/{repo}" target="_blank">{repo}</a> &middot;
+      {earliest_fmt} &rarr; {latest_fmt} &middot;
+      <a href="https://github.com/agent-team-foundation/gardener-bench" target="_blank">source</a>
+    </div>
   </div>
 
   <div class="stats">
@@ -545,27 +634,31 @@ def build_dashboard(data_dir, repo, output_path):
 
   <div class="methodology">
     <h4>How accuracy is calculated</h4>
+    <div class="table-wrap">
     <table class="scoring-table">
       <tr><th>Gardener said</th><th>Merged cleanly</th><th>Merged after revision</th><th>Maintainer rejected</th></tr>
       <tr><td>{chip("ALIGNED","#2ea44f")}</td><td style="background:#dcfce7">Correct</td><td style="background:#fef3c7">Partial</td><td style="background:#fee2e2">Wrong</td></tr>
       <tr><td>{chip("NEEDS_REVIEW","#bf8700")}</td><td style="background:#fee2e2">Wrong</td><td style="background:#dcfce7">Correct</td><td style="background:#dcfce7">Correct</td></tr>
       <tr><td>{chip("CONFLICT","#cf222e")}</td><td style="background:#fee2e2">Wrong</td><td style="background:#dcfce7">Correct</td><td style="background:#dcfce7">Correct</td></tr>
     </table>
+    </div>
     <p><strong>Excluded:</strong> Author-withdrawn PRs (gardener can't predict humans leaving) and pending PRs (no outcome yet).</p>
     <p><strong>Formula:</strong> <code>(correct + 0.5 &times; partial) / scorable &times; 100</code></p>
   </div>
 
-  {"<h4>Confusion matrix</h4><table class='confusion'><tr><th>Verdict</th>" + "".join(f"<th>{esc(OUTCOME_LABELS[o])}</th>" for o in confusion_outcomes) + "</tr>" + confusion_rows + "</table>" if confusion_rows else ""}
+  {"<h4>Confusion matrix</h4><div class='table-wrap'><table class='confusion'><tr><th>Verdict</th>" + "".join(f"<th>{esc(OUTCOME_LABELS[o])}</th>" for o in confusion_outcomes) + "</tr>" + confusion_rows + "</table></div>" if confusion_rows else ""}
 
   {wrong_html}
   {partial_html}
 
   <details>
     <summary class="muted">Unscorable PRs ({acc.get('pending',0)} pending + {acc.get('withdrawn',0)} withdrawn)</summary>
+    <div class="table-wrap">
     <table class="detail-table">
       <tr><th>PR</th><th>Verdict</th><th>Reason</th><th>Title</th><th>Author</th></tr>
       {unscorable_rows}
     </table>
+    </div>
   </details>
 
   <div class="methodology">
@@ -655,7 +748,16 @@ function filter() {{
     c.style.display = ok ? '' : 'none';
   }});
 }}
+// Format ISO timestamps to human-readable
+document.querySelectorAll('.ts').forEach(el => {{
+  try {{
+    const d = new Date(el.textContent);
+    el.textContent = d.toLocaleDateString('en-US', {{month:'short',day:'numeric',year:'numeric'}})
+      + ' ' + d.toLocaleTimeString('en-US', {{hour:'2-digit',minute:'2-digit'}});
+  }} catch(e) {{}}
+}});
 </script>
+</div>
 </body>
 </html>
 """
