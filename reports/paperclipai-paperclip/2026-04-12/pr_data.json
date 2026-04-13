@@ -2729,6 +2729,1715 @@
       }
     ]
   },
+  "3540": {
+    "pr": {
+      "additions": 322,
+      "changed_files": 12,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-13T01:46:54Z",
+      "deletions": 15,
+      "merged": false,
+      "merged_at": null,
+      "n": 3540,
+      "review_comments": 1,
+      "state": "open",
+      "title": "feat(adapters): add capability flags to ServerAdapterModule",
+      "updated_at": "2026-04-13T21:43:31Z",
+      "user": "cpfarhood"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T01:50:45Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T01:09:17Z",
+        "message": "feat(adapters): add capability flags to ServerAdapterModule\n\nReplace 5 hardcoded adapter type lists ",
+        "sha": "904e9cb95e4017e38a424f740b9673a7de9f804c"
+      },
+      {
+        "date": "2026-04-13T01:26:42Z",
+        "message": "test+docs: add capability flag tests and documentation\n\nTests:\n- adapter-registry: verify capability",
+        "sha": "0dfb93e89820d3885c288164466985aa8e3df599"
+      },
+      {
+        "date": "2026-04-13T02:05:00Z",
+        "message": "Fix instructionsPathKey default and async capability cold-load regression\n\n- resolveInstructionsPath",
+        "sha": "8f02e66eddbe1632c11612258d33b1c803208ded"
+      }
+    ]
+  },
+  "3543": {
+    "pr": {
+      "additions": 414,
+      "changed_files": 13,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-13T02:27:19Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3543,
+      "review_comments": 4,
+      "state": "open",
+      "title": "test(server): auth validation matrix for board auth, agent JWT scoping, bootstrap, and onboarding (#693)",
+      "updated_at": "2026-04-13T21:43:28Z",
+      "user": "alexfosterinvisible"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T02:32:19Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "The auth validation matrix test is excellent coverage \u2014 approve the test file.\n\nHowever, this PR also includes deployment-specific files that should not be upstream:\n- `.claude/rex-claude.md`, `.claud",
+        "state": "CHANGES_REQUESTED",
+        "submitted_at": "2026-04-13T08:09:23Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T03:32:57Z",
+        "message": "chore: add agent governance files and PM2 config\n\n- .claude/rex-claude.md \u2014 Rex engineering lead age",
+        "sha": "9ecec980296eeecaed1856e4ac2a39e953d78294"
+      },
+      {
+        "date": "2026-04-13T03:32:57Z",
+        "message": "test(server): auth validation matrix for board auth, agent JWT scoping, bootstrap, and onboarding (#",
+        "sha": "41ea800bc5e76b77e23a292e38539e8d4cddbf23"
+      },
+      {
+        "date": "2026-04-13T03:32:57Z",
+        "message": "fix(server): resolve greptile P1s -- board_key source drift and hardcoded paths\n\n- Remove `\"board_ke",
+        "sha": "e973e38f7e5034e0acfc3e27f3594517e593c822"
+      }
+    ]
+  },
+  "3544": {
+    "pr": {
+      "additions": 340,
+      "changed_files": 6,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T02:51:20Z",
+      "deletions": 31,
+      "merged": false,
+      "merged_at": null,
+      "n": 3544,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix: allow review-stage checkout rebinding",
+      "updated_at": "2026-04-13T21:43:25Z",
+      "user": "alexgorbatchev"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T03:00:17Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "Important execution policy fix. Preserving `in_review` status on re-checkout is the right behavior for review/signoff workflows. Spec docs, API docs, and tests all updated. LGTM.",
+        "state": "APPROVED",
+        "submitted_at": "2026-04-13T08:09:03Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T02:48:00Z",
+        "message": "fix: allow review-stage checkout rebinding\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "f431ab38c2562e8aa9669fd446afe845886b3477"
+      }
+    ]
+  },
+  "3547": {
+    "pr": {
+      "additions": 199,
+      "changed_files": 3,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T03:20:15Z",
+      "deletions": 16,
+      "merged": false,
+      "merged_at": null,
+      "n": 3547,
+      "review_comments": 3,
+      "state": "open",
+      "title": "Improve New Issue Dialog validation UX with inline warnings and button feedback",
+      "updated_at": "2026-04-13T21:43:22Z",
+      "user": "jackz-jones"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T03:22:31Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "Good UX improvement \u2014 inline validation warnings with shake feedback and proper state management. Test coverage is thorough. Clean.",
+        "state": "APPROVED",
+        "submitted_at": "2026-04-13T08:09:01Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T05:58:04Z",
+        "message": "Improve New Issue Dialog validation UX with inline warnings and button feedback",
+        "sha": "a6e24a1bce37cf93b60a3d1a7a3ad1ef00ccc79d"
+      }
+    ]
+  },
+  "3548": {
+    "pr": {
+      "additions": 7,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-13T03:22:21Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3548,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix: add missing fields to shared types for gemini-local adapter (#3519)",
+      "updated_at": "2026-04-13T21:43:18Z",
+      "user": "saishankar404"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T03:24:06Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "LGTM. Clean, focused change with good test coverage.",
+        "state": "APPROVED",
+        "submitted_at": "2026-04-13T08:08:58Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T03:18:08Z",
+        "message": "add missing fields to shared types for gemini-local adapter\n\n- Add thinkingTokens to UsageSummary\n- ",
+        "sha": "bfa7f1e6828da3f47922bb4c754fd22057935795"
+      },
+      {
+        "date": "2026-04-13T03:35:07Z",
+        "message": "add estimated_cost to billing normalization switch",
+        "sha": "28b3f6cb4da571ed839e9bea83059e024a2348eb"
+      }
+    ]
+  },
+  "3549": {
+    "pr": {
+      "additions": 452,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-13T03:37:30Z",
+      "deletions": 49,
+      "merged": false,
+      "merged_at": null,
+      "n": 3549,
+      "review_comments": 0,
+      "state": "open",
+      "title": "DIG-510: add stale-backup startup catch-up",
+      "updated_at": "2026-04-13T21:43:15Z",
+      "user": "rudyjellis"
+    },
+    "reviews": [
+      {
+        "body": "## Code Review: Stale Backup Startup Catch-Up (DIG-510)\n\n**Overall**: Well-structured refactor with solid test coverage. The extraction of backup scheduling logic into a dedicated module with proper d",
+        "state": "APPROVED",
+        "submitted_at": "2026-04-13T04:08:46Z",
+        "user": "xkonjin"
+      },
+      {
+        "body": "Well-implemented startup catch-up with good test coverage (stale, fresh, missing, overlap prevention). Documentation updated. Ship it.",
+        "state": "APPROVED",
+        "submitted_at": "2026-04-13T08:09:00Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T03:30:44Z",
+        "message": "DIG-510 add startup backup catch-up\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "2ab7168d3ab403a462ee2d60ac29784d66ec923c"
+      },
+      {
+        "date": "2026-04-13T03:36:37Z",
+        "message": "DIG-510 document backup catch-up\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "319b8952222c9ec5d0f45bd6f105ab33fc4cdf57"
+      }
+    ]
+  },
+  "3551": {
+    "pr": {
+      "additions": 1060,
+      "changed_files": 8,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T03:55:51Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3551,
+      "review_comments": 3,
+      "state": "open",
+      "title": "[PAP-1379] Update Slack sync issue threading",
+      "updated_at": "2026-04-13T21:43:12Z",
+      "user": "larry82"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T04:00:20Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T03:55:19Z",
+        "message": "[PAP-1379] update slack sync issue threading",
+        "sha": "4d9aa842763f5b4c8c47183ab494b2f8a4a5da1b"
+      }
+    ]
+  },
+  "3553": {
+    "pr": {
+      "additions": 1174,
+      "changed_files": 8,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-13T05:08:00Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3553,
+      "review_comments": 2,
+      "state": "open",
+      "title": "[PAP-1390] Slack done-thread notification",
+      "updated_at": "2026-04-13T21:43:09Z",
+      "user": "larry82"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T05:10:30Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "This PR (#3553) and #3551 overlap almost entirely \u2014 same files, same plugin package (`@paperclipai/plugin-slack-sync`). #3553 appears to be the successor (adds the done-thread notification on top of #",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T08:09:17Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T03:55:19Z",
+        "message": "[PAP-1379] update slack sync issue threading",
+        "sha": "4d9aa842763f5b4c8c47183ab494b2f8a4a5da1b"
+      },
+      {
+        "date": "2026-04-13T05:07:17Z",
+        "message": "[PAP-1390] notify source Slack thread when issue marked done\n\nWhen an issue's status transitions to ",
+        "sha": "e9e2d77156377bcd4b0cf4351391fc7f9126fe36"
+      }
+    ]
+  },
+  "3556": {
+    "pr": {
+      "additions": 1,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T05:50:46Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3556,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(docker): update GitHub CLI keyring SHA256 after upstream rotation",
+      "updated_at": "2026-04-13T21:43:05Z",
+      "user": "xonline"
+    },
+    "reviews": [
+      {
+        "body": "LGTM. Clean, focused change with good test coverage.",
+        "state": "APPROVED",
+        "submitted_at": "2026-04-13T08:08:57Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T05:50:22Z",
+        "message": "fix(docker): update GitHub CLI keyring SHA256 after upstream rotation\n\nThe GitHub CLI APT keyring SH",
+        "sha": "107b98b18437842de203fb9bc32cfa45da65bc71"
+      }
+    ]
+  },
+  "3557": {
+    "pr": {
+      "additions": 13,
+      "changed_files": 3,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T05:51:44Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3557,
+      "review_comments": 5,
+      "state": "open",
+      "title": "Enforce UTF-8 encoding for DB connections, HTTP responses (issue #2928)",
+      "updated_at": "2026-04-13T21:43:02Z",
+      "user": "xingxing21"
+    },
+    "reviews": [
+      {
+        "body": "## Pull request overview\n\nThis PR addresses Windows-specific UTF-8 corruption by forcing UTF-8 at key I/O boundaries (PostgreSQL client sessions, HTTP response headers, and agent child process environ",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T05:56:31Z",
+        "user": "copilot-pull-request-reviewer[bot]"
+      },
+      {
+        "body": "LGTM. Clean, focused change with good test coverage.",
+        "state": "APPROVED",
+        "submitted_at": "2026-04-13T08:08:56Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T05:41:01Z",
+        "message": "fix(win32): enforce UTF-8 encoding for DB connections, HTTP responses, and agent child processes",
+        "sha": "390354c75727c839c879040260f4b1a186fec402"
+      }
+    ]
+  },
+  "3559": {
+    "pr": {
+      "additions": 104,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 4,
+      "created_at": "2026-04-13T07:05:28Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3559,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(server): clear execution lock fields on issue release",
+      "updated_at": "2026-04-13T21:42:59Z",
+      "user": "bloodycoder"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T07:06:58Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "LGTM. Clean, focused change with good test coverage.",
+        "state": "APPROVED",
+        "submitted_at": "2026-04-13T08:08:55Z",
+        "user": "stefanocampana"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T07:05:16Z",
+        "message": "fix(server): clear execution lock fields on release",
+        "sha": "10aa533c23233c2eb6bd1431a1a1d9b9f823a40b"
+      },
+      {
+        "date": "2026-04-13T07:05:17Z",
+        "message": "test(server): add regression for release clearing execution lock",
+        "sha": "c2a5341a2d5be5bab6c79d0ba7143c5e751564ca"
+      },
+      {
+        "date": "2026-04-13T09:54:24Z",
+        "message": "test(server): seed heartbeat runs in release lock regression",
+        "sha": "7c10f6ed1692d83e6b4a61600cf8fa88999617b3"
+      },
+      {
+        "date": "2026-04-13T09:59:01Z",
+        "message": "test(server): cleanup heartbeat runs in release lock test",
+        "sha": "67b05be888f6f983254f4546170fc056001fb918"
+      }
+    ]
+  },
+  "3561": {
+    "pr": {
+      "additions": 1,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T07:29:02Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3561,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(heartbeat): add hermes_local to SESSIONED_LOCAL_ADAPTERS",
+      "updated_at": "2026-04-13T21:47:27Z",
+      "user": "akhater"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T07:30:40Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T07:28:44Z",
+        "message": "fix(heartbeat): add hermes_local to SESSIONED_LOCAL_ADAPTERS\n\nThe hermes_local adapter was missing f",
+        "sha": "9d67f4f5e60b9e8e452357017e21755e4854fe71"
+      }
+    ]
+  },
+  "3562": {
+    "pr": {
+      "additions": 8,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-13T07:57:58Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3562,
+      "review_comments": 2,
+      "state": "open",
+      "title": "Clarify how to onboard when deploying via docker compose",
+      "updated_at": "2026-04-13T21:42:10Z",
+      "user": "jviki"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T08:00:05Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "## Code Review: Docker Compose Onboarding Docs\n\n**Overall**: Simple, necessary documentation addition. Clear instructions for first-time setup.\n\n**Strengths**:\n- Addresses a real gap (users deploying ",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T08:11:03Z",
+        "user": "xkonjin"
+      },
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T19:26:39Z",
+        "user": "jviki"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T07:56:41Z",
+        "message": "Clarify how to onboard when deploying via docker compose\n\nIt was not clear how to call onboard when ",
+        "sha": "2f29a15d094a87e036804f68c3be629882cb1e3a"
+      },
+      {
+        "date": "2026-04-13T19:28:56Z",
+        "message": "Run paperclipai onboard as use node\n\nRunning `docker exec -it docker-paperclip-1 bash` starts bash a",
+        "sha": "107ef93be4e67d4083cb46e22fcf4bfbc78b4aab"
+      }
+    ]
+  },
+  "3563": {
+    "pr": {
+      "additions": 102,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T08:27:39Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3563,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(routines): coalesce into stranded execution issue instead of failing dispatch",
+      "updated_at": "2026-04-13T21:42:06Z",
+      "user": "zlfnhmd"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-13T08:26:21Z",
+        "message": "fix(routines): coalesce into stranded execution issue instead of failing dispatch\n\nWhen a routine ex",
+        "sha": "29107dfc0051c86fa7f6c722579fbebef239c41d"
+      }
+    ]
+  },
+  "3568": {
+    "pr": {
+      "additions": 30,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-13T09:38:32Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3568,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(issues): cancel active run when issue becomes done or cancelled",
+      "updated_at": "2026-04-13T21:42:03Z",
+      "user": "taehoshino"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T09:40:46Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T09:36:08Z",
+        "message": "fix(issues): cancel active run when issue becomes done or cancelled\n\nWhen an external actor (board u",
+        "sha": "4408d5c60c7b426bab53158c8c44d2a966be4fc5"
+      },
+      {
+        "date": "2026-04-13T10:02:28Z",
+        "message": "fix(issues): add error handling for run cancellation on terminal transition\n\nWrap the cancelRun call",
+        "sha": "ebf96a75e8c5e21644773b89e1144200e036f522"
+      },
+      {
+        "date": "2026-04-13T10:27:42Z",
+        "message": "Apply suggestion from @greptile-apps[bot]\n\nCo-authored-by: greptile-apps[bot] <165735046+greptile-ap",
+        "sha": "e249b0263301deb049e5872002d66c50ce724c98"
+      }
+    ]
+  },
+  "3569": {
+    "pr": {
+      "additions": 1818,
+      "changed_files": 6,
+      "closed_at": null,
+      "commits": 7,
+      "created_at": "2026-04-13T10:31:45Z",
+      "deletions": 570,
+      "merged": false,
+      "merged_at": null,
+      "n": 3569,
+      "review_comments": 4,
+      "state": "open",
+      "title": "fix(ui): prevent lossy cron rewrites + redesign routine triggers tab",
+      "updated_at": "2026-04-13T21:42:00Z",
+      "user": "aronprins"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T10:38:53Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T10:51:42Z",
+        "user": "aronprins"
+      },
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T10:51:42Z",
+        "user": "aronprins"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-11T14:53:44Z",
+        "message": "fix(ui): route complex cron expressions to custom preset in ScheduleEditor\n\nThe ScheduleEditor's cro",
+        "sha": "9018e461a6e79235434a8636dd66f0587743260a"
+      },
+      {
+        "date": "2026-04-13T09:17:44Z",
+        "message": "feat(ui): redesign routine triggers tab with list-view cards and modal editor\n\nReplace the always-vi",
+        "sha": "82147887e1609165a4d0e7d0803ba5d5e6bf7faa"
+      },
+      {
+        "date": "2026-04-13T09:21:49Z",
+        "message": "refactor(ui): use Checkbox primitive in ScheduleEditor\n\nSwap raw <input type=\"checkbox\"> for the sha",
+        "sha": "1fcff6a4393a66618130d33401c8a1eb8009e6c1"
+      },
+      {
+        "date": "2026-04-13T09:49:26Z",
+        "message": "fix(ui): prevent lossy schedule editor cron rewrites",
+        "sha": "d7ec634890370714c733e4c0cee0683796636e0c"
+      },
+      {
+        "date": "2026-04-13T10:00:04Z",
+        "message": "fix(ui): mark webhook kind as COMING SOON in trigger add dialog\n\nMatch the production behaviour that",
+        "sha": "2ba5e6ad4fe438c560839cf9b19c8eebb6c63244"
+      },
+      {
+        "date": "2026-04-13T10:21:57Z",
+        "message": "feat(ui): move routine triggers/runs/activity tabs into properties panel\n\nReuses the global Properti",
+        "sha": "145a86b51265e326160cb8c48e0874cb36d86f37"
+      },
+      {
+        "date": "2026-04-13T10:50:39Z",
+        "message": "fix(ui): address greptile review feedback",
+        "sha": "19c67a8dd85273212f44e6c143e2c5e067bab4b3"
+      }
+    ]
+  },
+  "3572": {
+    "pr": {
+      "additions": 41,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T11:56:24Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3572,
+      "review_comments": 3,
+      "state": "open",
+      "title": "fix(claude-local): detect and clear ghost resume sessions for local/Ollama models",
+      "updated_at": "2026-04-13T21:41:57Z",
+      "user": "simonlpaige"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T12:01:19Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T11:55:04Z",
+        "message": "fix(claude-local): detect and clear ghost resume sessions for local/Ollama models\n\nWhen using local ",
+        "sha": "938b3f0e0224e4309d180a00def82924c1418f42"
+      }
+    ]
+  },
+  "3573": {
+    "pr": {
+      "additions": 1484,
+      "changed_files": 22,
+      "closed_at": null,
+      "commits": 11,
+      "created_at": "2026-04-13T11:59:40Z",
+      "deletions": 25,
+      "merged": false,
+      "merged_at": null,
+      "n": 3573,
+      "review_comments": 3,
+      "state": "open",
+      "title": "feat(ui): add system theme mode with three-state toggle",
+      "updated_at": "2026-04-13T21:41:16Z",
+      "user": "lubos-buracinsky"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T12:02:46Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-09T08:17:26Z",
+        "message": "Update CLAUDE.md with infisical skill reference",
+        "sha": "cdb8b48de700c44e1b976e0687f96199274396dd"
+      },
+      {
+        "date": "2026-04-09T22:19:08Z",
+        "message": "Initial commit",
+        "sha": "be094dda192a57e236c0569cc325b2daeb25cb75"
+      },
+      {
+        "date": "2026-04-09T22:19:08Z",
+        "message": "feat(ui): add upstream update banner in Layout\n\nReads ~/.paperclip/instances/default/update-status.j",
+        "sha": "dd3255e1d5d77a89e986c3d7262082e47a2a2b76"
+      },
+      {
+        "date": "2026-04-09T22:19:08Z",
+        "message": "feat(ui): add token usage charts per agent\n\nTokenTimelineChart and TokenUsageByAgentChart components",
+        "sha": "1413f9908262662cebb3f6fee66ce257c33e0268"
+      },
+      {
+        "date": "2026-04-09T22:19:08Z",
+        "message": "feat(ui): fork version badge + fork update detection in banner\n\n- Purple commit hash badge in sideba",
+        "sha": "16347326262431d150acaf0675bfc295b7e6a2c8"
+      },
+      {
+        "date": "2026-04-09T22:19:08Z",
+        "message": "feat: add slack-bridge daemon for Slack \u2192 Paperclip issue creation\n\nSocket Mode listener that watche",
+        "sha": "d337e995d17a02826cd5e18b80239a117da4c706"
+      },
+      {
+        "date": "2026-04-09T23:08:39Z",
+        "message": "feat(slack-bridge): add autostart setup script for macOS launchd\n\nCo-Authored-By: Claude Opus 4.6 (1",
+        "sha": "2bf3270e815a837df83ba72c4762507196f5c125"
+      },
+      {
+        "date": "2026-04-09T23:09:46Z",
+        "message": "docs: update CLAUDE.md with slack-bridge, MCP, GStack, rebase docs\n\nCo-Authored-By: Claude Opus 4.6 ",
+        "sha": "35a86d4282593cf1728027f7e3e18db48266c583"
+      },
+      {
+        "date": "2026-04-09T23:16:25Z",
+        "message": "feat(slack-bridge): add blocked alerts with warning emoji + agent comment in thread\n\nCo-Authored-By:",
+        "sha": "340ee7c5da0efb4cbef402f4c6716990cb2832f4"
+      },
+      {
+        "date": "2026-04-09T23:24:19Z",
+        "message": "fix(slack-bridge): send blocked notification only once per issue\n\nCo-Authored-By: Claude Opus 4.6 (1",
+        "sha": "1b9cf5b534d0ebeee02b83ddf2b21b30cfcb60ae"
+      },
+      {
+        "date": "2026-04-13T11:58:35Z",
+        "message": "feat(ui): add system theme mode with three-state toggle (dark \u2192 light \u2192 system)\n\nAdds a \"system\" opt",
+        "sha": "4a89c9e7acdf76780c9a7eb218e5a864e27896dc"
+      }
+    ]
+  },
+  "3576": {
+    "pr": {
+      "additions": 1,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T12:26:06Z",
+      "deletions": 8,
+      "merged": false,
+      "merged_at": null,
+      "n": 3576,
+      "review_comments": 2,
+      "state": "open",
+      "title": "Update Dockerfile",
+      "updated_at": "2026-04-13T21:41:13Z",
+      "user": "fearless-labs1"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T12:28:04Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T12:25:56Z",
+        "message": "Update Dockerfile",
+        "sha": "1790c5b77e4de140b13e7bac067c17d26aa0a9fe"
+      }
+    ]
+  },
+  "3581": {
+    "pr": {
+      "additions": 5,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T12:41:04Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3581,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(ui): prevent routine schedule from resetting to 10 AM",
+      "updated_at": "2026-04-13T21:41:10Z",
+      "user": "bartrtl"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T12:43:56Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T12:40:37Z",
+        "message": "fix(ui): prevent routine trigger schedule from resetting to 10 AM\n\nThe TriggerEditor useEffect depen",
+        "sha": "5fb198247b9be060418b5b2e24debee2e8b0a57d"
+      }
+    ]
+  },
+  "3584": {
+    "pr": {
+      "additions": 584,
+      "changed_files": 6,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-13T13:52:52Z",
+      "deletions": 31,
+      "merged": false,
+      "merged_at": null,
+      "n": 3584,
+      "review_comments": 3,
+      "state": "open",
+      "title": "DIG-534: add run-log credential redaction guardrail",
+      "updated_at": "2026-04-13T21:41:07Z",
+      "user": "rudyjellis"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T14:02:38Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T16:36:49Z",
+        "message": "DIG-534 add run log credential redaction guardrail\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing",
+        "sha": "a6b077d35be61ff5e7f4b7674b297d0b8cdddd62"
+      },
+      {
+        "date": "2026-04-13T17:57:37Z",
+        "message": "DIG-534 sanitize heartbeat failure redaction\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "b74d5d5035407ddc57908bf9b4d12a759c4ab1f0"
+      }
+    ]
+  },
+  "3585": {
+    "pr": {
+      "additions": 59,
+      "changed_files": 3,
+      "closed_at": null,
+      "commits": 4,
+      "created_at": "2026-04-13T13:54:27Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3585,
+      "review_comments": 3,
+      "state": "open",
+      "title": "feat(openclaw-gateway): add GCP OIDC identity token support for service-to-service auth",
+      "updated_at": "2026-04-13T21:41:04Z",
+      "user": "vennemp"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T13:58:50Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-07T19:24:47Z",
+        "message": "Add design spec for Rust Paperclip port\n\nFull architecture for a FIPS-compliant, single-binary Rust ",
+        "sha": "b1f648c3c9a9928dd93bb1c5a9f2443e7645672c"
+      },
+      {
+        "date": "2026-04-13T13:53:15Z",
+        "message": "feat(openclaw-gateway): add GCP OIDC identity token support for service-to-service auth\n\nAdd `useGcp",
+        "sha": "c19ff74bed711e1582e0465eb9623bc56e38d336"
+      },
+      {
+        "date": "2026-04-13T14:01:26Z",
+        "message": "revert: remove pnpm-lock.yaml changes from PR\n\nCI owns lockfile updates per policy. The google-auth-",
+        "sha": "42c414365d7819e08dd9a9941cbedd1434ac1d4c"
+      },
+      {
+        "date": "2026-04-13T15:03:33Z",
+        "message": "fix(openclaw-gateway): address Greptile review feedback\n\n- Add warning log when useGcpIdentityToken ",
+        "sha": "6951021309cd8f9669be8a7ec1194001f6dc4c84"
+      }
+    ]
+  },
+  "3588": {
+    "pr": {
+      "additions": 170367,
+      "changed_files": 718,
+      "closed_at": null,
+      "commits": 391,
+      "created_at": "2026-04-13T16:00:45Z",
+      "deletions": 43,
+      "merged": false,
+      "merged_at": null,
+      "n": 3588,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(ui): restore Improvements sidebar item lost in upstream merge",
+      "updated_at": "2026-04-13T21:41:01Z",
+      "user": "tmartin2113"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-03-06T21:10:53Z",
+        "message": "fix(issues): skip agent wakeup when issue status is backlog\n\nAgents were being woken immediately whe",
+        "sha": "e3caded6229c5bf6de53e6675d4a883773122e28"
+      },
+      {
+        "date": "2026-03-06T21:15:24Z",
+        "message": "Reintroduce OpenClaw webhook transport alongside SSE",
+        "sha": "fb19aa3b4550e6f6768a60341d26faeb2d1a2a45"
+      },
+      {
+        "date": "2026-03-06T21:48:35Z",
+        "message": "dev: make pnpm dev watch workspace package changes",
+        "sha": "a959a3a29692fb69bc1d73c137182be89c1b4393"
+      },
+      {
+        "date": "2026-03-06T21:50:08Z",
+        "message": "fix openclaw webhook payload for /v1/responses",
+        "sha": "3bed8581fde758800bb3b0b07c92e641ad989745"
+      },
+      {
+        "date": "2026-03-06T22:05:28Z",
+        "message": "Merge pull request #154 from cschneid/fix/no-self-wake-on-comment\n\nskip agent self-wake on comment a",
+        "sha": "6cc75ae946ebbeb83493c9f6e6490d8369df16bf"
+      },
+      {
+        "date": "2026-03-06T22:11:11Z",
+        "message": "openclaw: force webhook transport to use hooks/wake",
+        "sha": "8d7277f79c60306178d4d0371bc06a647ece779b"
+      },
+      {
+        "date": "2026-03-06T22:18:26Z",
+        "message": "Revert \"openclaw: force webhook transport to use hooks/wake\"\n\nThis reverts commit 8d7277f79c60306178",
+        "sha": "d04a05b546133f1c0a7b646b2a1737c230724aa2"
+      },
+      {
+        "date": "2026-03-06T22:50:15Z",
+        "message": "feat(openclaw): support /hooks/agent endpoint and multi-endpoint detection\n\nAdd OpenClawEndpointKind",
+        "sha": "560ca906ca2a17c986b5898a0ce5674efd5c3075"
+      },
+      {
+        "date": "2026-03-06T22:50:20Z",
+        "message": "feat(openclaw): support x-openclaw-token header alongside legacy x-openclaw-auth\n\nAccept x-openclaw-",
+        "sha": "7e4daa356243b634b993c6f66a020b5349d3f91b"
+      },
+      {
+        "date": "2026-03-06T22:50:25Z",
+        "message": "feat(release): auto-create GitHub Release on publish\n\nAdd create_github_release helper to release sc",
+        "sha": "ba3c80fd4d316eade4a1e4e1edeb5634e8e4031d"
+      },
+      {
+        "date": "2026-03-06T22:52:11Z",
+        "message": "Merge branch 'master' of github.com-dotta:paperclipai/paperclip\n\n* 'master' of github.com-dotta:pape",
+        "sha": "3a42acc890373104926f6509b832a9164d174b4f"
+      },
+      {
+        "date": "2026-03-06T22:57:17Z",
+        "message": "Merge pull request #159 from Logesh-waran2003/logesh/fix-backlog-issue-wake\n\nfix(issues): skip agent",
+        "sha": "24f2a90053122fdc261784018f426deefc4d519d"
+      },
+      {
+        "date": "2026-03-06T23:09:21Z",
+        "message": "fix(ui): show agent issue title as two lines on dashboard\n\nChange the issue title in agent run cards",
+        "sha": "733ec811ee4f91a3118f9314b406ae15b637ccf9"
+      },
+      {
+        "date": "2026-03-07T00:21:28Z",
+        "message": "ci: split workflows and move pnpm lockfile ownership to GitHub Actions",
+        "sha": "464cbc37c36335a5b23e5c1ed08bffc17851093e"
+      },
+      {
+        "date": "2026-03-07T00:29:16Z",
+        "message": "ci: fix pnpm lockfile policy checks",
+        "sha": "0fd6f9517fd4d4233bc8de243e29f8bb5c932bbf"
+      },
+      {
+        "date": "2026-03-07T00:40:05Z",
+        "message": "ci: remove unnecessary full-history checkout",
+        "sha": "60bde2392f1700aaaa16aebe22b1a45f2b5eb812"
+      },
+      {
+        "date": "2026-03-07T00:49:13Z",
+        "message": "ci: clarify fail-fast lockfile refresh behavior",
+        "sha": "1338bde4824949e3c033a2d165601e0529beba14"
+      },
+      {
+        "date": "2026-03-07T02:29:38Z",
+        "message": "Adding support for pi-local",
+        "sha": "5341c65e6b08d50d19a18ebea1b1573a143d0e65"
+      },
+      {
+        "date": "2026-03-07T02:47:44Z",
+        "message": "feat: add Pi adapter support to constants and onboarding UI",
+        "sha": "85e51e813d78b105aca4146c2544105e609f7f0e"
+      },
+      {
+        "date": "2026-03-07T09:38:07Z",
+        "message": "fix(sidebar-badges): include approvals in inbox badge count\n\nWhen a company has \"require board appro",
+        "sha": "1f5ac659b1be24db77bd0b055a18bd92aa099799"
+      },
+      {
+        "date": "2026-03-07T14:26:49Z",
+        "message": "feat(ui): add agent creation choice modal and full-page config\n\nReplace the direct agent config dial",
+        "sha": "c89ab15d39874bcf78f1c2154ad01c3461e3858f"
+      },
+      {
+        "date": "2026-03-07T14:31:59Z",
+        "message": "ui: avoid duplicate and self comment toasts",
+        "sha": "169fb790a8a9a078ce888cbd2bc31c0fb84a5ef1"
+      },
+      {
+        "date": "2026-03-07T14:42:58Z",
+        "message": "ui: suppress self-authored issue toasts",
+        "sha": "0dc61a55786a6553370c6b2298a6147755608eb0"
+      },
+      {
+        "date": "2026-03-07T14:55:19Z",
+        "message": "ui: remove local toast on issue create",
+        "sha": "3743df56ebac062995327647e2e29106b561e9ea"
+      },
+      {
+        "date": "2026-03-07T14:59:29Z",
+        "message": "feat: add openclaw_gateway adapter\n\nNew adapter type for invoking OpenClaw agents via the gateway pr",
+        "sha": "b1388501747396531954a97e46ec066d0af30398"
+      },
+      {
+        "date": "2026-03-07T14:59:34Z",
+        "message": "feat: deduplicate project shortnames on create and update\n\nEnsure unique URL-safe shortnames by appe",
+        "sha": "5dec6bdcca75e234a25637deff98757738c44380"
+      },
+      {
+        "date": "2026-03-07T14:59:39Z",
+        "message": "feat(ui): render mermaid diagrams in markdown content\n\nLazy-load mermaid.js and render fenced mermai",
+        "sha": "3db52df28d7bd1491c8d9271d328c7d8af605e3c"
+      },
+      {
+        "date": "2026-03-07T14:59:45Z",
+        "message": "feat(cli): add agent local-cli command for skill install and env export\n\nNew subcommand to install P",
+        "sha": "8b641bbb0f6113bdbad955cb224f6809903d623a"
+      },
+      {
+        "date": "2026-03-07T14:59:51Z",
+        "message": "docs: add local-cli mode and self-test playbook to paperclip skill\n\nDocument the agent local-cli com",
+        "sha": "43e4b5f772e9e203aa5cae2cea4c1384ceb96de4"
+      },
+      {
+        "date": "2026-03-07T15:04:39Z",
+        "message": "Merge remote-tracking branch 'public-gh/master'\n\n* public-gh/master:\n  fix(issues): skip agent wakeu",
+        "sha": "69d4c7edc8aae8141fa617eba8d76e145d6ba6b4"
+      },
+      {
+        "date": "2026-03-07T15:05:19Z",
+        "message": "Merge pull request #78 from MumuTW/fix/dashboard-spa-refresh-500\n\nfix: resolve 500 error on SPA rout",
+        "sha": "ec5b5251b26da927908ccfe810a2ce70b815b698"
+      },
+      {
+        "date": "2026-03-07T15:22:40Z",
+        "message": "fix(openclaw-gateway): add diagnostics capture and two-lane validation to e2e\n\nCapture run events, l",
+        "sha": "2909b029c95241d7dec8d886017da016debe5868"
+      },
+      {
+        "date": "2026-03-07T15:23:44Z",
+        "message": "feat(pi-local): fix bugs, add RPC mode, improve cost tracking and output handling\n\nMajor improvement",
+        "sha": "e00864c9be97affc3107b67a39000e17f8cc06ff"
+      },
+      {
+        "date": "2026-03-07T15:31:35Z",
+        "message": "Merge pull request #183 from richardanaya/master\n\nAdding support for pi-local",
+        "sha": "19948e2948dabcb495aaf9354c6a0059b3b71de2"
+      },
+      {
+        "date": "2026-03-07T15:38:56Z",
+        "message": "Add Contributing guide",
+        "sha": "8dbbd548a4e1827140633cac2735ccc36c1f6b53"
+      },
+      {
+        "date": "2026-03-07T15:39:51Z",
+        "message": "Merge pull request #217 from aaaaron/CONTRIBUTING\n\nAdd CONTRIBUTING.md guide",
+        "sha": "bd60ab995cd3ccddf71c4e03fe5f51cf79698b78"
+      },
+      {
+        "date": "2026-03-07T15:46:03Z",
+        "message": "Merge pull request #196 from hougangdev/fix/inbox-badge-missing-approvals\n\nfix(sidebar-badges): incl",
+        "sha": "a7c112a913d25afa49477ef87d4c3310f09eef60"
+      },
+      {
+        "date": "2026-03-07T15:47:24Z",
+        "message": "fixing overhanging recommended text in onboarding",
+        "sha": "fd44ed95598e541145305fd95a014f8ecec2f69e"
+      },
+      {
+        "date": "2026-03-07T15:49:20Z",
+        "message": "Merge pull request #218 from richardanaya/fix-recommended-pill\n\nfixing overhanging recommended text ",
+        "sha": "1b223a253a11083a16a5aedde6a0d71b53134bf5"
+      },
+      {
+        "date": "2026-03-07T15:50:28Z",
+        "message": "Merge pull request #151 from eltociear/add-license\n\nAdd License",
+        "sha": "80a4e4697308febd580d8d25e9a290bae30fdaa8"
+      },
+      {
+        "date": "2026-03-07T15:52:01Z",
+        "message": "fix(openclaw): embed explicit heartbeat workflow in wake text\n\nInclude the full Paperclip API workfl",
+        "sha": "37dfad8e81e2d9ea7850b9db16776791a3fb1b67"
+      },
+      {
+        "date": "2026-03-07T15:52:08Z",
+        "message": "docs(openclaw-gateway): record e2e execution findings from stock lane validation\n\nDocument observed ",
+        "sha": "68dcf9c9a69be424cc5c3faa76a01ee8f5cb9ac3"
+      },
+      {
+        "date": "2026-03-07T15:56:46Z",
+        "message": "Fix markdown editor escaped list markers",
+        "sha": "e8d4feef98dea3807676e73c98e2dfe917c242c2"
+      },
+      {
+        "date": "2026-03-07T15:57:50Z",
+        "message": "feat(ui): add copy-as-markdown button to comment headers\n\nAdds a small copy icon to the right of eac",
+        "sha": "df270f5a12772807d8718a49ce733b6dfdfd7efa"
+      },
+      {
+        "date": "2026-03-07T16:09:04Z",
+        "message": "Revert \"Fix markdown editor escaped list markers\"\n\nThis reverts commit e8d4feef98dea3807676e73c98e2d",
+        "sha": "6b2545f70f74bba5b62ec8fd6868680aeec38033"
+      },
+      {
+        "date": "2026-03-07T16:12:37Z",
+        "message": "Rename Invoke button to Run Heartbeat for clarity",
+        "sha": "0c8b1a3e432cabf76fec3400b029e03df8d23864"
+      },
+      {
+        "date": "2026-03-07T16:16:31Z",
+        "message": "fix(ui): enforce min 2-line height for agent issue titles on dashboard\n\nShort titles now always occu",
+        "sha": "6da8d6ded44bfc45f4e5f6a5d9bbf716dde26f4a"
+      },
+      {
+        "date": "2026-03-07T16:17:04Z",
+        "message": "Merge pull request #221 from richardanaya/rename-invoke-to-run-heartbeat\n\nRename Invoke button to Ru",
+        "sha": "235d4104fcd7186ced2a6979fdf5ec5294e88703"
+      },
+      {
+        "date": "2026-03-07T16:19:51Z",
+        "message": "feat(ui): add plus button to sidebar AGENTS header\n\nAdd a \"+\" button next to \"AGENTS\" in the sidebar",
+        "sha": "2ebe8fe969d42b94fcf037b30f05cfb21086a46f"
+      },
+      {
+        "date": "2026-03-07T16:32:22Z",
+        "message": "docs: add manual OpenClaw onboarding checklist",
+        "sha": "ef1ccac39d8c1b24d89eebad8be3e453f45980f1"
+      },
+      {
+        "date": "2026-03-07T16:32:22Z",
+        "message": "ui: unify comment/update issue toasts",
+        "sha": "9748a90798228f12a2b451a34f49fbd50e0dee55"
+      },
+      {
+        "date": "2026-03-07T18:45:56Z",
+        "message": "fix(scripts): use shell on Windows to fix spawn EINVAL in dev-runner",
+        "sha": "0cd18de6fe64d6d4970963fce56188f7c7b921f6"
+      },
+      {
+        "date": "2026-03-07T19:01:04Z",
+        "message": "Fix opencode-local adapter: parser, UI, CLI, and environment tests\n\n- Move costUsd to top-level retu",
+        "sha": "12854f9ea17786fdff7bc1ac34b6311456b609cf"
+      },
+      {
+        "date": "2026-03-07T19:12:22Z",
+        "message": "Apply suggestion from @greptile-apps[bot]\n\nCo-authored-by: greptile-apps[bot] <165735046+greptile-ap",
+        "sha": "f8f61b40642f6aba5f7bda8858935ffb5d12708a"
+      },
+      {
+        "date": "2026-03-07T19:15:10Z",
+        "message": "Address PR feedback: keep testEnvironment non-destructive, warn on swallowed errors\n\n- Update cwd te",
+        "sha": "6200984e7f37d2ac66f39ab46882747e9746d494"
+      },
+      {
+        "date": "2026-03-07T20:56:31Z",
+        "message": "Merge pull request #240 from aaaaron/fix-opencode-local-adapter-tests\n\nFix opencode-local adapter te",
+        "sha": "51fb84cf9d0506cec7409ce2d1e1e9b11f56b2a5"
+      },
+      {
+        "date": "2026-03-07T21:09:52Z",
+        "message": "fix(smoke): pin OpenClaw docker harness to stable stock ref",
+        "sha": "5d82ed519c08396f3e4da1d6248167d53c6b56ce"
+      },
+      {
+        "date": "2026-03-07T21:15:20Z",
+        "message": "Merge pull request #173 from zvictor/ci\n\nci: split workflows and move pnpm lockfile ownership to Git",
+        "sha": "16285e3cc9c931dc6aa063611ff0831480bc397a"
+      },
+      {
+        "date": "2026-03-07T21:15:51Z",
+        "message": "fix(server): return 404 JSON for unmatched API routes\n\nAdd catch-all handler after API router to ret",
+        "sha": "d26b71cbcc3560ddecd3281f646897978329a5b6"
+      },
+      {
+        "date": "2026-03-07T21:18:02Z",
+        "message": "Merge remote-tracking branch 'public-gh/master'\n\n* public-gh/master:\n  Address PR feedback: keep tes",
+        "sha": "0c268d6be793fd102b54757cdd48461aeaf6f825"
+      },
+      {
+        "date": "2026-03-07T21:18:23Z",
+        "message": "chore: regenerate pnpm-lock.yaml after merge\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com",
+        "sha": "b937ef0ce489e1d7a6a1ef92f5b57194f3cea534"
+      },
+      {
+        "date": "2026-03-07T21:19:03Z",
+        "message": "fix(server): attach raw Error to res.err and avoid pino err key collision\n\nExtract attachErrorContex",
+        "sha": "f5bc2dcea3b067d168e3f141f9cfd6ea429a84c4"
+      },
+      {
+        "date": "2026-03-07T21:19:08Z",
+        "message": "fix(issues): guard missing companyId and enrich activity log context\n\nAdd 400 response for /issues w",
+        "sha": "a631fe300ba6edf76c82d00c7bcdafc1b103db6c"
+      },
+      {
+        "date": "2026-03-07T21:20:39Z",
+        "message": "Merge pull request #252 from paperclipai/dotta\n\nDotta updates - sorry it's so large",
+        "sha": "092c05b006ae4bfa5fa92a82d236d87bd3e5c763"
+      },
+      {
+        "date": "2026-03-07T21:39:12Z",
+        "message": "fix(openclaw): make invite snippet/onboarding gateway-first",
+        "sha": "17c93d3c8e0d23839b0e8dd0c61c2c561bd8a4f0"
+      },
+      {
+        "date": "2026-03-07T22:01:19Z",
+        "message": "fix(openclaw-gateway): enforce join token validation and add smoke preflight gates",
+        "sha": "c123f953c1e5e1a966d49b035cce8073b2f11c53"
+      },
+      {
+        "date": "2026-03-07T22:16:53Z",
+        "message": "fix(smoke): disambiguate case C ack comment target",
+        "sha": "b043791d8f0cba37d12d015addcd2dc1ae06905e"
+      },
+      {
+        "date": "2026-03-07T22:32:49Z",
+        "message": "openclaw-gateway: document and surface pairing-mode requirements",
+        "sha": "8edccdc1c9735502b63f52f55fe40646dab2f59c"
+      },
+      {
+        "date": "2026-03-07T23:05:36Z",
+        "message": "openclaw gateway: persist device keys and smoke pairing flow",
+        "sha": "5d0961996f56c33b293bed12f9d58571db4c510f"
+      },
+      {
+        "date": "2026-03-07T23:16:37Z",
+        "message": "plugin spec draft ideas v0",
+        "sha": "1e5c9f80cb04a4defa286d0d696daad0ecec89a9"
+      },
+      {
+        "date": "2026-03-07T23:18:46Z",
+        "message": "Merge pull request #256 from paperclipai/dotta\n\nDotta",
+        "sha": "5187cc22365ea957b4b500f8c90fbc8aeb079002"
+      },
+      {
+        "date": "2026-03-07T23:34:38Z",
+        "message": "openclaw gateway: persist device keys on create/update and clarify pairing flow",
+        "sha": "44c7e14629cdf155a8f4ca3d63c79e3c64cc4c8a"
+      },
+      {
+        "date": "2026-03-07T23:46:55Z",
+        "message": "openclaw gateway: auto-approve first pairing and retry",
+        "sha": "a8ccc91aa1d22fd94121e9e526ced2006b6ffff8"
+      },
+      {
+        "date": "2026-03-08T00:08:48Z",
+        "message": "fix(cli): split path and query in buildUrl to prevent %3F encoding\n\nThe URL constructor's pathname s",
+        "sha": "5177e71a44e757a451215fff3ad608f8332cc404"
+      },
+      {
+        "date": "2026-03-08T00:08:49Z",
+        "message": "fix(server): redact secret-sourced env vars in run logs by provenance\n\nresolveAdapterConfigForRuntim",
+        "sha": "c110dfac633e6e771da0130dd4686fdd1c2b6977"
+      },
+      {
+        "date": "2026-03-08T00:08:51Z",
+        "message": "fix(ui): prevent blank screen when prompt template is emptied\n\nChange onChange handler from v || und",
+        "sha": "eb1ecdd49796e94cd795266d4b7b0590f7920ff5"
+      },
+      {
+        "date": "2026-03-08T00:08:52Z",
+        "message": "feat(ui): show human-readable role labels in agent list and properties\n\nUse roleLabels lookup in lis",
+        "sha": "48a7bb70d24444810b54d2a60744f30f4515ca72"
+      },
+      {
+        "date": "2026-03-08T00:08:53Z",
+        "message": "fix(server): auto-deduplicate agent names on creation instead of rejecting\n\nReplace assertCompanySho",
+        "sha": "0e1e0b87265e4a4772392291ad983f8c98e47135"
+      },
+      {
+        "date": "2026-03-08T00:17:45Z",
+        "message": "fix(db): use fileURLToPath for Windows-safe migration paths\n\nURL.pathname returns /C:/... on Windows",
+        "sha": "cd87e263733760e267e0906cdef6e5f884c5bf39"
+      },
+      {
+        "date": "2026-03-08T00:18:14Z",
+        "message": "fix(server): use home-based path for run logs instead of cwd\n\nRun logs defaulted to process.cwd()/da",
+        "sha": "610da36e69c659ebbd83c40e593847e94e44145f"
+      },
+      {
+        "date": "2026-03-08T00:18:41Z",
+        "message": "fix(server): wake agent when issue status changes from backlog\n\nPreviously, agents were only woken w",
+        "sha": "a904264f5c47604e508b0346561792a994928b69"
+      },
+      {
+        "date": "2026-03-08T00:19:06Z",
+        "message": "Add CEO OpenClaw invite endpoint and update onboarding UX",
+        "sha": "ecea262fd59717da6c8306dc8a6d5224bd81f266"
+      },
+      {
+        "date": "2026-03-08T00:20:19Z",
+        "message": "fix(server): serve cached index.html in SPA catch-all to prevent 500\n\nres.sendFile can emit NotFound",
+        "sha": "84f56fd2055407d68e4a0e0ac7573096f5f98df1"
+      },
+      {
+        "date": "2026-03-08T00:33:40Z",
+        "message": "Fix CI typecheck and default OpenClaw sessions to issue scope",
+        "sha": "0af5beaf5875be136d1fc11d9b631304f04faa7a"
+      },
+      {
+        "date": "2026-03-08T00:50:25Z",
+        "message": "Remove legacy OpenClaw adapter and keep gateway-only flow",
+        "sha": "18bf81461e9383b90fea9839aebcdbedd187eec9"
+      },
+      {
+        "date": "2026-03-08T00:52:35Z",
+        "message": "Enhance plugin architecture by introducing agent tool contributions and plugin-to-plugin communicati",
+        "sha": "ee574463b9dad2858042f223df4688940b90cbec"
+      },
+      {
+        "date": "2026-03-08T00:54:16Z",
+        "message": "Revert lockfile changes from OpenClaw gateway cleanup",
+        "sha": "342d5c950d97c7a16f127b36c2ebeece1d7bd7b8"
+      },
+      {
+        "date": "2026-03-08T00:54:33Z",
+        "message": "Merge pull request #269 from mvanhorn/fix/233-spa-fallback-500\n\nfix(server): serve cached index.html",
+        "sha": "ff707f61c12dbadabdb0b3d087fb358bf4b8a2c8"
+      },
+      {
+        "date": "2026-03-08T00:56:00Z",
+        "message": "Merge pull request #273 from gsxdsm/feature/plugins\n\nEnhance plugin architecture by introducing agen",
+        "sha": "89532aecae9b2d32e0cfe482a4a45fc2bec7ff3d"
+      },
+      {
+        "date": "2026-03-08T00:57:16Z",
+        "message": "Merge pull request #270 from paperclipai/openclawgateway\n\nOpenclaw gateway",
+        "sha": "7307454057fd0e8143b583a8c681a8e48f4d0dd8"
+      },
+      {
+        "date": "2026-03-08T01:01:36Z",
+        "message": "fix(db): reuse MIGRATIONS_FOLDER constant instead of recomputing\n\nThe local migrationsFolder variabl",
+        "sha": "60b89085a5ad691e936aaae224944e2b5995225e"
+      },
+      {
+        "date": "2026-03-08T01:06:10Z",
+        "message": "fix(secrets): add secretKeys tracking to resolveEnvBindings for consistent redaction\n\nresolveEnvBind",
+        "sha": "764ec644ce1090a50c5f65f3ac49cb5eabd6d98e"
+      },
+      {
+        "date": "2026-03-08T01:07:14Z",
+        "message": "refactor: extract roleLabels to shared constants\n\nMove duplicated roleLabels map from AgentPropertie",
+        "sha": "0c8d6a49cb6f2a7cad8deec9bf1be1f1232d42dd"
+      },
+      {
+        "date": "2026-03-08T01:38:32Z",
+        "message": "feat: add auth.disableSignUp config option\n\n- Added disableSignUp to authConfigSchema in config-sche",
+        "sha": "368baba7eb9d785b8a7617a4493c2d394040b2ab"
+      },
+      {
+        "date": "2026-03-08T02:15:12Z",
+        "message": "Add pi-local package.json to Dockerfile",
+        "sha": "5f6041b4767a995a1e914596dc3f5064a966695a"
+      },
+      {
+        "date": "2026-03-08T02:18:27Z",
+        "message": "fix: correct env var priority for authDisableSignUp\n\n- Env var now properly overrides file config in",
+        "sha": "667407d30a11162ce957ca994e3c2cc37e53b39b"
+      },
+      {
+        "date": "2026-03-08T02:24:56Z",
+        "message": "Add opencode-ai to global npm install in Dockerfile",
+        "sha": "d48712717a292852736680b9b3a36926e097147b"
+      },
+      {
+        "date": "2026-03-08T02:57:06Z",
+        "message": "feat(adapters): add claude-sonnet-4-6 and claude-haiku-4-6 models",
+        "sha": "7105f077cbe4d555a5286b9c5e195de5c802da22"
+      },
+      {
+        "date": "2026-03-08T03:00:07Z",
+        "message": "Merge pull request #293 from cpfarhood/feat/add-claude-4-6-models\n\nfeat(adapters): add claude-sonnet",
+        "sha": "a49f070d0c6be449cb409527268848a42633b793"
+      },
+      {
+        "date": "2026-03-08T03:06:09Z",
+        "message": "Merge pull request #284 from mingfang/patch-2\n\nAdd opencode-ai to global npm install in Dockerfile",
+        "sha": "fcc0ee79aaf2272dde8dc6d895a38ed8d9e98123"
+      }
+    ]
+  },
+  "3589": {
+    "pr": {
+      "additions": 65,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-13T16:41:35Z",
+      "deletions": 22,
+      "merged": false,
+      "merged_at": null,
+      "n": 3589,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix: Anthropic subscription quota always shows 100% used",
+      "updated_at": "2026-04-13T21:40:24Z",
+      "user": "youja2014"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T16:43:49Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T16:40:48Z",
+        "message": "fix: normalize Anthropic utilization values that are already percentages\n\nThe Anthropic OAuth usage ",
+        "sha": "3a9e9d96b4182e58afefcd708f22695eb20d2513"
+      },
+      {
+        "date": "2026-04-13T16:45:22Z",
+        "message": "fix: convert extra usage credits from cents to dollars in display\n\nThe Anthropic OAuth usage API ret",
+        "sha": "ea2b35418e1b5330e07fe2715ddc484e5d212bf2"
+      }
+    ]
+  },
+  "3591": {
+    "pr": {
+      "additions": 797,
+      "changed_files": 11,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T17:41:31Z",
+      "deletions": 18,
+      "merged": false,
+      "merged_at": null,
+      "n": 3591,
+      "review_comments": 4,
+      "state": "open",
+      "title": "DIG-554: add supported local secrets master-key rekey workflow",
+      "updated_at": "2026-04-13T21:40:19Z",
+      "user": "rudyjellis"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T17:48:00Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T17:37:28Z",
+        "message": "DIG-554 add local secrets rekey workflow\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "1262fc057d958e350e8556f934432ac178486f59"
+      }
+    ]
+  },
+  "3594": {
+    "pr": {
+      "additions": 835,
+      "changed_files": 22,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T19:38:55Z",
+      "deletions": 4,
+      "merged": false,
+      "merged_at": null,
+      "n": 3594,
+      "review_comments": 3,
+      "state": "open",
+      "title": "Add mobile onboarding handoff and readiness routes",
+      "updated_at": "2026-04-13T21:40:16Z",
+      "user": "jonslimak"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T19:44:09Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T19:37:52Z",
+        "message": "Add mobile onboarding handoff and readiness routes",
+        "sha": "e34aed883d164624f7edad43cb50a42cc1ac1136"
+      }
+    ]
+  },
+  "3595": {
+    "pr": {
+      "additions": 273,
+      "changed_files": 23,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-13T19:47:30Z",
+      "deletions": 6,
+      "merged": false,
+      "merged_at": null,
+      "n": 3595,
+      "review_comments": 3,
+      "state": "open",
+      "title": "feat(issues): add scheduledFor date field with auto-backlog and cron transition",
+      "updated_at": "2026-04-13T21:40:12Z",
+      "user": "kbecking"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T20:06:13Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "## Code Review: scheduledFor date field + auto-backlog\n\n### Bug / Compile Error\nIn `server/src/services/issues.ts`, `applyStatusSideEffects` calls:\n```ts\napplyScheduledForAutoBacklog(patch, existing?.",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T20:08:17Z",
+        "user": "xkonjin"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T19:46:56Z",
+        "message": "feat(issues): add native scheduledFor field with auto-backlog and cron job\n\n- Add `scheduled_for` nu",
+        "sha": "d7502b78c0b28b856a74608badbab12ec0166fc6"
+      },
+      {
+        "date": "2026-04-13T19:54:47Z",
+        "message": "fix(db): renumber scheduledFor migration to 0056 to resolve upstream conflict\n\nUpstream merged 0052_",
+        "sha": "0f4769fadc365d0fbcf12dc89ff913fbee4b6a89"
+      },
+      {
+        "date": "2026-04-13T20:38:02Z",
+        "message": "fix: address reviewer feedback on scheduledFor PR\n\n- Fix P1: applyStatusSideEffects referenced out-o",
+        "sha": "710981215725a9fd18bee7ace6bd00cc381aa296"
+      }
+    ]
+  },
+  "3597": {
+    "pr": {
+      "additions": 650,
+      "changed_files": 8,
+      "closed_at": null,
+      "commits": 5,
+      "created_at": "2026-04-13T20:11:23Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3597,
+      "review_comments": 5,
+      "state": "open",
+      "title": "feat: AgentCash plugin for paid API access via x402/SIWX",
+      "updated_at": "2026-04-13T21:40:08Z",
+      "user": "0xOsprey"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T20:15:28Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T20:13:47Z",
+        "message": "feat: add AgentCash plugin for paid API access via x402/SIWX\n\nAdds a Paperclip plugin that gives age",
+        "sha": "14b39648b3fe9f8e4c6a8a95bd5652607d5b1617"
+      },
+      {
+        "date": "2026-04-13T20:14:57Z",
+        "message": "fix: add plugin-agentcash to Dockerfile deps stage\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <no",
+        "sha": "a07ecf1e91f895a0ade640783c2c425d03ac19e3"
+      },
+      {
+        "date": "2026-04-13T20:17:14Z",
+        "message": "chore: update pnpm-lock.yaml for plugin-agentcash dependencies\n\nCo-Authored-By: Claude Opus 4.6 (1M ",
+        "sha": "871a3bbbe5e2c502e2f4133f627837e4131f88e3"
+      },
+      {
+        "date": "2026-04-13T20:20:03Z",
+        "message": "revert: remove pnpm-lock.yaml changes, let CI own lockfile\n\nCo-Authored-By: Claude Opus 4.6 (1M cont",
+        "sha": "e996ba661e4a6f670266390e9f340c5968fb0de9"
+      },
+      {
+        "date": "2026-04-13T20:27:49Z",
+        "message": "fix: address Greptile review feedback\n\n- Use `accounts` subcommand for wallet probe (was `balance`)\n",
+        "sha": "d85b8bec8f052d98b019b473b22e92154eebdf9b"
+      }
+    ]
+  },
+  "3598": {
+    "pr": {
+      "additions": 3,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T20:15:10Z",
+      "deletions": 3,
+      "merged": false,
+      "merged_at": null,
+      "n": 3598,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix: improve type safety for BillingType in BillerSpendCard",
+      "updated_at": "2026-04-13T21:40:03Z",
+      "user": "IgorGanapolsky"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-13T20:14:44Z",
+        "message": "fix: improve type safety for BillingType in BillerSpendCard\n\nReplace generic string Map with typed B",
+        "sha": "004417a37d79d417171ed994452dc3a1e78e9f97"
+      }
+    ]
+  },
   "3599": {
     "pr": {
       "additions": 567,

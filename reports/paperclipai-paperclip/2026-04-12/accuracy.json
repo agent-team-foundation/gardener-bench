@@ -1,11 +1,11 @@
 {
-  "total_prs": 66,
+  "total_prs": 95,
   "scorable": 2,
   "correct": 2,
   "partial": 0,
   "wrong": 0,
-  "unscorable": 64,
-  "pending": 50,
+  "unscorable": 93,
+  "pending": 79,
   "withdrawn": 13,
   "governance_closed": 1,
   "accuracy": 100.0
