@@ -2743,7 +2743,7 @@
       "review_comments": 1,
       "state": "open",
       "title": "feat(adapters): add capability flags to ServerAdapterModule",
-      "updated_at": "2026-04-13T21:43:31Z",
+      "updated_at": "2026-04-14T01:24:23Z",
       "user": "cpfarhood"
     },
     "reviews": [
@@ -2956,8 +2956,8 @@
       "n": 3549,
       "review_comments": 0,
       "state": "open",
-      "title": "DIG-510: add stale-backup startup catch-up",
-      "updated_at": "2026-04-13T21:43:15Z",
+      "title": "add stale-backup startup catch-up",
+      "updated_at": "2026-04-14T00:28:16Z",
       "user": "rudyjellis"
     },
     "reviews": [
@@ -3612,8 +3612,8 @@
       "n": 3584,
       "review_comments": 3,
       "state": "open",
-      "title": "DIG-534: add run-log credential redaction guardrail",
-      "updated_at": "2026-04-13T21:41:07Z",
+      "title": "add run-log credential redaction guardrail",
+      "updated_at": "2026-04-14T00:28:13Z",
       "user": "rudyjellis"
     },
     "reviews": [
@@ -4257,8 +4257,8 @@
       "n": 3591,
       "review_comments": 4,
       "state": "open",
-      "title": "DIG-554: add supported local secrets master-key rekey workflow",
-      "updated_at": "2026-04-13T21:40:19Z",
+      "title": "add supported local secrets master-key rekey workflow",
+      "updated_at": "2026-04-14T00:28:12Z",
       "user": "rudyjellis"
     },
     "reviews": [
@@ -4511,6 +4511,101 @@
         "date": "2026-04-13T22:06:34Z",
         "message": "Fix mobile onboarding permissions and signup handoff",
         "sha": "aa967986ffff4742b54598f3f693dd2a93dc3a4b"
+      }
+    ]
+  },
+  "3608": {
+    "pr": {
+      "additions": 141,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-13T23:00:23Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3608,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(hermes): inject agent JWT into Hermes adapter env to fix identity attribution",
+      "updated_at": "2026-04-13T23:04:03Z",
+      "user": "rvanduiven"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T23:03:27Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T22:34:41Z",
+        "message": "fix(hermes): inject agent JWT into Hermes adapter env to fix identity attribution\n\nhermes-paperclip-",
+        "sha": "7b144879521808679250a10666e9da66076c650c"
+      }
+    ]
+  },
+  "3609": {
+    "pr": {
+      "additions": 53,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-13T23:07:37Z",
+      "deletions": 7,
+      "merged": false,
+      "merged_at": null,
+      "n": 3609,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(server): fix FK constraint violations in company delete",
+      "updated_at": "2026-04-13T23:14:32Z",
+      "user": "vlpl"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-10T08:57:27Z",
+        "message": "fix(adapter-utils): disable io_uring in spawned child processes\n\nOn Linux kernel 6.8, processes usin",
+        "sha": "0b3576430c8762d6a8e5e40b7ed611e5b2659fe4"
+      },
+      {
+        "date": "2026-04-10T21:42:53Z",
+        "message": "fix(server): disable io_uring in MCP server and plugin worker processes\n\nExtends the io_uring fix to",
+        "sha": "874a1bee83ceeff61767fc7a73fb90c3418e86a1"
+      },
+      {
+        "date": "2026-04-13T23:06:37Z",
+        "message": "fix(server): fix FK constraint violations in company delete\n\nThe `remove` method in company service ",
+        "sha": "9fbffc3b744874c35152ba8260212435d6527421"
+      }
+    ]
+  },
+  "3612": {
+    "pr": {
+      "additions": 13,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-14T00:21:34Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3612,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(plugin-host): add PAPERCLIP_PLUGIN_ALLOW_PRIVATE_IPS for self-hosted deployments",
+      "updated_at": "2026-04-14T01:27:19Z",
+      "user": "redhelix"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-14T01:27:14Z",
+        "message": "fix(plugin-host): add PAPERCLIP_PLUGIN_ALLOW_PRIVATE_IPS env var\n\nSelf-hosted / homelab deployments ",
+        "sha": "72289485fc29f9a5c3801916ddf4019ba0db55f0"
       }
     ]
   }

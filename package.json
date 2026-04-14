@@ -1,0 +1,23 @@
+{
+  "name": "gardener-bench",
+  "version": "1.0.0",
+  "description": "[![Live Dashboard](https://img.shields.io/badge/dashboard-live-blue)](https://gardener-report.pages.dev)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agent-team-foundation/gardener-bench.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agent-team-foundation/gardener-bench/issues"
+  },
+  "homepage": "https://github.com/agent-team-foundation/gardener-bench#readme",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}
