@@ -832,7 +832,7 @@
       "additions": 501,
       "changed_files": 9,
       "closed_at": null,
-      "commits": 3,
+      "commits": 4,
       "created_at": "2026-04-09T19:37:46Z",
       "deletions": 57,
       "merged": false,
@@ -841,7 +841,7 @@
       "review_comments": 6,
       "state": "open",
       "title": "feat(skills): GitHub PAT support for private skill repos + delete by source",
-      "updated_at": "2026-04-15T08:04:27Z",
+      "updated_at": "2026-04-15T22:27:06Z",
       "user": "cpfarhood"
     },
     "reviews": [
@@ -866,19 +866,24 @@
     ],
     "commits": [
       {
-        "date": "2026-04-15T08:03:57Z",
+        "date": "2026-04-15T22:26:43Z",
         "message": "feat(skills): GitHub PAT support for private skill repos + delete by source",
-        "sha": "ee700b75fc904e8c2e907f132f855682e4bebfe6"
+        "sha": "c310f2af519e18fb67b0bd991d75cc1e2940d191"
       },
       {
-        "date": "2026-04-15T08:03:57Z",
+        "date": "2026-04-15T22:26:43Z",
         "message": "fix(security): validate GitHub hostname before attaching PAT in ghFetch\n\nPrevent credential exfiltra",
-        "sha": "1d989fe4df14580fcacaddb8d26cd834770d1b79"
+        "sha": "c2a84834fbcccac476d8f03574e067e8ccd4a698"
       },
       {
-        "date": "2026-04-15T08:03:57Z",
+        "date": "2026-04-15T22:26:43Z",
         "message": "fix(security): only use redirect: manual when auth token is attached\n\nToken-free requests should fol",
-        "sha": "648aadedea40effce62e53f4f967295736f0f3be"
+        "sha": "bd3322c74cbef506a8295ce930c5d277838b0ae6"
+      },
+      {
+        "date": "2026-04-15T22:27:01Z",
+        "message": "fix(ui): use useToastActions instead of useToast in SkillAuthEditor\n\nCo-Authored-By: Paperclip <nore",
+        "sha": "3dda492735995c268b12b6e6ed2801de1d6d4e96"
       }
     ]
   },
@@ -2712,27 +2717,137 @@
   },
   "3302": {
     "pr": {
-      "additions": 26,
-      "changed_files": 2,
+      "additions": 3638,
+      "changed_files": 49,
       "closed_at": null,
-      "commits": 1,
+      "commits": 23,
       "created_at": "2026-04-10T13:17:50Z",
-      "deletions": 2,
+      "deletions": 174,
       "merged": false,
       "merged_at": null,
       "n": 3302,
       "review_comments": 0,
       "state": "open",
       "title": "Fix plugin page routes doubling company prefix on company switch",
-      "updated_at": "2026-04-10T13:25:04Z",
+      "updated_at": "2026-04-15T22:24:50Z",
       "user": "harperaa"
     },
     "reviews": [],
     "commits": [
       {
-        "date": "2026-04-10T13:17:04Z",
+        "date": "2026-04-15T22:16:01Z",
+        "message": "Update issue templates and security policy for Paperclip\n\nThese files were copied from BastionClaw a",
+        "sha": "0278c98277220c3196abcbd870ab1ba0c46cfa7e"
+      },
+      {
+        "date": "2026-04-15T22:16:01Z",
+        "message": "Add BastionClaw adapter, the secure containerized and hardened alternative to OpenClaw\n\nRegister Bas",
+        "sha": "8c8a68a68ff2005308b9f77e9a86fdc9a4b46652"
+      },
+      {
+        "date": "2026-04-15T22:16:01Z",
+        "message": "Fix Greptile review feedback\n\n- Remove unused existsSync import from execute.ts\n- Add dedicated asse",
+        "sha": "7b07df4d237b80996eb7715423b0edbbabe3b8c0"
+      },
+      {
+        "date": "2026-04-15T22:16:01Z",
+        "message": "Add post-import-defaults skill and executor script\n\nSkill analyzes agent roles/titles/skills to assi",
+        "sha": "78ba0458060adea4692a4473644912f167eeeb96"
+      },
+      {
+        "date": "2026-04-15T22:18:18Z",
+        "message": "Add company kill switch",
+        "sha": "e59163f66fba607cc8075bda35480dbe77d356fb"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Add heartbeat model override via runtimeConfig.heartbeat.model\n\nWhen an agent has runtimeConfig.hear",
+        "sha": "0b0f1aebbe1247a5ab18551ae1bb10a3f7a3116f"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Add heartbeat model field to agent config UI\n\nShows in the Run Policy section on agent edit page. Te",
+        "sha": "f1684cdbabd792debe9c545bd6a4b627d28a9604"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Use parseHeartbeatPolicy for heartbeat model override\n\nReplace duplicate IIFE parsing with existing ",
+        "sha": "4de2ac94163d55b10242b157b439aee803547c4b"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Deep-merge runtimeConfig.heartbeat on agent PATCH\n\nPreviously, PATCHing runtimeConfig.heartbeat with",
+        "sha": "9763773d99e5d3c03ffb3bdbb1a223ef5e3c0c8f"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Add upstream rebase script for feature branches\n\nAutomates fetching upstream/master, rebasing dev, t",
+        "sha": "1adb2a2c31e66969862ad251622f1dca9db9b8b1"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Update rebase script to use master as main branch\n\nRenamed dev -> master. Script now always returns ",
+        "sha": "87516e665a8e3a5fcfe98ffb0b509d98deb1d1bc"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Gitignore youtube-intelligence plugin (private repo)\n\nCo-Authored-By: Paperclip <noreply@paperclip.i",
+        "sha": "3aad0ba10a2926b0f3f26397ad8c2cff4992697b"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Update rebase script: private-release branch, remove old youtube branch\n\nCo-Authored-By: Paperclip <",
+        "sha": "cdc3bb1216b72ca4f34893ea4a2daf79b8b4d95d"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Remove plugin-server-fixes from rebase script (no longer needed)\n\nCo-Authored-By: Paperclip <noreply",
+        "sha": "9b1485052f4ccd34b92d1012285072dcef59c5f4"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Add BastionClaw adapter, the secure containerized and hardened alternative to OpenClaw\n\nRegister Bas",
+        "sha": "fd9e328278d81423adfad9b361c67b35e0d0fd87"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Fix Greptile review feedback\n\n- Type companyStatus as union (\"active\" | \"paused\" | \"archived\")\n- Res",
+        "sha": "bff1a0687083762e7332bc940918dd5b6ae900ef"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Rebase script: merge feature branches into master, simplify private-release\n\nFeature branches are no",
+        "sha": "b4d71d44b401085b254b184e150c54fc01d0dc73"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Rename plugin directory: youtube-intelligence \u2192 harper-cmo\n\nCo-Authored-By: Paperclip <noreply@paper",
+        "sha": "264a47b0538244dd60139189d4c1803b1f41d16d"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Add fix/plugin-page-route-prefix-doubling to rebase script",
+        "sha": "440896fec44403412eaf36a0974d775bff6c1673"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
         "message": "Fix plugin page routes doubling company prefix on company switch\n\ntoCompanyRelativePath() only strip",
-        "sha": "6363ab3b523eeedcef01a33a3cede8912a067bd4"
+        "sha": "adc20b9a8a29969970d1b54b2a7a1527630742a3"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Update rebase script: rename plugin-route-prefix branch to v2",
+        "sha": "37a6ab78b3e1559bbec9fe5f5329a0261d1e1dbe"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "Remove assertBoard from /api/plugins/tools/execute\n\nAgent JWTs have type=\"agent\" not \"board\", so the",
+        "sha": "48beabdbaff5707f16e0cf5b41f92bdaa2a2dcb9"
+      },
+      {
+        "date": "2026-04-15T22:18:45Z",
+        "message": "fix(plugin-tools): pass pluginDbId through registerPluginTools so worker isRunning check uses UUID k",
+        "sha": "5f31d69b1fd5ae1b175eac5fb9cc7728b0c46307"
       }
     ]
   },
@@ -4339,19 +4454,19 @@
   },
   "3595": {
     "pr": {
-      "additions": 273,
-      "changed_files": 23,
+      "additions": 272,
+      "changed_files": 24,
       "closed_at": null,
       "commits": 3,
       "created_at": "2026-04-13T19:47:30Z",
-      "deletions": 6,
+      "deletions": 7,
       "merged": false,
       "merged_at": null,
       "n": 3595,
       "review_comments": 3,
       "state": "open",
       "title": "feat(issues): add scheduledFor date field with auto-backlog and cron transition",
-      "updated_at": "2026-04-13T21:40:12Z",
+      "updated_at": "2026-04-15T20:51:52Z",
       "user": "kbecking"
     },
     "reviews": [
@@ -4370,19 +4485,19 @@
     ],
     "commits": [
       {
-        "date": "2026-04-13T19:46:56Z",
+        "date": "2026-04-15T20:49:45Z",
         "message": "feat(issues): add native scheduledFor field with auto-backlog and cron job\n\n- Add `scheduled_for` nu",
-        "sha": "d7502b78c0b28b856a74608badbab12ec0166fc6"
+        "sha": "a4af1d3f5b0e437d76c1b03a0f42f50a3e6b375c"
       },
       {
-        "date": "2026-04-13T19:54:47Z",
-        "message": "fix(db): renumber scheduledFor migration to 0056 to resolve upstream conflict\n\nUpstream merged 0052_",
-        "sha": "0f4769fadc365d0fbcf12dc89ff913fbee4b6a89"
-      },
-      {
-        "date": "2026-04-13T20:38:02Z",
+        "date": "2026-04-15T20:49:53Z",
         "message": "fix: address reviewer feedback on scheduledFor PR\n\n- Fix P1: applyStatusSideEffects referenced out-o",
-        "sha": "710981215725a9fd18bee7ace6bd00cc381aa296"
+        "sha": "c42767d0fd5a66abb9fbaafc5d1880eb0051f85b"
+      },
+      {
+        "date": "2026-04-15T20:49:53Z",
+        "message": "fix(tests): correct create() call signature and Date serialization in scheduledFor tests\n\n- Pass com",
+        "sha": "1d1c60e66e70a5fca5db5a46a33178bfa3b57dfe"
       }
     ]
   },
@@ -4525,19 +4640,19 @@
   },
   "3601": {
     "pr": {
-      "additions": 32,
-      "changed_files": 4,
+      "additions": 1330,
+      "changed_files": 30,
       "closed_at": null,
-      "commits": 1,
+      "commits": 5,
       "created_at": "2026-04-13T22:07:45Z",
-      "deletions": 9,
+      "deletions": 278,
       "merged": false,
       "merged_at": null,
       "n": 3601,
       "review_comments": 3,
       "state": "open",
       "title": "Fix mobile onboarding permissions and signup handoff",
-      "updated_at": "2026-04-13T22:25:16Z",
+      "updated_at": "2026-04-15T18:45:10Z",
       "user": "jonslimak"
     },
     "reviews": [
@@ -4550,9 +4665,29 @@
     ],
     "commits": [
       {
+        "date": "2026-04-13T19:37:52Z",
+        "message": "Add mobile onboarding handoff and readiness routes",
+        "sha": "e34aed883d164624f7edad43cb50a42cc1ac1136"
+      },
+      {
         "date": "2026-04-13T22:06:34Z",
         "message": "Fix mobile onboarding permissions and signup handoff",
         "sha": "aa967986ffff4742b54598f3f693dd2a93dc3a4b"
+      },
+      {
+        "date": "2026-04-14T15:50:04Z",
+        "message": "Tighten mobile onboarding handoff",
+        "sha": "685e206e5248f147befa9d8d2ef80c321c119b52"
+      },
+      {
+        "date": "2026-04-15T18:43:49Z",
+        "message": "Improve onboarding and CLI auth web flows",
+        "sha": "83940d43ea1ce7d49f11b44b410842ab83106c7f"
+      },
+      {
+        "date": "2026-04-15T18:44:47Z",
+        "message": "Merge onboarding and CLI auth updates into master",
+        "sha": "7bc26e32bd83d1bcece86e9465395a49769ef40d"
       }
     ]
   },
@@ -4668,10 +4803,10 @@
   },
   "3640": {
     "pr": {
-      "additions": 88,
+      "additions": 90,
       "changed_files": 4,
       "closed_at": null,
-      "commits": 4,
+      "commits": 5,
       "created_at": "2026-04-14T11:43:38Z",
       "deletions": 3,
       "merged": false,
@@ -4680,7 +4815,7 @@
       "review_comments": 3,
       "state": "open",
       "title": "feat(plugins): add agent.tool.pre_execute and post_execute events",
-      "updated_at": "2026-04-15T08:04:29Z",
+      "updated_at": "2026-04-15T22:31:07Z",
       "user": "cpfarhood"
     },
     "reviews": [
@@ -4699,24 +4834,29 @@
     ],
     "commits": [
       {
-        "date": "2026-04-15T08:03:58Z",
+        "date": "2026-04-15T22:26:30Z",
         "message": "feat(plugins): add agent.tool.pre_execute and agent.tool.post_execute events\n\nEnables plugins to obs",
-        "sha": "1eb96d43edf5701a59c07225588d4e2cd5fa3ceb"
+        "sha": "58cd42a6dda0a8f8d4d2170b3a732dd2151085e2"
       },
       {
-        "date": "2026-04-15T08:03:58Z",
+        "date": "2026-04-15T22:26:30Z",
         "message": "fix(plugins): correct PluginEvent shape, remove parameter leak, add callId\n\n- Use proper PluginEvent",
-        "sha": "ab6acc33a1073d2ed2fdf0809af752c2cf16bd85"
+        "sha": "78d9884296c63b74b1d97d1797fd6979829e9c11"
       },
       {
-        "date": "2026-04-15T08:03:58Z",
+        "date": "2026-04-15T22:26:30Z",
         "message": "fix(plugins): align post_execute event payload shape between error and success paths\n\nCo-Authored-By",
-        "sha": "fe4e3a89adf7ec146b2154f0948aba9d75adf413"
+        "sha": "a6171e8957ff6bf9b7e3cb1a66080cd0c48a1a8e"
       },
       {
-        "date": "2026-04-15T08:03:58Z",
+        "date": "2026-04-15T22:26:30Z",
         "message": "fix(plugins): include error string in success-path post_execute payload\n\nWhen workerManager.call ret",
-        "sha": "c38dfeee3e8cc287a0f7b1f197398bd0e10b2f44"
+        "sha": "6456e5dc5c17d8b056ad088120ad5d1450409cee"
+      },
+      {
+        "date": "2026-04-15T22:26:30Z",
+        "message": "fix(plugins): guard actorId/actorType against missing agentId in runContext\n\nDerive actorType dynami",
+        "sha": "f312c9ba241f24b08e5db258e53a3b4d3c92e4c1"
       }
     ]
   },
@@ -5435,7 +5575,7 @@
       "review_comments": 0,
       "state": "closed",
       "title": "feat: add 'parked' issue status and deduplicate status constants",
-      "updated_at": "2026-04-15T05:58:50Z",
+      "updated_at": "2026-04-15T17:23:46Z",
       "user": "akhater"
     },
     "reviews": [],
@@ -5466,7 +5606,7 @@
       "review_comments": 2,
       "state": "open",
       "title": "fix: preserve managed Codex auth and repo-root env loading",
-      "updated_at": "2026-04-15T05:46:25Z",
+      "updated_at": "2026-04-15T20:03:03Z",
       "user": "neerazz"
     },
     "reviews": [
@@ -6003,7 +6143,7 @@
       "review_comments": 0,
       "state": "open",
       "title": "Fix stale execution lock cleanup",
-      "updated_at": "2026-04-15T02:33:05Z",
+      "updated_at": "2026-04-15T20:09:15Z",
       "user": "TheConnMan"
     },
     "reviews": [
@@ -6362,7 +6502,7 @@
       "review_comments": 2,
       "state": "open",
       "title": "fix(openclaw-gateway): stop sending top-level paperclip payload",
-      "updated_at": "2026-04-15T06:05:24Z",
+      "updated_at": "2026-04-15T20:02:54Z",
       "user": "LeonSGP43"
     },
     "reviews": [
@@ -6433,6 +6573,1518 @@
         "date": "2026-04-15T02:54:27Z",
         "message": "fix(server): capture rawBody for urlencoded webhooks and deduplicate plugin onEvent delivery\n\nTwo bu",
         "sha": "85d8a3af367fe01477018d8b634e90da84c17236"
+      }
+    ]
+  },
+  "3714": {
+    "pr": {
+      "additions": 54,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T04:13:30Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3714,
+      "review_comments": 2,
+      "state": "open",
+      "title": "Fix MarkdownBody external links opening in the same tab",
+      "updated_at": "2026-04-15T20:02:32Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T04:17:31Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T04:10:20Z",
+        "message": "fix(ui): open external markdown links in new tabs",
+        "sha": "6d1e854bde4e35e3df2bda12c65c44cc539d4a88"
+      }
+    ]
+  },
+  "3716": {
+    "pr": {
+      "additions": 61,
+      "changed_files": 3,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-15T05:15:19Z",
+      "deletions": 46,
+      "merged": false,
+      "merged_at": null,
+      "n": 3716,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(opencode-local): resolve config path using APPDATA on Windows",
+      "updated_at": "2026-04-15T20:02:25Z",
+      "user": "sunghoonism"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T05:19:51Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T03:50:47Z",
+        "message": "fix(opencode-local): resolve config path using APPDATA on Windows",
+        "sha": "e24031df8b8f70c2556cfd1b486d31bfdb3afac2"
+      },
+      {
+        "date": "2026-04-15T12:02:18Z",
+        "message": "fix(opencode-local): ensure headless execution and path resolution on Windows",
+        "sha": "614090d2eca3d1b5f66beb0840a2c9124b49405d"
+      }
+    ]
+  },
+  "3718": {
+    "pr": {
+      "additions": 47,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-15T05:38:22Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3718,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(db): use calendar month retention for backups",
+      "updated_at": "2026-04-15T20:02:18Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T05:43:59Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T05:37:22Z",
+        "message": "fix(db): use calendar month retention for backups",
+        "sha": "3875a295cf6a96ccca7f20e21c6d13b2136e1916"
+      },
+      {
+        "date": "2026-04-15T05:48:22Z",
+        "message": "fix(db): make monthly backup retention timezone-stable",
+        "sha": "508f82d5be5479b44767f38f86e31f126f45acad"
+      }
+    ]
+  },
+  "3719": {
+    "pr": {
+      "additions": 26,
+      "changed_files": 6,
+      "closed_at": null,
+      "commits": 4,
+      "created_at": "2026-04-15T06:01:54Z",
+      "deletions": 22,
+      "merged": false,
+      "merged_at": null,
+      "n": 3719,
+      "review_comments": 2,
+      "state": "open",
+      "title": "refactor: deduplicate issue status lists to single source of truth",
+      "updated_at": "2026-04-15T21:17:58Z",
+      "user": "akhater"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T06:04:31Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "Good catch \u2014 the column ordering in `ISSUE_STATUSES` had `done` before `blocked`, which reversed the original `boardStatuses` order. Fixed in the follow-up commit: `blocked` is now at position 5 (befo",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T06:14:59Z",
+        "user": "akhater"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T06:01:45Z",
+        "message": "refactor: deduplicate issue status lists to single source of truth\n\nFour components maintained their",
+        "sha": "de072839159e6c3bd12e0d29d30fbc7c5032f3d0"
+      },
+      {
+        "date": "2026-04-15T06:12:51Z",
+        "message": "fix: restore blocked-before-done column order in ISSUE_STATUSES\n\nThe original boardStatuses in Kanba",
+        "sha": "93f1b6716839021ec92292053827c1ab30bdec90"
+      },
+      {
+        "date": "2026-04-15T17:26:22Z",
+        "message": "refactor(ui): derive issueStatusOrder and issuePriorityOrder from shared SSOT\n\nThe status and priori",
+        "sha": "291a65c50dc3c90d80a9cc5bc0c10fdb7b3848d7"
+      },
+      {
+        "date": "2026-04-15T21:08:21Z",
+        "message": "fix(ui): hide blocked/cancelled from new issue status picker\n\nUsers should not create issues with \"b",
+        "sha": "543c1a4535ae2766b9deddf81b9cfb39bba798f4"
+      }
+    ]
+  },
+  "3723": {
+    "pr": {
+      "additions": 5,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T09:45:26Z",
+      "deletions": 5,
+      "merged": false,
+      "merged_at": null,
+      "n": 3723,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix: issue identifier regex rejects prefixes with digits",
+      "updated_at": "2026-04-15T20:02:00Z",
+      "user": "stubbi"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-15T09:45:04Z",
+        "message": "fix: issue identifier regex rejects prefixes with digits\n\nThe regex `[A-Z]+-\\d+` used to detect issu",
+        "sha": "a96f281026b4da84c112b4013ac85f8a407c4136"
+      }
+    ]
+  },
+  "3725": {
+    "pr": {
+      "additions": 20,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-15T09:48:39Z",
+      "deletions": 11,
+      "merged": false,
+      "merged_at": null,
+      "n": 3725,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix: read-only agent config/skill endpoints should not require agents:create",
+      "updated_at": "2026-04-15T20:01:49Z",
+      "user": "stubbi"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T09:51:39Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T09:48:23Z",
+        "message": "fix: read-only agent config/skill endpoints should not require agents:create\n\n`assertCanReadConfigur",
+        "sha": "a0942a74e643123c84c0f7e5e7467958dfba7095"
+      },
+      {
+        "date": "2026-04-15T11:16:11Z",
+        "message": "fix: use assertCompanyAccess in try/catch for boolean read check\n\n`actorCanReadConfigurationsForComp",
+        "sha": "803252a9c17f555bec33f0d53ae4c86a2a55c371"
+      }
+    ]
+  },
+  "3729": {
+    "pr": {
+      "additions": 31,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-15T09:51:39Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3729,
+      "review_comments": 1,
+      "state": "open",
+      "title": "feat: support TRUST_PROXY env var for correct client IP behind proxies",
+      "updated_at": "2026-04-15T20:01:41Z",
+      "user": "stubbi"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T09:53:27Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T09:51:25Z",
+        "message": "feat: support TRUST_PROXY env var for correct client IP behind proxies\n\nPaperclip deployments behind",
+        "sha": "d18040b4e5165e8971e0425b1bc124dabb6fc2d0"
+      },
+      {
+        "date": "2026-04-15T11:17:11Z",
+        "message": "fix: reject unrecognized TRUST_PROXY values instead of trusting all\n\nThe previous validation fell th",
+        "sha": "907d23f30c40a883f122201fcd4850bc1cb7290d"
+      }
+    ]
+  },
+  "3732": {
+    "pr": {
+      "additions": 31,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T09:56:20Z",
+      "deletions": 27,
+      "merged": false,
+      "merged_at": null,
+      "n": 3732,
+      "review_comments": 1,
+      "state": "open",
+      "title": "feat(ui): extract ThemeToggle, add it to Auth page, default to system color scheme",
+      "updated_at": "2026-04-15T20:01:32Z",
+      "user": "stubbi"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T09:57:57Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T09:56:04Z",
+        "message": "feat(ui): extract ThemeToggle, add it to Auth page, default to system color scheme\n\nThe theme toggle",
+        "sha": "b86cbf64894d621a3861ae13183a6e9c6202ad1f"
+      }
+    ]
+  },
+  "3735": {
+    "pr": {
+      "additions": 99,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-15T10:02:41Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3735,
+      "review_comments": 2,
+      "state": "open",
+      "title": "feat(server): opt-in OpenTelemetry auto-instrumentation",
+      "updated_at": "2026-04-15T20:01:25Z",
+      "user": "stubbi"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T10:05:45Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T10:02:24Z",
+        "message": "feat(server): opt-in OpenTelemetry auto-instrumentation\n\nAdd a self-contained OTel bootstrap module ",
+        "sha": "a0ce70c7be8da41e6a29ce5ac1281c02fb79bf8b"
+      },
+      {
+        "date": "2026-04-15T11:18:43Z",
+        "message": "refactor(otel): dynamic imports, try/catch sdk.start, once-shutdown\n\nAddress review feedback and unb",
+        "sha": "71a79117523d2a0c8f86b755c697ea1b7a211e24"
+      }
+    ]
+  },
+  "3736": {
+    "pr": {
+      "additions": 128,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 4,
+      "created_at": "2026-04-15T10:03:51Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3736,
+      "review_comments": 3,
+      "state": "open",
+      "title": "feat: optional Redis pub/sub for cross-replica live events",
+      "updated_at": "2026-04-15T20:01:16Z",
+      "user": "stubbi"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T10:06:10Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T11:41:41Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T10:03:32Z",
+        "message": "feat: optional Redis pub/sub for cross-replica live events\n\nDeployments with more than one server re",
+        "sha": "6af51d5e53b693166854ebae0aedf755f000ec55"
+      },
+      {
+        "date": "2026-04-15T11:19:22Z",
+        "message": "fix(live-events): correct cross-replica routing, surface init errors\n\nTwo follow-ups to the cross-re",
+        "sha": "0cdfb3c3b94a20306ae09294cc95565b0a615ba9"
+      },
+      {
+        "date": "2026-04-15T12:12:55Z",
+        "message": "fix(live-events): attach error listeners to redis clients\n\nioredis clients emit `error` on their own",
+        "sha": "8dac2b3965d939a67cef79503ce76a98a5dfad74"
+      },
+      {
+        "date": "2026-04-15T12:49:47Z",
+        "message": "fix(live-events): subscribe before exposing the publisher\n\nIf `redisPub` is assigned before `sub.sub",
+        "sha": "65eb8468f3591789b1d7b8af6ea6d6cf4761beb6"
+      }
+    ]
+  },
+  "3739": {
+    "pr": {
+      "additions": 289,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-15T11:08:02Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3739,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(issues): block agent comments on completed issues from unrelated runs (OCT-552)",
+      "updated_at": "2026-04-15T20:01:05Z",
+      "user": "octasoft-ltd"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T11:11:05Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T11:07:39Z",
+        "message": "fix(issues): block agent comments on completed issues from unrelated runs (OCT-552)\n\nAgents in an ac",
+        "sha": "b563458fbd70b0fe53a23f9298f928d9ed834551"
+      },
+      {
+        "date": "2026-04-15T11:53:55Z",
+        "message": "fix(issues): reject when run record not found, add missing test assertions (OCT-552)\n\nAddress Grepti",
+        "sha": "01e3a0e45ebb159d4e5bedd5bb9572a077cd7a21"
+      }
+    ]
+  },
+  "3744": {
+    "pr": {
+      "additions": 1035,
+      "changed_files": 34,
+      "closed_at": "2026-04-15T20:54:05Z",
+      "commits": 16,
+      "created_at": "2026-04-15T14:17:40Z",
+      "deletions": 241,
+      "merged": true,
+      "merged_at": "2026-04-15T20:54:05Z",
+      "n": 3744,
+      "review_comments": 1,
+      "state": "closed",
+      "title": "[codex] improve issue and routine UI responsiveness",
+      "updated_at": "2026-04-15T21:11:48Z",
+      "user": "cryppadotta"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T14:45:24Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "feat: show routine execution issues in lists by default\n\nRoutine-backed issues were filtered out of ",
+        "sha": "60994725d2d07646c965a25f8e1460daed71b938"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "fix: rename filter to \"Hide routine runs\" so default state has no active filter badge\n\nInverts the c",
+        "sha": "206e6d00077b77a19d951276c76ee68d36fd49a8"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "feat: show routine name above \"Run routine\" title in run dialog\n\nDisplay the routine's title above t",
+        "sha": "7cfcde7691250238d0070c77fb4f861ff6a941e1"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "feat: properties pane adjustments - workspace link, copy-on-click, inline parent arrow\n\n- Add \"Works",
+        "sha": "92430a94c75403a9d9731d5f7810a6087f7382c3"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Reduce issue detail rerenders\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>\n(cherry picked from",
+        "sha": "c92f76201e6eb2b143476961fccfd81721c2014c"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Keep queued issue chat mounted\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>\n(cherry picked fro",
+        "sha": "cba4e4a3a5a66cf65fe2f0bfa611f93b075893b5"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Add inbox other search results section\n\n(cherry picked from commit 81b3aacc81da69b548680f11f6dfa1356",
+        "sha": "20a37c87e38470ab0d5076519f2842fc55286761"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Improve issues page search responsiveness\n\n(cherry picked from commit e58b74d1c4b2ef27a545a3e84489c2",
+        "sha": "801a91e039c9e517b75832e1a6d2ac6095c9d362"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Optimize issues workspace lookups\n\n(cherry picked from commit 493ef18a2f68ee5372a2da585a2f6b709f5cf3",
+        "sha": "fd22d10db32ee1f6fb2e800a27ac52aadc1bd909"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Refresh visible issue runs on status updates\n\n(cherry picked from commit fce4ddfa0de92ff03682edc6fc4",
+        "sha": "e5e2667c6497288d76dfe7ccea00cc82d57e33b3"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Fix long-string wrapping in markdown comments\n\n(cherry picked from commit d4919e6894741ff5c93d54e157",
+        "sha": "c5de2fe854dd005c04997fc63d5ae74f1051a814"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Fix scrolling for self-comment code blocks\n\n(cherry picked from commit 219505197bad39a61f88fa5220915",
+        "sha": "e6d99f1d1534a43cad60756b0e00e5baa2537dda"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Speed up issues page first paint\n\n(cherry picked from commit 9b12f59b1f605c80fda00fcfbd839fcf705e995",
+        "sha": "ab6e382aa454143e900ec9338401b33e076b1a2d"
+      },
+      {
+        "date": "2026-04-15T14:12:41Z",
+        "message": "Refine issues render progress copy\n\n(cherry picked from commit a5a34f5b479b43c6fc212e6666f9d175bed48",
+        "sha": "e83df59452808ab8b2e57dbb7796f4f55e79a43d"
+      },
+      {
+        "date": "2026-04-15T14:14:56Z",
+        "message": "test: relax markdown sanitizer assertion",
+        "sha": "83b10f4075896d15f0f61972b92b9176bc916b42"
+      },
+      {
+        "date": "2026-04-15T15:05:23Z",
+        "message": "fix: address PR 3744 UI follow-ups",
+        "sha": "988409dfc530930f77d241a83aaa420a7e8819c9"
+      }
+    ]
+  },
+  "3746": {
+    "pr": {
+      "additions": 657,
+      "changed_files": 101,
+      "closed_at": null,
+      "commits": 15,
+      "created_at": "2026-04-15T15:26:23Z",
+      "deletions": 2774,
+      "merged": false,
+      "merged_at": null,
+      "n": 3746,
+      "review_comments": 0,
+      "state": "open",
+      "title": "refactor(cleanup): 11-pass dedup, typing, and circular-dep cleanup",
+      "updated_at": "2026-04-15T20:00:31Z",
+      "user": "bludragon66613-sys"
+    },
+    "reviews": [
+      {
+        "body": "Great cleanup of circular dependencies by extracting the `CheckResult` type to `types.js`. Resolving circular dependencies by separating types from implementation helps avoid bundling issues and impro",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T16:03:30Z",
+        "user": "xkonjin"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-03-25T19:38:43Z",
+        "message": "feat: add bulk agent adapter configuration script\n\nInteractive script to configure all agents in a c",
+        "sha": "2631f80421def152d4c79dd98d85ed8792fb3419"
+      },
+      {
+        "date": "2026-04-09T23:15:55Z",
+        "message": "Merge branch 'master' of https://github.com/paperclipai/paperclip",
+        "sha": "ea7f3669887ee3e017550f387e3258ef369dc4b1"
+      },
+      {
+        "date": "2026-04-10T00:16:32Z",
+        "message": "feat: add TallyAI agent eval test cases\n\n6 promptfoo test cases covering role-specific behaviors:\nCT",
+        "sha": "f19f55e043ff94086f91a96d999b1f8f470dd9e6"
+      },
+      {
+        "date": "2026-04-15T12:17:31Z",
+        "message": "chore(cleanup): delete verified dead files (pass 1)\n\nDeleted 15 unreferenced files with zero externa",
+        "sha": "02f786d000291e5b89107bb49d53d31e33e4888f"
+      },
+      {
+        "date": "2026-04-15T12:26:57Z",
+        "message": "chore(cleanup): remove AI slop comments (pass 2)\n\n- ui/src/pages/AgentDetail.tsx: deleted 2-line com",
+        "sha": "b806e71688e4ceab9e717b49d740c00ec8b11197"
+      },
+      {
+        "date": "2026-04-15T12:34:56Z",
+        "message": "refactor(cleanup): remove defensive try/catch around localStorage (pass 3)\n\nCo-Authored-By: Claude S",
+        "sha": "f1713377df607b2c04c2b96c4a1c0f777d719940"
+      },
+      {
+        "date": "2026-04-15T12:56:36Z",
+        "message": "refactor(cleanup): replace weak any/unknown types with strong types (pass 4)\n\n- routes/access.ts: pe",
+        "sha": "eda792afaada4b2ea5c3de6932977a33b67f9f59"
+      },
+      {
+        "date": "2026-04-15T13:02:28Z",
+        "message": "fix(cleanup): DbOrTx union + issues.ts type narrowing (pass 4 followup)\n\nPass 4 introduced DbOrTx as",
+        "sha": "f997b5aa2f1340d166f36f8d61531ca2fff7d009"
+      },
+      {
+        "date": "2026-04-15T13:27:28Z",
+        "message": "refactor(cleanup): consolidate duplicate types into @paperclipai/shared (pass 5)\n\nMoved AdapterModel",
+        "sha": "0c719b0cbe05d75b2d729d0e7ef2ce03b0a7c338"
+      },
+      {
+        "date": "2026-04-15T13:48:26Z",
+        "message": "refactor(cleanup): consolidate OrgNode into @paperclipai/shared (pass 6)\n\nMoved OrgNode from server/",
+        "sha": "52e3ca99c053c1c540ddd3a20412b6e76bfd47ae"
+      },
+      {
+        "date": "2026-04-15T14:05:30Z",
+        "message": "refactor(cleanup): extract adapter probe helpers to adapter-utils (pass 7)\n\nMoved firstNonEmptyLine,",
+        "sha": "8408684e211c5d4e777281cde950698287a40ca4"
+      },
+      {
+        "date": "2026-04-15T14:10:01Z",
+        "message": "refactor(cleanup): extract adapter config parsers to adapter-utils (pass 8)\n\nMoved parseCommaArgs, p",
+        "sha": "93165d386848037d6ba06fc173f0b4612783ea61"
+      },
+      {
+        "date": "2026-04-15T14:19:54Z",
+        "message": "refactor(cleanup): extract type-coercion helpers to adapter-utils (pass 9)\n\nMoved asRecord, asString",
+        "sha": "d3382efec7cc845186218c7ee738c2c766928b00"
+      },
+      {
+        "date": "2026-04-15T14:31:16Z",
+        "message": "refactor(cleanup): extract resolveAdapterSkillsHome to server-utils (pass 10)\n\nAdded a variadic `res",
+        "sha": "f45fa03871e5680ccb10c5cc32d1d2c29b86cbd4"
+      },
+      {
+        "date": "2026-04-15T14:38:23Z",
+        "message": "refactor(cleanup): break CLI check barrel and run\u2194onboard cycles (pass 11)\n\nExtracted the CheckResul",
+        "sha": "0e73c95d702d13aab1d5e6ddd0cd61e7d7be372e"
+      }
+    ]
+  },
+  "3748": {
+    "pr": {
+      "additions": 1226,
+      "changed_files": 28,
+      "closed_at": null,
+      "commits": 38,
+      "created_at": "2026-04-15T16:43:03Z",
+      "deletions": 4,
+      "merged": false,
+      "merged_at": null,
+      "n": 3748,
+      "review_comments": 0,
+      "state": "open",
+      "title": "feat: add OpenRouter adapter",
+      "updated_at": "2026-04-15T21:18:22Z",
+      "user": "RushAlmosa"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-12T15:47:53Z",
+        "message": "fix: remove stale github cli gpg checksum from Dockerfile",
+        "sha": "9ccdc35a16b8a5bb20403389c1e575a42e8a4e23"
+      },
+      {
+        "date": "2026-04-12T17:10:20Z",
+        "message": "fix",
+        "sha": "b69a449a63d3137a6d4f5e75169cf86cb538565d"
+      },
+      {
+        "date": "2026-04-13T18:25:44Z",
+        "message": "fix",
+        "sha": "8ecef4d7bd79975ea9e646e32a7384c245b8a60d"
+      },
+      {
+        "date": "2026-04-13T18:29:19Z",
+        "message": "fix",
+        "sha": "ca0f8bb30dc4145f4502c009d0ce02d6a7dc9f6c"
+      },
+      {
+        "date": "2026-04-13T18:31:05Z",
+        "message": "Merge branch 'paperclipai:master' into master",
+        "sha": "679e9e575eacb4662b2a16570aba3095e188044b"
+      },
+      {
+        "date": "2026-04-13T18:43:23Z",
+        "message": "add gemini models",
+        "sha": "23e88aa96689c353b96cf362a0eeb8df2f3efe44"
+      },
+      {
+        "date": "2026-04-13T19:46:35Z",
+        "message": "Merge remote-tracking branch 'origin/master'",
+        "sha": "15d985c89a5dde2eee3e59e2a6115b0e7e0e853f"
+      },
+      {
+        "date": "2026-04-13T19:47:24Z",
+        "message": "add open router",
+        "sha": "182f14395522377abc40c42af6bdb35ab2c43d07"
+      },
+      {
+        "date": "2026-04-13T20:07:53Z",
+        "message": "fix models",
+        "sha": "1b171c1b8cf9e210b107bf268e4dd7951e336d89"
+      },
+      {
+        "date": "2026-04-13T20:59:31Z",
+        "message": "fix",
+        "sha": "22a3b789acf526ee3930e5b5ca7aa795cd94718b"
+      },
+      {
+        "date": "2026-04-13T21:04:23Z",
+        "message": "fix",
+        "sha": "ac0054b071b90230d1192caf062d15075d423190"
+      },
+      {
+        "date": "2026-04-13T21:49:45Z",
+        "message": "fix",
+        "sha": "5597c07b8c0b6e70cafe40c420cdf7a3d5764cdf"
+      },
+      {
+        "date": "2026-04-13T21:50:35Z",
+        "message": "fix",
+        "sha": "d7d4d2e4a6c09afa7a2ea05c60ece5a4e18c5a9b"
+      },
+      {
+        "date": "2026-04-13T21:52:09Z",
+        "message": "fix",
+        "sha": "9354f69c990cecab6f3ccfce05a413034baabd6b"
+      },
+      {
+        "date": "2026-04-13T21:56:31Z",
+        "message": "fix",
+        "sha": "d01bbffb9aec4c6f4322f1b42913943487df2fe2"
+      },
+      {
+        "date": "2026-04-13T22:04:15Z",
+        "message": "fix skills",
+        "sha": "1ffcc240d174f1b711f3801b3f8c42b9c5f4f89a"
+      },
+      {
+        "date": "2026-04-14T06:57:59Z",
+        "message": "fix",
+        "sha": "b3d8d358bb6e5448ab3bc128e993975be5fda51a"
+      },
+      {
+        "date": "2026-04-14T07:04:36Z",
+        "message": "fix",
+        "sha": "fa621695974b74ede98535b6cb007c26a9cfeaf6"
+      },
+      {
+        "date": "2026-04-14T08:25:31Z",
+        "message": "fix",
+        "sha": "2c0263c4f1cbbc2af486a85c7545ddcb5b91205f"
+      },
+      {
+        "date": "2026-04-14T09:37:19Z",
+        "message": "fix",
+        "sha": "a3b95b93eaf6f9a2aeab972463bcff5d1fc61912"
+      },
+      {
+        "date": "2026-04-14T10:07:20Z",
+        "message": "enthance",
+        "sha": "fb7f154382f622dd643527934556750888d01ab1"
+      },
+      {
+        "date": "2026-04-14T12:07:24Z",
+        "message": "fix",
+        "sha": "14d36172de3148f0118ecea94308679a8a7f385b"
+      },
+      {
+        "date": "2026-04-14T15:21:26Z",
+        "message": "add gemini modells",
+        "sha": "16aeaaa6553cca883e5a9fdf467f71fb97fc157c"
+      },
+      {
+        "date": "2026-04-14T15:23:27Z",
+        "message": "fix",
+        "sha": "60eaf5c436bbbd42a976a948b8ded0ab9f0f7835"
+      },
+      {
+        "date": "2026-04-14T15:27:50Z",
+        "message": "fix gemini",
+        "sha": "3214ef2198960351c8f86805a4bbbebc55ece1d2"
+      },
+      {
+        "date": "2026-04-14T16:29:37Z",
+        "message": "add openrouter2",
+        "sha": "5881b2ad71534d148b1da1df058030c95222359a"
+      },
+      {
+        "date": "2026-04-14T18:09:40Z",
+        "message": "fix",
+        "sha": "0dc8e7f0f4f38a3d0d32fe1a751bc16b7e0c87fb"
+      },
+      {
+        "date": "2026-04-14T18:47:32Z",
+        "message": "fix",
+        "sha": "412063c90485b6f30efaf0427ce8c55f2836a1a6"
+      },
+      {
+        "date": "2026-04-14T19:14:35Z",
+        "message": "fix",
+        "sha": "2b950dcf2aea852bcbac591cdd3d9a7f4721f2fe"
+      },
+      {
+        "date": "2026-04-14T19:16:16Z",
+        "message": "fix",
+        "sha": "0815146e80f6f0c7f2cd6a92c914828b6f6d48b4"
+      },
+      {
+        "date": "2026-04-14T19:52:18Z",
+        "message": "fix",
+        "sha": "d2a2b29c136c3afca616cf022234eaaf78d3c366"
+      },
+      {
+        "date": "2026-04-15T15:35:16Z",
+        "message": "Merge branch 'paperclipai:master' into master",
+        "sha": "b87bd7a317f95774d484e8b4a9ff388f66e38921"
+      },
+      {
+        "date": "2026-04-15T16:14:32Z",
+        "message": "fix adapter",
+        "sha": "3b553c014dcc6ea7699012da4a89b2b050e2fb25"
+      },
+      {
+        "date": "2026-04-15T16:20:26Z",
+        "message": "update name",
+        "sha": "395a9a4c12ce6a2fec36412533a0d2d1b0c7d28e"
+      },
+      {
+        "date": "2026-04-15T16:23:49Z",
+        "message": "add docs",
+        "sha": "eff30b58a035550330807065d5c708874cdbb977"
+      },
+      {
+        "date": "2026-04-15T16:25:16Z",
+        "message": "Merge branch 'openrouter2'\n\n# Conflicts:\n#\tDockerfile\n#\tpackages/adapters/gemini-local/src/index.ts\n",
+        "sha": "f0c83363feaea049cdc1d8c8a4d371ecb3149d97"
+      },
+      {
+        "date": "2026-04-15T16:39:21Z",
+        "message": "fix",
+        "sha": "5752bb2a68f33003078d01e1299f59bd0f620e65"
+      },
+      {
+        "date": "2026-04-15T20:42:51Z",
+        "message": "revert: restore CEO-only canCreateAgents \u2014 governance change belongs in separate PR",
+        "sha": "c4d7046c761d5f26b90d486c1847b26a11e14fb7"
+      }
+    ]
+  },
+  "3750": {
+    "pr": {
+      "additions": 129,
+      "changed_files": 6,
+      "closed_at": null,
+      "commits": 8,
+      "created_at": "2026-04-15T18:18:43Z",
+      "deletions": 13,
+      "merged": false,
+      "merged_at": null,
+      "n": 3750,
+      "review_comments": 2,
+      "state": "open",
+      "title": "server infrastructure for observability plugin",
+      "updated_at": "2026-04-15T20:00:10Z",
+      "user": "henrikrexed"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T18:22:54Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T17:23:42Z",
+        "message": "fix(heartbeat): emit agent.run.* plugin events via logActivity (ISI-264)\n\nThe heartbeat service was ",
+        "sha": "fdd9dfd8b2f739b3ee8930f52c255db646429121"
+      },
+      {
+        "date": "2026-04-15T17:23:45Z",
+        "message": "fix(costs): emit cost_event.created plugin events with full payload (ISI-269)\n\nThe cost route was lo",
+        "sha": "18327d0f135cf339dd76e1e52ce18a916a1c4636"
+      },
+      {
+        "date": "2026-04-15T17:23:48Z",
+        "message": "fix(costs): move cost_event.created emission into cost service (ISI-284)\n\nMoves the logActivity(cost",
+        "sha": "0bbe8ddccd53d56a4a0fee6383ee4866fcffa803"
+      },
+      {
+        "date": "2026-04-15T17:23:51Z",
+        "message": "feat(events): Forward cost_event.created to plugin event bus",
+        "sha": "bd9f2b683f58fb1701cdf273e1be194eab98c858"
+      },
+      {
+        "date": "2026-04-15T17:24:13Z",
+        "message": "fix(paperclip): stability fixes for activity log and package exports\n\n- Remove stray comma in activi",
+        "sha": "cfe855d9633e4bda067c65cad0904cefc0173f36"
+      },
+      {
+        "date": "2026-04-15T17:25:43Z",
+        "message": "feat(server): emit agent.delegation.created event for agent-to-agent handoffs\n\nWhen an agent run cau",
+        "sha": "96fd1e504e6728039140c3ee6337460de5ad1b36"
+      },
+      {
+        "date": "2026-04-15T17:25:47Z",
+        "message": "fix(server): set explicit stale threshold for orphaned run reaper\n\nCo-Authored-By: Paperclip <norepl",
+        "sha": "397e40731d7f4497a9553b16ebd3efbed4fb67dc"
+      },
+      {
+        "date": "2026-04-15T17:26:42Z",
+        "message": "fix: remove duplicate logActivity import in heartbeat service\n\nCo-Authored-By: Paperclip <noreply@pa",
+        "sha": "6f1ddd3ec22e23c13ef8788346cf394ffa7f2646"
+      }
+    ]
+  },
+  "3751": {
+    "pr": {
+      "additions": 583,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-15T18:19:30Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3751,
+      "review_comments": 4,
+      "state": "open",
+      "title": "add Ollama agent adapter for tool-calling models",
+      "updated_at": "2026-04-15T19:59:59Z",
+      "user": "henrikrexed"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T18:21:40Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T17:28:21Z",
+        "message": "feat(adapters): add Ollama agent adapter for tool-calling models\n\n- Supports qwen3.5, llama3.3, mist",
+        "sha": "6e1654b5065757fa16e4348d6df9a1aaf1b38d3c"
+      },
+      {
+        "date": "2026-04-15T19:53:14Z",
+        "message": "fix(security): replace hardcoded LAN IP with localhost in ollama adapter\n\nThe Ollama adapter exposed",
+        "sha": "e35c1fd4db8f03be212651da24aed2259cdd2ae1"
+      }
+    ]
+  },
+  "3752": {
+    "pr": {
+      "additions": 9331,
+      "changed_files": 54,
+      "closed_at": null,
+      "commits": 99,
+      "created_at": "2026-04-15T18:34:32Z",
+      "deletions": 67,
+      "merged": false,
+      "merged_at": null,
+      "n": 3752,
+      "review_comments": 5,
+      "state": "open",
+      "title": "Pr/observability plugin",
+      "updated_at": "2026-04-15T19:59:45Z",
+      "user": "henrikrexed"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T18:39:10Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-01T13:01:46Z",
+        "message": "feat(plugin): add observability plugin with OTel SDK integration\n\nScaffolds the Paperclip observabil",
+        "sha": "35315cf28a15ae4509915bec3beb799995d4ca89"
+      },
+      {
+        "date": "2026-04-01T15:13:02Z",
+        "message": "feat(plugin): scaffold paperclip-observability plugin at plugins/\n\nCreate the observability plugin s",
+        "sha": "f98a17d291fd648102bc46806ef5bc8a48e6a65f"
+      },
+      {
+        "date": "2026-04-01T15:17:26Z",
+        "message": "feat(observability): upgrade OTel SDK to v2 initialization\n\nMigrate otel-setup.ts from SDK v1 to v2 ",
+        "sha": "05167d43c2e9c1dbd9612f5c0a9c6010e81ed74e"
+      },
+      {
+        "date": "2026-04-01T15:32:14Z",
+        "message": "feat(observability): wire all domain events to dedicated telemetry handlers\n\nSubscribe issue.created",
+        "sha": "f1e2240d90b1b47d7b31ee2210126d22bb2e7ce4"
+      },
+      {
+        "date": "2026-04-01T20:21:15Z",
+        "message": "feat(observability): implement token and cost metrics with GenAI semconv\n\n- Add mapProvider() to map",
+        "sha": "78deeab9a25d3048965af1cae98abaf97c342f81"
+      },
+      {
+        "date": "2026-04-01T20:39:34Z",
+        "message": "feat(observability): implement agent health metrics in scheduled job\n\nAdd four observable gauges to ",
+        "sha": "70d78a1081182d5c69ddf8421e3acb9168606599"
+      },
+      {
+        "date": "2026-04-01T20:40:38Z",
+        "message": "fix(observability): use mapProvider() for operation duration metric\n\nThe gen_ai.client.operation.dur",
+        "sha": "f1b28b9f342f0d928e3fdc5fb1d9b8be5039d4bb"
+      },
+      {
+        "date": "2026-04-02T01:14:14Z",
+        "message": "feat(observability): implement issue/task flow metrics\n\nAdd event-driven issue completion counter (p",
+        "sha": "3fe8298975c1f5662e1b4d8a7f9043bc24112288"
+      },
+      {
+        "date": "2026-04-02T05:21:35Z",
+        "message": "feat(observability): implement budget and governance metrics\n\nAdd company-level budget utilization, ",
+        "sha": "bd398358ea087fdde3c58c4ffea06671d797732a"
+      },
+      {
+        "date": "2026-04-02T06:10:17Z",
+        "message": "feat(observability): implement heartbeat run span lifecycle\n\n- Keep root spans open in memory (activ",
+        "sha": "3467c7b7fa3b40c6694886653969f1633c5d442a"
+      },
+      {
+        "date": "2026-04-02T06:17:16Z",
+        "message": "feat(observability): add cost event GenAI spans and issue lifecycle spans\n\n- ISI-143: Enhanced cost ",
+        "sha": "37ddad9916f2742d8363f2908caba548990200ea"
+      },
+      {
+        "date": "2026-04-02T06:31:43Z",
+        "message": "feat(observability): add event telemetry router and handler framework\n\nRefactor the monolithic worke",
+        "sha": "ab0e22e1ba66d308b3086a69d7d99ae3d33e4bb9"
+      },
+      {
+        "date": "2026-04-02T06:33:34Z",
+        "message": "fix(observability): correct mapProvider adapter type case names to use underscores\n\nFixes hyphens to",
+        "sha": "eccd8321894847ddfab2e87e4770c52cc571fac6"
+      },
+      {
+        "date": "2026-04-02T06:38:54Z",
+        "message": "feat(observability): implement structured log export via OTel Logs API\n\nAdds OTel LoggerProvider wit",
+        "sha": "1579f0d4147db4ee83d827ae707126d8a38c08d7"
+      },
+      {
+        "date": "2026-04-02T09:13:58Z",
+        "message": "feat(observability): add agent health scoring system (ISI-149)\n\nImplements a 0-100 health score per ",
+        "sha": "5e03e670819fb4e1efd772ee90e97978a2aad3b6"
+      },
+      {
+        "date": "2026-04-02T09:17:28Z",
+        "message": "feat(observability): add server and DB health probes (ISI-150)\n\n- Enhanced onHealth() with DB reacha",
+        "sha": "17fb3f5f32e45a3029161e3e6e8e40a2b5dbb538"
+      },
+      {
+        "date": "2026-04-02T19:44:17Z",
+        "message": "fix(heartbeat): emit agent.run.* plugin events via logActivity (ISI-264)\n\nThe heartbeat service was ",
+        "sha": "8c7870b934ecb0df5ae40509a01cd27d79c42861"
+      },
+      {
+        "date": "2026-04-02T19:46:30Z",
+        "message": "fix(observability): add enableLogs to instanceConfigSchema (ISI-265)\n\nThe plugin's config.ts and ote",
+        "sha": "2ccc2f1a16d4327f22fef108ef9a2ee9f3b3f057"
+      },
+      {
+        "date": "2026-04-02T20:52:04Z",
+        "message": "fix(costs): emit cost_event.created plugin events with full payload (ISI-269)\n\nThe cost route was lo",
+        "sha": "6270b4cdb2cebf55ea8905681f7ef98a0d8de0b6"
+      },
+      {
+        "date": "2026-04-02T20:57:19Z",
+        "message": "feat(observability): cross-agent trace context propagation via issue spans (ISI-269)\n\nEnrich agent.r",
+        "sha": "1d8b5447b9a20154ad26f30a1065718d1373580c"
+      },
+      {
+        "date": "2026-04-02T21:03:57Z",
+        "message": "fix(costs): move cost_event.created emission into cost service (ISI-284)\n\nMoves the logActivity(cost",
+        "sha": "00791da2f462baafb52a055c0d21d2a43c5edca4"
+      },
+      {
+        "date": "2026-04-03T05:54:54Z",
+        "message": "feat(observability): add otel-instrumentation-postgres for DB spans (ISI-285)\n\nInstrument PostgreSQL",
+        "sha": "8d27aaa4d81bb24bfbd505a3a00aed00a93f1fa7"
+      },
+      {
+        "date": "2026-04-03T08:37:58Z",
+        "message": "Revert \"feat(observability): add otel-instrumentation-postgres for DB spans (ISI-285)\"\n\nThis reverts",
+        "sha": "1bf32720b18b23d9c30217994bc3b544a5fed3ed"
+      },
+      {
+        "date": "2026-04-03T10:04:39Z",
+        "message": "fix(observability): add agent_name attribute to all metric handlers (ISI-318)\n\nMetrics handlers were",
+        "sha": "54ba3016cab397b364ff4e92c4c175c1aff39054"
+      },
+      {
+        "date": "2026-04-03T11:53:25Z",
+        "message": "feat(observability): add agent session streaming hooks for chunk/status/done/error events (ISI-315)\n",
+        "sha": "33abdda300d5634118b76669d81398e8b051f497"
+      },
+      {
+        "date": "2026-04-03T11:57:46Z",
+        "message": "fix(observability): move sessionMeta.delete after await to prevent race condition (ISI-315)\n\nThe ses",
+        "sha": "80b4ac5c14609f42491d6f7a7832f9cc226d28e4"
+      },
+      {
+        "date": "2026-04-03T12:39:52Z",
+        "message": "fix(observability): normalize error metric dimension and remove project_name from gauge (ISI-313)\n\n-",
+        "sha": "afbaa858f21f36e7161a6803db4ccc96a55e34e0"
+      },
+      {
+        "date": "2026-04-03T15:38:26Z",
+        "message": "feat(observability): enrich run/cost/issue spans with full business context (ISI-312)\n\nAddresses cod",
+        "sha": "9df2b8d20a8fb6df47a31533cd5f20bb73db5a13"
+      },
+      {
+        "date": "2026-04-03T15:43:51Z",
+        "message": "feat(observability): add activity.logged telemetry handlers\n\nAdd dedicated metrics, traces, and logs",
+        "sha": "cc3112259f9c49418b34227f5b992e58e0810972"
+      },
+      {
+        "date": "2026-04-03T20:13:43Z",
+        "message": "fix(activity): address code review \u2014 commit router.ts, fix cardinality, add tests\n\n- Include Telemet",
+        "sha": "1da91985dd1e31d6e03c07e0c928f7dd2e756032"
+      },
+      {
+        "date": "2026-04-08T11:57:40Z",
+        "message": "feat(events): Forward cost_event.created to plugin event bus",
+        "sha": "3ad856effd331b864d826222dd2ca0812a1824f5"
+      },
+      {
+        "date": "2026-04-08T13:34:42Z",
+        "message": "feat(adapters): add Ollama agent adapter for tool-calling models\n\n- Supports qwen3.5, llama3.3, mist",
+        "sha": "15bd4f4332ec8263c382068af53114829f0ffda8"
+      },
+      {
+        "date": "2026-04-08T13:35:05Z",
+        "message": "fix(paperclip): stability fixes for activity log and package exports\n\n- Remove stray comma in activi",
+        "sha": "fd142576a5b00290329782ceb1fff775eda2cefc"
+      },
+      {
+        "date": "2026-04-08T14:52:52Z",
+        "message": "Merge branch 'fix/paperclip-stability'",
+        "sha": "ff0d6dde600600c37de53af9d44e18007f310834"
+      },
+      {
+        "date": "2026-04-09T10:13:10Z",
+        "message": "feat(observability): implement cross-agent trace linking for multi-agent workflows\n\nWhen Agent A del",
+        "sha": "890a66ef1a5b40100948d83be085e779c8dd6fbe"
+      },
+      {
+        "date": "2026-04-09T10:20:09Z",
+        "message": "fix(observability): address code review nits on cross-agent trace linking\n\n- Remove orphaned JSDoc c",
+        "sha": "f7da51b29544ed5eedbb5856832383b2ea8f1b15"
+      },
+      {
+        "date": "2026-04-09T10:29:10Z",
+        "message": "feat(observability): complete issue lifecycle tracing with creation spans, comment events, and deleg",
+        "sha": "ae2f222eaacba0f671ae33b98ca92fe5319ed906"
+      },
+      {
+        "date": "2026-04-09T10:45:32Z",
+        "message": "feat(observability): upgrade tool activity events to proper child spans\n\nTool invocations (file, api",
+        "sha": "4e4543ec4cb893abe1657fda3a7f9f42060ee3e8"
+      },
+      {
+        "date": "2026-04-09T10:47:47Z",
+        "message": "fix(observability): resolve lifecycle span leak and event ordering issues\n\nEnd the lifecycle span be",
+        "sha": "22582cc8c745d9c2401f29b37ff32f260f6e7c3b"
+      },
+      {
+        "date": "2026-04-09T11:02:18Z",
+        "message": "feat(observability): propagate server trace context in plugin event payloads\n\nAdd W3C trace context ",
+        "sha": "dc7fe8564d9d0966f5d676fb22100d6e7401d3a9"
+      },
+      {
+        "date": "2026-04-09T11:48:54Z",
+        "message": "fix(observability): register BasicTracerProvider so server spans produce valid trace IDs\n\nThe previo",
+        "sha": "1d77a93b6927aec14a54e69c998457a4bc02fe46"
+      },
+      {
+        "date": "2026-04-09T11:58:40Z",
+        "message": "fix(observability): address code review findings for tool activity child spans\n\n- Fix stale tests: u",
+        "sha": "5ba634f202d30167ff68ae83b49892e62dede710"
+      },
+      {
+        "date": "2026-04-09T12:03:43Z",
+        "message": "feat(server): emit agent.delegation.created event for agent-to-agent handoffs\n\nWhen an agent run cau",
+        "sha": "ded1e4a838f300dfc859d298836ea56327c42528"
+      },
+      {
+        "date": "2026-04-09T12:09:58Z",
+        "message": "fix(observability): address code review findings for tool activity child spans\n\n- Extract duplicated",
+        "sha": "9303d9a0fae591aef13358ce6d07f5ad3a8f456c"
+      },
+      {
+        "date": "2026-04-09T12:22:16Z",
+        "message": "feat(observability): add lightweight database instrumentation for critical path queries\n\nInstruments",
+        "sha": "09b2277843d3a0d544144d70c15200ab86d35b5e"
+      },
+      {
+        "date": "2026-04-09T12:54:05Z",
+        "message": "fix(observability): address code review findings for database instrumentation\n\nRemove duplicate plug",
+        "sha": "dfeb89fb30969efa5129576dec97916f67c8063b"
+      },
+      {
+        "date": "2026-04-11T16:17:29Z",
+        "message": "fix(observability): add parent context fallbacks to eliminate orphan spans\n\nThree categories of orph",
+        "sha": "2571918672669303a5374f453bbcf3a4ad9a05d6"
+      },
+      {
+        "date": "2026-04-14T09:59:33Z",
+        "message": "feat(observability): link ticket changes as child spans of heartbeat runs\n\nWhen an agent's heartbeat",
+        "sha": "c84237ee3ede0cb2b99e11e8583e03f44abb87db"
+      },
+      {
+        "date": "2026-04-14T10:06:05Z",
+        "message": "fix(observability): address code review findings for run-child spans\n\n- Commit missing agentNameMap ",
+        "sha": "e2b85b172be24687351040e7662422504e0e0f1f"
+      },
+      {
+        "date": "2026-04-14T10:06:11Z",
+        "message": "fix(server): set explicit stale threshold for orphaned run reaper\n\nCo-Authored-By: Paperclip <norepl",
+        "sha": "5b9afaa755ae17ca746cac4d410640cd31b22ea2"
+      },
+      {
+        "date": "2026-04-15T09:59:50Z",
+        "message": "fix(observability): resolve agent name from agentNameMap for run finished/failed logs\n\nThe agent.run",
+        "sha": "f1c95337454a52d248a70a1fb08a33c2c848b85b"
+      },
+      {
+        "date": "2026-04-15T12:36:27Z",
+        "message": "fix(observability): resolve broken span hierarchy from missing event payload fields\n\nIssue event han",
+        "sha": "5e198e8b0310c7562c811a5d826938bfa6e8fac7"
+      },
+      {
+        "date": "2026-04-15T13:54:06Z",
+        "message": "fix(observability): nest ticket changes under heartbeat run spans via direct runId lookup\n\nUse event",
+        "sha": "9a00995c8ff3e8e718b6d36c10a9884413318afe"
+      },
+      {
+        "date": "2026-04-15T13:56:43Z",
+        "message": "feat(onboarding): add MemPalace MCP integration instructions to agent templates\n\nAdd shared memory u",
+        "sha": "454d5a1b603f2be146ca9e9429702bf9c4b57d55"
+      },
+      {
+        "date": "2026-04-15T15:56:23Z",
+        "message": "fix(observability): preserve run span context for late-arriving cost events\n\nCost events are emitted",
+        "sha": "ad2b4a69bc594f087c89b77346e54d8d0801649f"
+      },
+      {
+        "date": "2026-04-15T17:20:05Z",
+        "message": "feat(plugin): scaffold paperclip-observability plugin at plugins/\n\nCreate the observability plugin s",
+        "sha": "2c6d067c673be1fcf31f647dca009b3dccac147b"
+      },
+      {
+        "date": "2026-04-15T17:20:05Z",
+        "message": "feat(observability): upgrade OTel SDK to v2 initialization\n\nMigrate otel-setup.ts from SDK v1 to v2 ",
+        "sha": "7138359062730a75cba6e80ab3fc083b2c7f140e"
+      },
+      {
+        "date": "2026-04-15T17:20:05Z",
+        "message": "feat(observability): wire all domain events to dedicated telemetry handlers\n\nSubscribe issue.created",
+        "sha": "e726e84f12ee7c7a251d42e9b62f04757b6c45d9"
+      },
+      {
+        "date": "2026-04-15T17:20:05Z",
+        "message": "feat(observability): implement token and cost metrics with GenAI semconv\n\n- Add mapProvider() to map",
+        "sha": "15fe0e157ca27f3bd7c54a60c6a2271c5ffd6130"
+      },
+      {
+        "date": "2026-04-15T17:20:05Z",
+        "message": "feat(observability): implement agent health metrics in scheduled job\n\nAdd four observable gauges to ",
+        "sha": "fd0f383a82bde954b7cd4bab0385e94caa06cf81"
+      },
+      {
+        "date": "2026-04-15T17:20:05Z",
+        "message": "fix(observability): use mapProvider() for operation duration metric\n\nThe gen_ai.client.operation.dur",
+        "sha": "c93f70757e0ae3aced2023bba838b40ea47acf24"
+      },
+      {
+        "date": "2026-04-15T17:20:05Z",
+        "message": "feat(observability): implement issue/task flow metrics\n\nAdd event-driven issue completion counter (p",
+        "sha": "48dd60aef47d26751d8c54ce0784a99bd8be596b"
+      },
+      {
+        "date": "2026-04-15T17:20:06Z",
+        "message": "feat(observability): implement budget and governance metrics\n\nAdd company-level budget utilization, ",
+        "sha": "ce3e42fffc3cda428f7d3c2c463b47d2e262c45d"
+      },
+      {
+        "date": "2026-04-15T17:20:06Z",
+        "message": "feat(observability): implement heartbeat run span lifecycle\n\n- Keep root spans open in memory (activ",
+        "sha": "597828483f41783755196337f6c801b383b4cb54"
+      },
+      {
+        "date": "2026-04-15T17:20:06Z",
+        "message": "feat(observability): add cost event GenAI spans and issue lifecycle spans\n\n- ISI-143: Enhanced cost ",
+        "sha": "6aa0c041097ce65b61f20e82dd4e40ae58778ac2"
+      },
+      {
+        "date": "2026-04-15T17:20:06Z",
+        "message": "feat(observability): add event telemetry router and handler framework\n\nRefactor the monolithic worke",
+        "sha": "ec1d47ac736e6c54f3a9c5ee335f1dcab95f5fc7"
+      },
+      {
+        "date": "2026-04-15T17:20:06Z",
+        "message": "fix(observability): correct mapProvider adapter type case names to use underscores\n\nFixes hyphens to",
+        "sha": "134af7d690624e082ef3e088a983042bca25b356"
+      },
+      {
+        "date": "2026-04-15T17:20:06Z",
+        "message": "feat(observability): implement structured log export via OTel Logs API\n\nAdds OTel LoggerProvider wit",
+        "sha": "c39f138d0e3ed925b82ac6982ed3d0ba3320a0bb"
+      },
+      {
+        "date": "2026-04-15T17:20:06Z",
+        "message": "feat(observability): add agent health scoring system (ISI-149)\n\nImplements a 0-100 health score per ",
+        "sha": "977b91b7936f47cb3ed36d26e23bc644e069c5b0"
+      },
+      {
+        "date": "2026-04-15T17:20:06Z",
+        "message": "feat(observability): add server and DB health probes (ISI-150)\n\n- Enhanced onHealth() with DB reacha",
+        "sha": "54fc5ac3f3f8a0f91c94e0c44da875e1caf82155"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "fix(observability): add enableLogs to instanceConfigSchema (ISI-265)\n\nThe plugin's config.ts and ote",
+        "sha": "3016ac0366264885730b424f6e84e2295c762648"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "feat(observability): cross-agent trace context propagation via issue spans (ISI-269)\n\nEnrich agent.r",
+        "sha": "be0e74d1b7e0dc7687c2f838d1b2697712d3f437"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "fix(observability): add agent_name attribute to all metric handlers (ISI-318)\n\nMetrics handlers were",
+        "sha": "9a7703348c206d7a17694e3775e607d6b4c9003c"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "feat(observability): add agent session streaming hooks for chunk/status/done/error events (ISI-315)\n",
+        "sha": "6fe78f13de9b4815513c000331e46fd00dddc68b"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "fix(observability): move sessionMeta.delete after await to prevent race condition (ISI-315)\n\nThe ses",
+        "sha": "113695168f188f163b7254384aebaae53fe3a7fb"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "fix(observability): normalize error metric dimension and remove project_name from gauge (ISI-313)\n\n-",
+        "sha": "be9eae264d597025e7d3a763d41f058971f73c69"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "feat(observability): enrich run/cost/issue spans with full business context (ISI-312)\n\nAddresses cod",
+        "sha": "97e0b96fc52d2da4e4e76f723aeac953dcd1a5ef"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "feat(observability): add activity.logged telemetry handlers\n\nAdd dedicated metrics, traces, and logs",
+        "sha": "409aa5cdf38f80047104d549bb8dc8bd25b7177a"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "fix(activity): address code review \u2014 commit router.ts, fix cardinality, add tests\n\n- Include Telemet",
+        "sha": "6a5c5706b87e08960e0d75e34338f14dbfe289f3"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "feat(observability): implement cross-agent trace linking for multi-agent workflows\n\nWhen Agent A del",
+        "sha": "25aa84f236a9114cee6100617dc017867061041e"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "fix(observability): address code review nits on cross-agent trace linking\n\n- Remove orphaned JSDoc c",
+        "sha": "41ec90f3cdb90ff362e42978e222aca585bc83c5"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "feat(observability): complete issue lifecycle tracing with creation spans, comment events, and deleg",
+        "sha": "2b787e278a6e36e821fd6b762229029366110fda"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "feat(observability): upgrade tool activity events to proper child spans\n\nTool invocations (file, api",
+        "sha": "2cbc1b4c9e1abc48c456098560824dafa1c53deb"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "fix(observability): resolve lifecycle span leak and event ordering issues\n\nEnd the lifecycle span be",
+        "sha": "4956f48638ba63d18c4fbb779abc4d578465f45b"
+      },
+      {
+        "date": "2026-04-15T17:20:07Z",
+        "message": "feat(observability): propagate server trace context in plugin event payloads\n\nAdd W3C trace context ",
+        "sha": "6a4942fc2bab1f189ddacc57b1d2e00b480bff35"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): address code review findings for tool activity child spans\n\n- Fix stale tests: u",
+        "sha": "a4e1d04e64202560fc0aeaf17f12b70940bb4c84"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): address code review findings for tool activity child spans\n\n- Extract duplicated",
+        "sha": "8e285c0ae7a62be32b9df71bfe38b73d71eb08bc"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "feat(observability): add lightweight database instrumentation for critical path queries\n\nInstruments",
+        "sha": "3d5ffc84a8fea6db86ec4d8a53b9d2fe665f004c"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): address code review findings for database instrumentation\n\nRemove duplicate plug",
+        "sha": "90192f4fb319852780b4a753708a8bcf48ce6766"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): add parent context fallbacks to eliminate orphan spans\n\nThree categories of orph",
+        "sha": "d193425728d9ad31fb5a65522ee7886b426dbfa9"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "feat(observability): link ticket changes as child spans of heartbeat runs\n\nWhen an agent's heartbeat",
+        "sha": "5064b8383a31c51baed28912e525981ed548ccef"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): address code review findings for run-child spans\n\n- Commit missing agentNameMap ",
+        "sha": "a37d3b5cef998ab5aa27197de3fb77cd00613b21"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): resolve agent name from agentNameMap for run finished/failed logs\n\nThe agent.run",
+        "sha": "dc7ef1952369d875533b85eb8ddffe642fa81638"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): resolve broken span hierarchy from missing event payload fields\n\nIssue event han",
+        "sha": "1c50340577b3155622b80a67eb1504412ef4baef"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): nest ticket changes under heartbeat run spans via direct runId lookup\n\nUse event",
+        "sha": "18216f9db76d87f57a2e1f69bcd99e4afdc8f30a"
+      },
+      {
+        "date": "2026-04-15T17:20:08Z",
+        "message": "fix(observability): preserve run span context for late-arriving cost events\n\nCost events are emitted",
+        "sha": "07253e9ed6f52c6e3ab62f76623b4dc0a4d61dbf"
+      },
+      {
+        "date": "2026-04-15T17:20:57Z",
+        "message": "docs(observability): add plugin README with setup, architecture, and configuration guide\n\nCo-Authore",
+        "sha": "32c6b6f6bede87f501cff440059043fc95949e32"
+      },
+      {
+        "date": "2026-04-15T18:29:48Z",
+        "message": "docs(observability): add PR description for observability plugin\n\nSummarizes all 42 commits on the p",
+        "sha": "893838cb456f7eef309222f9e07ef5aef7e4f965"
+      },
+      {
+        "date": "2026-04-15T18:40:06Z",
+        "message": "Merge branch 'master' into pr/observability-plugin",
+        "sha": "738ffd0dd503e8e348f01044ecd60a8a6876b431"
+      }
+    ]
+  },
+  "3758": {
+    "pr": {
+      "additions": 9,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T20:38:21Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3758,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(auth): drop non-UUID x-paperclip-run-id header to avoid PATCH 500s",
+      "updated_at": "2026-04-15T21:04:10Z",
+      "user": "100em100"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T20:40:14Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T20:36:19Z",
+        "message": "fix(auth): drop non-UUID x-paperclip-run-id header to avoid PATCH 500s\n\nactivity_log.run_id is a UUI",
+        "sha": "e2f4b45fd0340ac48d999519b6460f09d5ddce22"
       }
     ]
   }
