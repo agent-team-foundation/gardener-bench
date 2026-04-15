@@ -4902,7 +4902,7 @@
       "review_comments": 2,
       "state": "open",
       "title": "fix: upgrade drizzle-orm to 0.45.2, 1.0.0-beta.20 (CVE-2026-39356)",
-      "updated_at": "2026-04-14T23:53:42Z",
+      "updated_at": "2026-04-15T01:12:33Z",
       "user": "orbisai0security"
     },
     "reviews": [
@@ -5312,8 +5312,8 @@
       "n": 3672,
       "review_comments": 0,
       "state": "open",
-      "title": "feat(i18n): add scalable locale infrastructure for issue and activity flows",
-      "updated_at": "2026-04-15T00:45:59Z",
+      "title": "feat(i18n): add a production-ready multilingual internationalization framework",
+      "updated_at": "2026-04-15T00:56:35Z",
       "user": "LeonSGP43"
     },
     "reviews": [],
@@ -5475,19 +5475,19 @@
   },
   "3684": {
     "pr": {
-      "additions": 593,
+      "additions": 628,
       "changed_files": 25,
       "closed_at": null,
-      "commits": 15,
+      "commits": 17,
       "created_at": "2026-04-14T18:06:55Z",
-      "deletions": 227,
+      "deletions": 254,
       "merged": false,
       "merged_at": null,
       "n": 3684,
       "review_comments": 2,
       "state": "open",
       "title": "fix(api+ui): Server-side pagination for heartbeat runs",
-      "updated_at": "2026-04-15T00:06:59Z",
+      "updated_at": "2026-04-15T01:36:17Z",
       "user": "alexgorbatchev"
     },
     "reviews": [
@@ -5579,6 +5579,16 @@
         "date": "2026-04-14T23:50:56Z",
         "message": "fix: stream massive adapter run logs during feedback export to prevent OOM",
         "sha": "da2ef9110fa3068167dbaa4ded296ba99e14a5d9"
+      },
+      {
+        "date": "2026-04-15T01:29:46Z",
+        "message": "fix: lazily stream adapter run logs to fix V8 substring allocations",
+        "sha": "3bea39dd91687112f1b10c165164efb3e77909b5"
+      },
+      {
+        "date": "2026-04-15T01:36:09Z",
+        "message": "test(api): ensure XDG_CONFIG_HOME is passed in config.env to avoid test pollution",
+        "sha": "cede0644b34ac49678895142177c9769a26bc045"
       }
     ]
   },
@@ -6092,6 +6102,125 @@
         "date": "2026-04-14T23:45:40Z",
         "message": "Add Delete Company button to Company Settings danger zone\n\nAdds a deleteMutation using companiesApi.",
         "sha": "7b6af394ccec4c39cdcb2cca601fe7ced6be3f3b"
+      }
+    ]
+  },
+  "3697": {
+    "pr": {
+      "additions": 266,
+      "changed_files": 4,
+      "closed_at": "2026-04-15T01:38:44Z",
+      "commits": 5,
+      "created_at": "2026-04-15T00:00:26Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3697,
+      "review_comments": 2,
+      "state": "closed",
+      "title": "Add Delete Company button to Company Settings danger zone",
+      "updated_at": "2026-04-15T01:38:49Z",
+      "user": "cpfarhood"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T00:03:09Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-14T23:51:56Z",
+        "message": "Add Delete Company button to Company Settings danger zone\n\nAdds a deleteMutation using companiesApi.",
+        "sha": "9d706ed281eed066dd76e604190c69be7457e489"
+      },
+      {
+        "date": "2026-04-14T23:57:21Z",
+        "message": "Add test coverage and documentation for Delete Company feature\n\n- 4 passing tests: render, confirm d",
+        "sha": "19af877191229847863b484c74f4a7289842ffe1"
+      },
+      {
+        "date": "2026-04-15T00:26:56Z",
+        "message": "Fix cache invalidation and confirm state reset on company switch\n\n- Invalidate companies.all and com",
+        "sha": "42e6c423a5058615b31b9bdf270aa83485f90cd9"
+      },
+      {
+        "date": "2026-04-15T00:33:11Z",
+        "message": "Gate Delete Company button behind PAPERCLIP_ENABLE_COMPANY_DELETION flag\n\nRead features.companyDelet",
+        "sha": "d4b6cae3055ecb2d5da1eb270a37401e46bd656e"
+      },
+      {
+        "date": "2026-04-15T01:08:53Z",
+        "message": "Fix company deletion: add missing child table deletions and remove feature flag gating\n\nServer: add ",
+        "sha": "48c8b75ed4c14aec5837ce1ff1c3bc0e9a2f92aa"
+      }
+    ]
+  },
+  "3699": {
+    "pr": {
+      "additions": 21,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T00:20:40Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3699,
+      "review_comments": 2,
+      "state": "open",
+      "title": "Fixes #3660: Return 409 instead of 500 for checkout constraint violation",
+      "updated_at": "2026-04-15T00:50:54Z",
+      "user": "oraculoos"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T00:22:27Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T00:21:45Z",
+        "message": "fix: return 409 Conflict instead of 500 for checkout constraint violation\n\nWhen the issues_open_rout",
+        "sha": "1b7d9b699d82098f6b91b0d1fb299abece53cfe6"
+      }
+    ]
+  },
+  "3700": {
+    "pr": {
+      "additions": 44,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T00:43:08Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3700,
+      "review_comments": 2,
+      "state": "open",
+      "title": "feat: UX improvements \u2014 auto in_progress, Approve button, kanban auto-assign",
+      "updated_at": "2026-04-15T00:51:12Z",
+      "user": "faizer1989"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T00:46:37Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T00:42:16Z",
+        "message": "feat: UX improvements \u2014 auto in_progress on dispatch, Approve button, auto-assign on kanban drag\n\n- ",
+        "sha": "228f72a6f9ff0364a5522fbe8872ebf4a8bee513"
       }
     ]
   }
