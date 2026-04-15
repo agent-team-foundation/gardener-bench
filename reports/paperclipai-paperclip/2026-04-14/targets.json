@@ -1777,7 +1777,7 @@
     "state": "open",
     "title": "fix: update GitHub CLI GPG keyring SHA256 checksum",
     "url": "https://github.com/paperclipai/paperclip/pull/3649",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 1,
@@ -1807,7 +1807,7 @@
     "state": "open",
     "title": "docs(telegram-acp): comprehensive plugin integration fixes",
     "url": "https://github.com/paperclipai/paperclip/pull/3653",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 3,
@@ -1877,7 +1877,7 @@
     "state": "open",
     "title": "docs: fix typo in README (solo-entreprenuer -> solo-entrepreneur)",
     "url": "https://github.com/paperclipai/paperclip/pull/3662",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 4,
@@ -1887,7 +1887,7 @@
     "state": "open",
     "title": "docs: add Model Used section example to CONTRIBUTING.md",
     "url": "https://github.com/paperclipai/paperclip/pull/3663",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 4,
@@ -1897,7 +1897,7 @@
     "state": "open",
     "title": "docs: add documentation comments to .env.example",
     "url": "https://github.com/paperclipai/paperclip/pull/3664",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 4,
@@ -1907,7 +1907,7 @@
     "state": "open",
     "title": "docs: improve .gitignore comments and organization",
     "url": "https://github.com/paperclipai/paperclip/pull/3665",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 4,
@@ -1917,7 +1917,7 @@
     "state": "open",
     "title": "docs: add comment to .npmrc explaining auto-install-peers setting",
     "url": "https://github.com/paperclipai/paperclip/pull/3666",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 2,
@@ -2077,7 +2077,7 @@
     "state": "open",
     "title": "fix: convert Date to ISO string in listComments cursor query (fixes #3661)",
     "url": "https://github.com/paperclipai/paperclip/pull/3687",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 2,
@@ -2130,7 +2130,7 @@
     "user": "Franky4Fing3rs"
   },
   {
-    "comments": 1,
+    "comments": 2,
     "created_at": "2026-04-14T23:29:56Z",
     "is_pr": true,
     "n": 3694,
@@ -2170,14 +2170,14 @@
     "user": "cpfarhood"
   },
   {
-    "comments": 2,
+    "comments": 4,
     "created_at": "2026-04-15T00:20:40Z",
     "is_pr": true,
     "n": 3699,
     "state": "open",
     "title": "Fixes #3660: Return 409 instead of 500 for checkout constraint violation",
     "url": "https://github.com/paperclipai/paperclip/pull/3699",
-    "user": "oraculoos"
+    "user": "tentacloos"
   },
   {
     "comments": 2,
@@ -2208,5 +2208,35 @@
     "title": "[BLOCKED] x-data-loader: SocialData API credits exhausted \u2014 needs topup",
     "url": "https://github.com/paperclipai/paperclip/issues/3702",
     "user": "spritehc"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-15T01:47:50Z",
+    "is_pr": true,
+    "n": 3709,
+    "state": "open",
+    "title": "fix(server): coerce Date to ISO string in listComments cursor",
+    "url": "https://github.com/paperclipai/paperclip/pull/3709",
+    "user": "Mlaz-code"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-15T01:48:49Z",
+    "is_pr": true,
+    "n": 3710,
+    "state": "open",
+    "title": "fix(server): validate checkoutRunId exists before FK write",
+    "url": "https://github.com/paperclipai/paperclip/pull/3710",
+    "user": "Mlaz-code"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T02:19:12Z",
+    "is_pr": true,
+    "n": 3711,
+    "state": "open",
+    "title": "fix(openclaw-gateway): stop sending top-level paperclip payload",
+    "url": "https://github.com/paperclipai/paperclip/pull/3711",
+    "user": "LeonSGP43"
   }
 ]

@@ -4746,7 +4746,7 @@
       "state": "open",
       "title": "fix: update GitHub CLI GPG keyring SHA256 checksum",
       "updated_at": "2026-04-14T23:56:59Z",
-      "user": "oraculoos"
+      "user": "tentacloos"
     },
     "reviews": [
       {
@@ -4817,7 +4817,7 @@
       "state": "open",
       "title": "docs(telegram-acp): comprehensive plugin integration fixes",
       "updated_at": "2026-04-14T23:56:55Z",
-      "user": "oraculoos"
+      "user": "tentacloos"
     },
     "reviews": [
       {
@@ -4990,7 +4990,7 @@
       "state": "open",
       "title": "docs: fix typo in README (solo-entreprenuer -> solo-entrepreneur)",
       "updated_at": "2026-04-14T23:56:50Z",
-      "user": "oraculoos"
+      "user": "tentacloos"
     },
     "reviews": [
       {
@@ -5023,7 +5023,7 @@
       "state": "open",
       "title": "docs: add Model Used section example to CONTRIBUTING.md",
       "updated_at": "2026-04-14T23:56:49Z",
-      "user": "oraculoos"
+      "user": "tentacloos"
     },
     "reviews": [],
     "commits": [
@@ -5054,7 +5054,7 @@
       "state": "open",
       "title": "docs: add documentation comments to .env.example",
       "updated_at": "2026-04-14T23:56:18Z",
-      "user": "oraculoos"
+      "user": "tentacloos"
     },
     "reviews": [],
     "commits": [
@@ -5090,7 +5090,7 @@
       "state": "open",
       "title": "docs: improve .gitignore comments and organization",
       "updated_at": "2026-04-14T23:56:16Z",
-      "user": "oraculoos"
+      "user": "tentacloos"
     },
     "reviews": [],
     "commits": [
@@ -5131,7 +5131,7 @@
       "state": "open",
       "title": "docs: add comment to .npmrc explaining auto-install-peers setting",
       "updated_at": "2026-04-14T23:56:15Z",
-      "user": "oraculoos"
+      "user": "tentacloos"
     },
     "reviews": [
       {
@@ -5487,7 +5487,7 @@
       "review_comments": 2,
       "state": "open",
       "title": "fix(api+ui): Server-side pagination for heartbeat runs",
-      "updated_at": "2026-04-15T01:36:17Z",
+      "updated_at": "2026-04-15T01:56:57Z",
       "user": "alexgorbatchev"
     },
     "reviews": [
@@ -5666,7 +5666,7 @@
       "state": "open",
       "title": "fix: convert Date to ISO string in listComments cursor query (fixes #3661)",
       "updated_at": "2026-04-14T23:55:26Z",
-      "user": "oraculoos"
+      "user": "tentacloos"
     },
     "reviews": [],
     "commits": [
@@ -5679,10 +5679,10 @@
   },
   "3688": {
     "pr": {
-      "additions": 3982,
+      "additions": 3983,
       "changed_files": 58,
       "closed_at": null,
-      "commits": 9,
+      "commits": 10,
       "created_at": "2026-04-14T19:06:17Z",
       "deletions": 1030,
       "merged": false,
@@ -5691,7 +5691,7 @@
       "review_comments": 1,
       "state": "open",
       "title": "fix(docker): update GitHub CLI GPG keyring SHA256 checksum",
-      "updated_at": "2026-04-14T23:55:24Z",
+      "updated_at": "2026-04-15T02:21:28Z",
       "user": "neobones"
     },
     "reviews": [
@@ -5747,6 +5747,11 @@
         "date": "2026-04-14T19:05:51Z",
         "message": "fix(docker): update GitHub CLI GPG keyring SHA256 checksum\n\nThe upstream GitHub CLI GPG keyring file",
         "sha": "027dd55a69686e11be423f58d119cb39f0203115"
+      },
+      {
+        "date": "2026-04-15T02:21:18Z",
+        "message": "docs(docker): add comment with checksum update command\n\nAddresses Greptile review feedback about fut",
+        "sha": "938c375c15f1bae5696e87ebb349c40678234427"
       }
     ]
   },
@@ -5926,19 +5931,19 @@
   },
   "3694": {
     "pr": {
-      "additions": 612,
-      "changed_files": 3,
+      "additions": 831,
+      "changed_files": 6,
       "closed_at": null,
       "commits": 1,
       "created_at": "2026-04-14T23:29:56Z",
-      "deletions": 177,
+      "deletions": 180,
       "merged": false,
       "merged_at": null,
       "n": 3694,
       "review_comments": 0,
       "state": "open",
       "title": "Fix stale execution lock cleanup",
-      "updated_at": "2026-04-15T00:04:05Z",
+      "updated_at": "2026-04-15T02:33:05Z",
       "user": "TheConnMan"
     },
     "reviews": [
@@ -5951,9 +5956,9 @@
     ],
     "commits": [
       {
-        "date": "2026-04-14T23:29:03Z",
+        "date": "2026-04-15T02:27:12Z",
         "message": "Fix stale execution lock cleanup\n\nRef CON-39\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
-        "sha": "0e531457f4742d3d7210a077786a5ba866294bf2"
+        "sha": "c75b4555193484ea0a8f9ab529dffc5f4a9f7b4a"
       }
     ]
   },
@@ -6172,8 +6177,8 @@
       "review_comments": 2,
       "state": "open",
       "title": "Fixes #3660: Return 409 instead of 500 for checkout constraint violation",
-      "updated_at": "2026-04-15T00:50:54Z",
-      "user": "oraculoos"
+      "updated_at": "2026-04-15T02:29:58Z",
+      "user": "tentacloos"
     },
     "reviews": [
       {
@@ -6221,6 +6226,91 @@
         "date": "2026-04-15T00:42:16Z",
         "message": "feat: UX improvements \u2014 auto in_progress on dispatch, Approve button, auto-assign on kanban drag\n\n- ",
         "sha": "228f72a6f9ff0364a5522fbe8872ebf4a8bee513"
+      }
+    ]
+  },
+  "3709": {
+    "pr": {
+      "additions": 9,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T01:47:50Z",
+      "deletions": 4,
+      "merged": false,
+      "merged_at": null,
+      "n": 3709,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(server): coerce Date to ISO string in listComments cursor",
+      "updated_at": "2026-04-15T01:56:21Z",
+      "user": "Mlaz-code"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-15T01:47:19Z",
+        "message": "fix(server): coerce Date to ISO string in listComments cursor\n\npostgres@3.4.8 throws TypeError when ",
+        "sha": "f915446700b5e8c82fc256bd81112702b0e59cec"
+      }
+    ]
+  },
+  "3710": {
+    "pr": {
+      "additions": 16,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T01:48:49Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3710,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(server): validate checkoutRunId exists before FK write",
+      "updated_at": "2026-04-15T01:56:34Z",
+      "user": "Mlaz-code"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-15T01:48:17Z",
+        "message": "fix(server): validate checkoutRunId exists before FK write\n\nAgents holding an orphaned run id (for e",
+        "sha": "36be2665299d79dde765e9035f1b082e68b8aa15"
+      }
+    ]
+  },
+  "3711": {
+    "pr": {
+      "additions": 125,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T02:19:12Z",
+      "deletions": 62,
+      "merged": false,
+      "merged_at": null,
+      "n": 3711,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(openclaw-gateway): stop sending top-level paperclip payload",
+      "updated_at": "2026-04-15T02:23:19Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T02:22:01Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T01:50:39Z",
+        "message": "fix(openclaw-gateway): stop sending top-level paperclip payload",
+        "sha": "52b755a9a0abe73de092eaea85750572a2bed8cd"
       }
     ]
   }
