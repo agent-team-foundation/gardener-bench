@@ -546,6 +546,9 @@ def build_dashboard(data_dir, repo, output_path):
   .gauge-svg {{ width: 100%; height: auto; }}
   .accuracy-stats {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; flex: 1; min-width: 300px; }}
   .accuracy-stats .stat {{ padding: 10px 14px; }}
+  .stat.clickable {{ cursor: pointer; transition: transform .1s, box-shadow .15s; }}
+  .stat.clickable:hover {{ transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.1); }}
+  .stat.clickable:active {{ transform: translateY(0); }}
 
   /* Tables — responsive wrapper */
   .table-wrap {{ overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0; }}
@@ -622,13 +625,13 @@ def build_dashboard(data_dir, repo, output_path):
       </svg>
     </div>
     <div class="accuracy-stats">
-      <div class="stat"><div class="n" style="color:#2ea44f">{acc.get('correct',0)}</div><div class="l">Correct</div></div>
-      <div class="stat"><div class="n" style="color:#bf8700">{acc.get('partial',0)}</div><div class="l">Partial</div></div>
-      <div class="stat"><div class="n" style="color:#cf222e">{acc.get('wrong',0)}</div><div class="l">Wrong</div></div>
-      <div class="stat"><div class="n">{acc.get('scorable',0)}</div><div class="l">Scorable PRs</div></div>
-      <div class="stat"><div class="n" style="color:#6e7781">{acc.get('pending',0)}</div><div class="l">Pending</div></div>
-      <div class="stat"><div class="n" style="color:#6e7781">{acc.get('withdrawn',0)}</div><div class="l">Withdrawn</div></div>
-      <div class="stat"><div class="n" style="color:#6e7781">{acc.get('governance_closed',0)}</div><div class="l">Governance closed</div></div>
+      <div class="stat clickable" onclick="filterByScore('correct')" title="Click to filter"><div class="n" style="color:#2ea44f">{acc.get('correct',0)}</div><div class="l">Correct</div></div>
+      <div class="stat clickable" onclick="filterByScore('partial')" title="Click to filter"><div class="n" style="color:#bf8700">{acc.get('partial',0)}</div><div class="l">Partial</div></div>
+      <div class="stat clickable" onclick="filterByScore('wrong')" title="Click to filter"><div class="n" style="color:#cf222e">{acc.get('wrong',0)}</div><div class="l">Wrong</div></div>
+      <div class="stat clickable" onclick="filterByScore('')" title="Click to show all scorable"><div class="n">{acc.get('scorable',0)}</div><div class="l">Scorable PRs</div></div>
+      <div class="stat clickable" onclick="filterByScore('unscorable')" title="Click to filter"><div class="n" style="color:#6e7781">{acc.get('pending',0)}</div><div class="l">Pending</div></div>
+      <div class="stat clickable" onclick="filterByScore('unscorable')" title="Click to filter"><div class="n" style="color:#6e7781">{acc.get('withdrawn',0)}</div><div class="l">Withdrawn</div></div>
+      <div class="stat clickable" onclick="filterByScore('unscorable')" title="Click to filter"><div class="n" style="color:#6e7781">{acc.get('governance_closed',0)}</div><div class="l">Governance closed</div></div>
     </div>
   </div>
 
@@ -684,7 +687,7 @@ def build_dashboard(data_dir, repo, output_path):
     </div>
   </div>
 
-  <h2>All gardener comments ({total})</h2>
+  <h2 id="cards-section">All gardener comments ({total})</h2>
   <div class="controls">
     <label>Verdict
       <select id="fv" onchange="filter()">
@@ -747,6 +750,14 @@ function filter() {{
     if (fq && !c.textContent.toLowerCase().includes(fq)) ok = false;
     c.style.display = ok ? '' : 'none';
   }});
+}}
+function filterByScore(score) {{
+  const sel = document.getElementById('fsc');
+  sel.value = score;
+  // Also set kind to PR only since accuracy is PR-bench
+  document.getElementById('fk').value = 'pr';
+  filter();
+  document.getElementById('cards-section').scrollIntoView({{ behavior: 'smooth' }});
 }}
 // Format ISO timestamps to human-readable
 document.querySelectorAll('.ts').forEach(el => {{
