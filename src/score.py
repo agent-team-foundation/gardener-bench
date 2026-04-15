@@ -98,8 +98,9 @@ def score_prs(data_dir):
             outcome = "maintainer_rejected"
 
         # Score
-        # author_withdrawn, governance_closed, pending = unscorable
-        if outcome in ("pending", "author_withdrawn", "governance_closed"):
+        # author_withdrawn, pending = unscorable
+        # governance_closed = scorable (maintainer decided not to merge)
+        if outcome in ("pending", "author_withdrawn"):
             score = "unscorable"
             score_reason = outcome
         elif verdict == "ALIGNED":
@@ -107,13 +108,13 @@ def score_prs(data_dir):
                 score, score_reason = "correct", "ALIGNED → merged cleanly"
             elif outcome == "merged_after_revision":
                 score, score_reason = "partial", "ALIGNED but required revision"
-            elif outcome == "maintainer_rejected":
-                score, score_reason = "wrong", "ALIGNED but maintainer rejected"
+            elif outcome in ("maintainer_rejected", "governance_closed"):
+                score, score_reason = "wrong", f"ALIGNED but closed by maintainer ({outcome})"
             else:
                 score, score_reason = "unknown", f"unexpected: {outcome}"
         elif verdict in ("NEEDS_REVIEW", "CONFLICT", "INSUFFICIENT_CONTEXT", "NEW_TERRITORY"):
-            if outcome == "maintainer_rejected":
-                score, score_reason = "correct", f"{verdict} → maintainer rejected"
+            if outcome in ("maintainer_rejected", "governance_closed"):
+                score, score_reason = "correct", f"{verdict} → closed by maintainer ({outcome})"
             elif outcome == "merged_after_revision":
                 score, score_reason = "correct", f"{verdict} → merged after revision"
             elif outcome == "merged_clean":
