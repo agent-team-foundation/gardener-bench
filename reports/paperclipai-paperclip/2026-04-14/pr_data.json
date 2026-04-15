@@ -4735,7 +4735,7 @@
     "pr": {
       "additions": 1,
       "changed_files": 1,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:49Z",
       "commits": 1,
       "created_at": "2026-04-14T12:34:31Z",
       "deletions": 1,
@@ -4743,9 +4743,9 @@
       "merged_at": null,
       "n": 3649,
       "review_comments": 1,
-      "state": "open",
+      "state": "closed",
       "title": "fix: update GitHub CLI GPG keyring SHA256 checksum",
-      "updated_at": "2026-04-14T23:56:59Z",
+      "updated_at": "2026-04-15T03:59:49Z",
       "user": "tentacloos"
     },
     "reviews": [
@@ -4806,7 +4806,7 @@
     "pr": {
       "additions": 826,
       "changed_files": 3,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:52Z",
       "commits": 3,
       "created_at": "2026-04-14T13:25:56Z",
       "deletions": 0,
@@ -4814,9 +4814,9 @@
       "merged_at": null,
       "n": 3653,
       "review_comments": 2,
-      "state": "open",
+      "state": "closed",
       "title": "docs(telegram-acp): comprehensive plugin integration fixes",
-      "updated_at": "2026-04-14T23:56:55Z",
+      "updated_at": "2026-04-15T03:59:52Z",
       "user": "tentacloos"
     },
     "reviews": [
@@ -4979,7 +4979,7 @@
     "pr": {
       "additions": 1,
       "changed_files": 1,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:52Z",
       "commits": 1,
       "created_at": "2026-04-14T15:04:11Z",
       "deletions": 1,
@@ -4987,9 +4987,9 @@
       "merged_at": null,
       "n": 3662,
       "review_comments": 1,
-      "state": "open",
+      "state": "closed",
       "title": "docs: fix typo in README (solo-entreprenuer -> solo-entrepreneur)",
-      "updated_at": "2026-04-14T23:56:50Z",
+      "updated_at": "2026-04-15T03:59:52Z",
       "user": "tentacloos"
     },
     "reviews": [
@@ -5012,7 +5012,7 @@
     "pr": {
       "additions": 7,
       "changed_files": 2,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:50Z",
       "commits": 2,
       "created_at": "2026-04-14T15:05:33Z",
       "deletions": 1,
@@ -5020,9 +5020,9 @@
       "merged_at": null,
       "n": 3663,
       "review_comments": 0,
-      "state": "open",
+      "state": "closed",
       "title": "docs: add Model Used section example to CONTRIBUTING.md",
-      "updated_at": "2026-04-14T23:56:49Z",
+      "updated_at": "2026-04-15T03:59:50Z",
       "user": "tentacloos"
     },
     "reviews": [],
@@ -5043,7 +5043,7 @@
     "pr": {
       "additions": 11,
       "changed_files": 3,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:49Z",
       "commits": 3,
       "created_at": "2026-04-14T15:06:34Z",
       "deletions": 1,
@@ -5051,9 +5051,9 @@
       "merged_at": null,
       "n": 3664,
       "review_comments": 0,
-      "state": "open",
+      "state": "closed",
       "title": "docs: add documentation comments to .env.example",
-      "updated_at": "2026-04-14T23:56:18Z",
+      "updated_at": "2026-04-15T03:59:49Z",
       "user": "tentacloos"
     },
     "reviews": [],
@@ -5079,7 +5079,7 @@
     "pr": {
       "additions": 17,
       "changed_files": 4,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:50Z",
       "commits": 4,
       "created_at": "2026-04-14T15:07:14Z",
       "deletions": 2,
@@ -5087,9 +5087,9 @@
       "merged_at": null,
       "n": 3665,
       "review_comments": 0,
-      "state": "open",
+      "state": "closed",
       "title": "docs: improve .gitignore comments and organization",
-      "updated_at": "2026-04-14T23:56:16Z",
+      "updated_at": "2026-04-15T03:59:50Z",
       "user": "tentacloos"
     },
     "reviews": [],
@@ -5120,7 +5120,7 @@
     "pr": {
       "additions": 18,
       "changed_files": 5,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:51Z",
       "commits": 5,
       "created_at": "2026-04-14T15:07:42Z",
       "deletions": 2,
@@ -5128,9 +5128,9 @@
       "merged_at": null,
       "n": 3666,
       "review_comments": 1,
-      "state": "open",
+      "state": "closed",
       "title": "docs: add comment to .npmrc explaining auto-install-peers setting",
-      "updated_at": "2026-04-14T23:56:15Z",
+      "updated_at": "2026-04-15T03:59:52Z",
       "user": "tentacloos"
     },
     "reviews": [
@@ -5655,7 +5655,7 @@
     "pr": {
       "additions": 369,
       "changed_files": 2,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:51Z",
       "commits": 1,
       "created_at": "2026-04-14T18:35:51Z",
       "deletions": 4,
@@ -5663,9 +5663,9 @@
       "merged_at": null,
       "n": 3687,
       "review_comments": 0,
-      "state": "open",
+      "state": "closed",
       "title": "fix: convert Date to ISO string in listComments cursor query (fixes #3661)",
-      "updated_at": "2026-04-14T23:55:26Z",
+      "updated_at": "2026-04-15T03:59:51Z",
       "user": "tentacloos"
     },
     "reviews": [],
@@ -6167,7 +6167,7 @@
     "pr": {
       "additions": 21,
       "changed_files": 1,
-      "closed_at": null,
+      "closed_at": "2026-04-15T03:59:48Z",
       "commits": 1,
       "created_at": "2026-04-15T00:20:40Z",
       "deletions": 1,
@@ -6175,9 +6175,9 @@
       "merged_at": null,
       "n": 3699,
       "review_comments": 2,
-      "state": "open",
+      "state": "closed",
       "title": "Fixes #3660: Return 409 instead of 500 for checkout constraint violation",
-      "updated_at": "2026-04-15T02:29:58Z",
+      "updated_at": "2026-04-15T03:59:48Z",
       "user": "tentacloos"
     },
     "reviews": [
@@ -6269,10 +6269,17 @@
       "review_comments": 0,
       "state": "open",
       "title": "fix(server): validate checkoutRunId exists before FK write",
-      "updated_at": "2026-04-15T01:56:34Z",
+      "updated_at": "2026-04-15T04:07:59Z",
       "user": "Mlaz-code"
     },
-    "reviews": [],
+    "reviews": [
+      {
+        "body": "Simple and targeted fix. A few notes:\n\n1. **Error type**: `conflict()` is used for the missing run case, but the actual failure mode is a foreign-key constraint violation, which is closer to a 422 Unp",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T04:07:59Z",
+        "user": "xkonjin"
+      }
+    ],
     "commits": [
       {
         "date": "2026-04-15T01:48:17Z",
@@ -6283,19 +6290,19 @@
   },
   "3711": {
     "pr": {
-      "additions": 125,
-      "changed_files": 2,
+      "additions": 192,
+      "changed_files": 3,
       "closed_at": null,
-      "commits": 1,
+      "commits": 2,
       "created_at": "2026-04-15T02:19:12Z",
-      "deletions": 62,
+      "deletions": 42,
       "merged": false,
       "merged_at": null,
       "n": 3711,
       "review_comments": 2,
       "state": "open",
       "title": "fix(openclaw-gateway): stop sending top-level paperclip payload",
-      "updated_at": "2026-04-15T02:23:19Z",
+      "updated_at": "2026-04-15T04:39:56Z",
       "user": "LeonSGP43"
     },
     "reviews": [
@@ -6304,6 +6311,12 @@
         "state": "COMMENTED",
         "submitted_at": "2026-04-15T02:22:01Z",
         "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "Clean removal of the legacy top-level payload. A couple of concerns:\n\n1. **Backwards compatibility**: some deployed gateways may still expect the old `paperclip` field in the agent params. Please conf",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T04:07:48Z",
+        "user": "xkonjin"
       }
     ],
     "commits": [
@@ -6311,6 +6324,50 @@
         "date": "2026-04-15T01:50:39Z",
         "message": "fix(openclaw-gateway): stop sending top-level paperclip payload",
         "sha": "52b755a9a0abe73de092eaea85750572a2bed8cd"
+      },
+      {
+        "date": "2026-04-15T04:38:16Z",
+        "message": "fix(openclaw-gateway): preserve paperclip context in wake message",
+        "sha": "8f836e82f5f577ed44e7a81a0e192b808b5f3c1e"
+      }
+    ]
+  },
+  "3712": {
+    "pr": {
+      "additions": 35,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T02:55:59Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3712,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix: capture rawBody for form-encoded requests and deduplicate plugin event delivery",
+      "updated_at": "2026-04-15T04:07:38Z",
+      "user": "riptex"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T02:58:29Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "Thanks for the fix. A few notes:\n\n1. **Event deduplication memory bound**: the `recentEventIds` Map is pruned only when a *new* eventId arrives. During a burst of many unique events within 10s the Map",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T04:07:38Z",
+        "user": "xkonjin"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T02:54:27Z",
+        "message": "fix(server): capture rawBody for urlencoded webhooks and deduplicate plugin onEvent delivery\n\nTwo bu",
+        "sha": "85d8a3af367fe01477018d8b634e90da84c17236"
       }
     ]
   }

@@ -1774,7 +1774,7 @@
     "created_at": "2026-04-14T12:34:31Z",
     "is_pr": true,
     "n": 3649,
-    "state": "open",
+    "state": "closed",
     "title": "fix: update GitHub CLI GPG keyring SHA256 checksum",
     "url": "https://github.com/paperclipai/paperclip/pull/3649",
     "user": "tentacloos"
@@ -1804,7 +1804,7 @@
     "created_at": "2026-04-14T13:25:56Z",
     "is_pr": true,
     "n": 3653,
-    "state": "open",
+    "state": "closed",
     "title": "docs(telegram-acp): comprehensive plugin integration fixes",
     "url": "https://github.com/paperclipai/paperclip/pull/3653",
     "user": "tentacloos"
@@ -1874,7 +1874,7 @@
     "created_at": "2026-04-14T15:04:11Z",
     "is_pr": true,
     "n": 3662,
-    "state": "open",
+    "state": "closed",
     "title": "docs: fix typo in README (solo-entreprenuer -> solo-entrepreneur)",
     "url": "https://github.com/paperclipai/paperclip/pull/3662",
     "user": "tentacloos"
@@ -1884,7 +1884,7 @@
     "created_at": "2026-04-14T15:05:33Z",
     "is_pr": true,
     "n": 3663,
-    "state": "open",
+    "state": "closed",
     "title": "docs: add Model Used section example to CONTRIBUTING.md",
     "url": "https://github.com/paperclipai/paperclip/pull/3663",
     "user": "tentacloos"
@@ -1894,7 +1894,7 @@
     "created_at": "2026-04-14T15:06:34Z",
     "is_pr": true,
     "n": 3664,
-    "state": "open",
+    "state": "closed",
     "title": "docs: add documentation comments to .env.example",
     "url": "https://github.com/paperclipai/paperclip/pull/3664",
     "user": "tentacloos"
@@ -1904,7 +1904,7 @@
     "created_at": "2026-04-14T15:07:14Z",
     "is_pr": true,
     "n": 3665,
-    "state": "open",
+    "state": "closed",
     "title": "docs: improve .gitignore comments and organization",
     "url": "https://github.com/paperclipai/paperclip/pull/3665",
     "user": "tentacloos"
@@ -1914,7 +1914,7 @@
     "created_at": "2026-04-14T15:07:42Z",
     "is_pr": true,
     "n": 3666,
-    "state": "open",
+    "state": "closed",
     "title": "docs: add comment to .npmrc explaining auto-install-peers setting",
     "url": "https://github.com/paperclipai/paperclip/pull/3666",
     "user": "tentacloos"
@@ -2074,7 +2074,7 @@
     "created_at": "2026-04-14T18:35:51Z",
     "is_pr": true,
     "n": 3687,
-    "state": "open",
+    "state": "closed",
     "title": "fix: convert Date to ISO string in listComments cursor query (fixes #3661)",
     "url": "https://github.com/paperclipai/paperclip/pull/3687",
     "user": "tentacloos"
@@ -2174,7 +2174,7 @@
     "created_at": "2026-04-15T00:20:40Z",
     "is_pr": true,
     "n": 3699,
-    "state": "open",
+    "state": "closed",
     "title": "Fixes #3660: Return 409 instead of 500 for checkout constraint violation",
     "url": "https://github.com/paperclipai/paperclip/pull/3699",
     "user": "tentacloos"
@@ -2230,7 +2230,7 @@
     "user": "Mlaz-code"
   },
   {
-    "comments": 2,
+    "comments": 3,
     "created_at": "2026-04-15T02:19:12Z",
     "is_pr": true,
     "n": 3711,
@@ -2238,5 +2238,25 @@
     "title": "fix(openclaw-gateway): stop sending top-level paperclip payload",
     "url": "https://github.com/paperclipai/paperclip/pull/3711",
     "user": "LeonSGP43"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T02:55:59Z",
+    "is_pr": true,
+    "n": 3712,
+    "state": "open",
+    "title": "fix: capture rawBody for form-encoded requests and deduplicate plugin event delivery",
+    "url": "https://github.com/paperclipai/paperclip/pull/3712",
+    "user": "riptex"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-15T03:45:19Z",
+    "is_pr": false,
+    "n": 3713,
+    "state": "open",
+    "title": "pruneOldBackups uses a fixed 30-day month for monthlyCutoff, causing premature deletion in longer months",
+    "url": "https://github.com/paperclipai/paperclip/issues/3713",
+    "user": "shridipavansaber"
   }
 ]
