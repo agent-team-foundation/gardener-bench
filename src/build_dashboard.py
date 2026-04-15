@@ -608,8 +608,8 @@ def build_dashboard(data_dir, repo, output_path):
     <h4>Severity</h4>{severity_summary}
   </div>
 
-  <h2>Verdict accuracy</h2>
-  <p class="muted">Measures how often gardener's verdict matches the actual maintainer decision. Only scored on PRs with resolved outcomes.</p>
+  <h2>Verdict accuracy — PR bench only</h2>
+  <p class="muted">Measures how often gardener's PR verdict matches the actual maintainer decision. Only scored on PRs with resolved outcomes (merged or maintainer-rejected). Issues are excluded — they lack a clear correct/wrong signal.</p>
 
   <div class="accuracy-hero">
     <div class="gauge">

@@ -1608,5 +1608,555 @@
     "title": "[INFRA] Market Research Analyst agent failing - 'claude' command not in PATH",
     "url": "https://github.com/paperclipai/paperclip/issues/3614",
     "user": "AmplifyWhy"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T01:01:47Z",
+    "is_pr": false,
+    "n": 3615,
+    "state": "open",
+    "title": "[BUG] Agent instructions not visible in GUI for batch-created agents despite correct API/runtime data",
+    "url": "https://github.com/paperclipai/paperclip/issues/3615",
+    "user": "christianhaberl"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T03:23:17Z",
+    "is_pr": false,
+    "n": 3621,
+    "state": "open",
+    "title": "Heartbeat timer should skip agents in error status",
+    "url": "https://github.com/paperclipai/paperclip/issues/3621",
+    "user": "dooroosol"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T04:49:46Z",
+    "is_pr": false,
+    "n": 3623,
+    "state": "open",
+    "title": "Ollama models not showing in OpenCode Adapter when deployed via Docker Catalog on Hostinger VPS",
+    "url": "https://github.com/paperclipai/paperclip/issues/3623",
+    "user": "devtestifylabs24"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T07:14:30Z",
+    "is_pr": false,
+    "n": 3626,
+    "state": "open",
+    "title": "How can a company work autonomously when being task driven only?",
+    "url": "https://github.com/paperclipai/paperclip/issues/3626",
+    "user": "ttomiczek"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T08:42:11Z",
+    "is_pr": false,
+    "n": 3630,
+    "state": "open",
+    "title": "creating a portable zip so we can run the paperclip from pendrive",
+    "url": "https://github.com/paperclipai/paperclip/issues/3630",
+    "user": "37OMKAR"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T10:56:13Z",
+    "is_pr": false,
+    "n": 3635,
+    "state": "open",
+    "title": "canary/v2026.413.0-canary.3: UI build fails \u2014 BindMode/fastMode TypeScript errors",
+    "url": "https://github.com/paperclipai/paperclip/issues/3635",
+    "user": "Daradaal"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T11:03:43Z",
+    "is_pr": false,
+    "n": 3636,
+    "state": "open",
+    "title": "Heartbeat wakeups ignore issue blocking relations \u2014 blocked issues trigger agents unnecessarily",
+    "url": "https://github.com/paperclipai/paperclip/issues/3636",
+    "user": "Daradaal"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T11:43:38Z",
+    "is_pr": true,
+    "n": 3640,
+    "state": "open",
+    "title": "feat(plugins): add agent.tool.pre_execute and post_execute events",
+    "url": "https://github.com/paperclipai/paperclip/pull/3640",
+    "user": "cpfarhood"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T12:00:46Z",
+    "is_pr": false,
+    "n": 3641,
+    "state": "open",
+    "title": "Docker build fails: stale SHA256 checksum for GitHub CLI GPG keyring",
+    "url": "https://github.com/paperclipai/paperclip/issues/3641",
+    "user": "bobbyhyam"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T12:11:32Z",
+    "is_pr": false,
+    "n": 3642,
+    "state": "open",
+    "title": "paperclip-plugin-telegram: emits ACP events on wrong channel names (acp-spawn instead of namespaced plugin.*.acp-spawn / acp-message)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3642",
+    "user": "devli13"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T12:11:48Z",
+    "is_pr": false,
+    "n": 3643,
+    "state": "open",
+    "title": "paperclip-plugin-telegram: passes Paperclip agent display name as ACP agentId instead of adapter type",
+    "url": "https://github.com/paperclipai/paperclip/issues/3643",
+    "user": "devli13"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T12:12:30Z",
+    "is_pr": false,
+    "n": 3644,
+    "state": "open",
+    "title": "paperclip-plugin-acp: companyId missing from cross-plugin event payload, causing undefined companyId on all spawns",
+    "url": "https://github.com/paperclipai/paperclip/issues/3644",
+    "user": "devli13"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T12:12:44Z",
+    "is_pr": false,
+    "n": 3645,
+    "state": "open",
+    "title": "paperclip-plugin-acp: claude spawned with empty args \u2014 errors immediately in non-interactive environments",
+    "url": "https://github.com/paperclipai/paperclip/issues/3645",
+    "user": "devli13"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T12:12:59Z",
+    "is_pr": false,
+    "n": 3646,
+    "state": "open",
+    "title": "paperclip-plugin-telegram: handleAcpOutput crashes with TypeError on error-type ACP events (text is undefined)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3646",
+    "user": "devli13"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T12:22:05Z",
+    "is_pr": false,
+    "n": 3647,
+    "state": "open",
+    "title": "Dashboard timestamps displayed in UTC \u2014 should respect user's local timezone",
+    "url": "https://github.com/paperclipai/paperclip/issues/3647",
+    "user": "dooroosol"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-14T12:24:02Z",
+    "is_pr": true,
+    "n": 3648,
+    "state": "open",
+    "title": "fix: remove stale pinned sha256 for GitHub CLI keyring in Dockerfile",
+    "url": "https://github.com/paperclipai/paperclip/pull/3648",
+    "user": "bobbyhyam"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T12:34:31Z",
+    "is_pr": true,
+    "n": 3649,
+    "state": "open",
+    "title": "fix: update GitHub CLI GPG keyring SHA256 checksum",
+    "url": "https://github.com/paperclipai/paperclip/pull/3649",
+    "user": "oraculoos"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T13:00:55Z",
+    "is_pr": false,
+    "n": 3650,
+    "state": "open",
+    "title": "canary.3: heartbeat runs marked failed prematurely \u2014 retry output not finalized, UI shows no transcript",
+    "url": "https://github.com/paperclipai/paperclip/issues/3650",
+    "user": "Daradaal"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T13:16:30Z",
+    "is_pr": true,
+    "n": 3651,
+    "state": "open",
+    "title": "chore(tooling): refresh docs scripts and build configs",
+    "url": "https://github.com/paperclipai/paperclip/pull/3651",
+    "user": "heomin86"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T13:25:56Z",
+    "is_pr": true,
+    "n": 3653,
+    "state": "open",
+    "title": "docs(telegram-acp): comprehensive plugin integration fixes",
+    "url": "https://github.com/paperclipai/paperclip/pull/3653",
+    "user": "oraculoos"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-14T13:26:49Z",
+    "is_pr": true,
+    "n": 3654,
+    "state": "open",
+    "title": "fix(heartbeat): skip agents in error status from timer wakeups",
+    "url": "https://github.com/paperclipai/paperclip/pull/3654",
+    "user": "shoaib050326"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-14T13:28:07Z",
+    "is_pr": true,
+    "n": 3655,
+    "state": "open",
+    "title": "fix: upgrade drizzle-orm to 0.45.2, 1.0.0-beta.20 (CVE-2026-39356)",
+    "url": "https://github.com/paperclipai/paperclip/pull/3655",
+    "user": "orbisai0security"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T13:53:05Z",
+    "is_pr": false,
+    "n": 3656,
+    "state": "open",
+    "title": "feat: Show project workspaces in Dashboard UI",
+    "url": "https://github.com/paperclipai/paperclip/issues/3656",
+    "user": "dooroosol"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-14T14:10:42Z",
+    "is_pr": true,
+    "n": 3658,
+    "state": "open",
+    "title": "fix(ui): use browser timezone for all dashboard timestamps",
+    "url": "https://github.com/paperclipai/paperclip/pull/3658",
+    "user": "shoaib050326"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T14:33:01Z",
+    "is_pr": false,
+    "n": 3660,
+    "state": "open",
+    "title": "Bug: issues_open_routine_execution_uq constraint returns 500 instead of 409 causing agent crashes",
+    "url": "https://github.com/paperclipai/paperclip/issues/3660",
+    "user": "stephen-huskytail"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T14:55:19Z",
+    "is_pr": false,
+    "n": 3661,
+    "state": "open",
+    "title": "GET /api/issues/:id/comments?after= returns 500 (TypeError: Date received where string expected) on v2026.403.0",
+    "url": "https://github.com/paperclipai/paperclip/issues/3661",
+    "user": "chrisfonte"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T15:04:11Z",
+    "is_pr": true,
+    "n": 3662,
+    "state": "open",
+    "title": "docs: fix typo in README (solo-entreprenuer -> solo-entrepreneur)",
+    "url": "https://github.com/paperclipai/paperclip/pull/3662",
+    "user": "oraculoos"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T15:05:33Z",
+    "is_pr": true,
+    "n": 3663,
+    "state": "open",
+    "title": "docs: add Model Used section example to CONTRIBUTING.md",
+    "url": "https://github.com/paperclipai/paperclip/pull/3663",
+    "user": "oraculoos"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T15:06:34Z",
+    "is_pr": true,
+    "n": 3664,
+    "state": "open",
+    "title": "docs: add documentation comments to .env.example",
+    "url": "https://github.com/paperclipai/paperclip/pull/3664",
+    "user": "oraculoos"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T15:07:14Z",
+    "is_pr": true,
+    "n": 3665,
+    "state": "open",
+    "title": "docs: improve .gitignore comments and organization",
+    "url": "https://github.com/paperclipai/paperclip/pull/3665",
+    "user": "oraculoos"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T15:07:42Z",
+    "is_pr": true,
+    "n": 3666,
+    "state": "open",
+    "title": "docs: add comment to .npmrc explaining auto-install-peers setting",
+    "url": "https://github.com/paperclipai/paperclip/pull/3666",
+    "user": "oraculoos"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T15:16:08Z",
+    "is_pr": true,
+    "n": 3667,
+    "state": "open",
+    "title": "fix(gemini-local): inject gemini-system.md and add /tmp to --include-directories",
+    "url": "https://github.com/paperclipai/paperclip/pull/3667",
+    "user": "shoaib050326"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-14T15:23:51Z",
+    "is_pr": true,
+    "n": 3668,
+    "state": "open",
+    "title": "feat: Visibility tab \u2014 real-time file edit grid",
+    "url": "https://github.com/paperclipai/paperclip/pull/3668",
+    "user": "tmartin2113"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T15:30:18Z",
+    "is_pr": true,
+    "n": 3669,
+    "state": "open",
+    "title": "feat: add i18n internationalization support with zh-CN locale",
+    "url": "https://github.com/paperclipai/paperclip/pull/3669",
+    "user": "stakeswky"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-14T15:45:11Z",
+    "is_pr": false,
+    "n": 3671,
+    "state": "open",
+    "title": "[INFRA] Operational warnings: stuck agent, Market Research Analyst error",
+    "url": "https://github.com/paperclipai/paperclip/issues/3671",
+    "user": "AmplifyWhy"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-14T16:22:55Z",
+    "is_pr": true,
+    "n": 3672,
+    "state": "open",
+    "title": "feat(i18n): localize issue activity and issue UI flows",
+    "url": "https://github.com/paperclipai/paperclip/pull/3672",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T16:25:07Z",
+    "is_pr": false,
+    "n": 3673,
+    "state": "open",
+    "title": "Problems with opencode plugins \"oh my opencode\" / \"Sisyphus\" - not found... how to disable=?",
+    "url": "https://github.com/paperclipai/paperclip/issues/3673",
+    "user": "enving"
+  },
+  {
+    "comments": 5,
+    "created_at": "2026-04-14T16:30:47Z",
+    "is_pr": true,
+    "n": 3674,
+    "state": "open",
+    "title": "feat: persist and resume sessions across heartbeats",
+    "url": "https://github.com/paperclipai/paperclip/pull/3674",
+    "user": "jsdevninja"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T16:48:26Z",
+    "is_pr": false,
+    "n": 3675,
+    "state": "open",
+    "title": "Env variables Secret doesn't work",
+    "url": "https://github.com/paperclipai/paperclip/issues/3675",
+    "user": "xbraindance"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T16:52:00Z",
+    "is_pr": false,
+    "n": 3676,
+    "state": "open",
+    "title": "Timeout too short for local LLM servers (Ollama/LM Studio) \u2014 connection aborted before response completes",
+    "url": "https://github.com/paperclipai/paperclip/issues/3676",
+    "user": "rolfberkenbosch"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-14T16:52:42Z",
+    "is_pr": true,
+    "n": 3677,
+    "state": "open",
+    "title": "feat: add 'parked' issue status and deduplicate status constants",
+    "url": "https://github.com/paperclipai/paperclip/pull/3677",
+    "user": "akhater"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T17:17:28Z",
+    "is_pr": true,
+    "n": 3681,
+    "state": "open",
+    "title": "fix: preserve managed Codex auth and repo-root env loading",
+    "url": "https://github.com/paperclipai/paperclip/pull/3681",
+    "user": "neerazz"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T17:51:09Z",
+    "is_pr": true,
+    "n": 3683,
+    "state": "open",
+    "title": "Reduce first-run cold-start latency by caching runtime skills and prewarming reusable runtime services",
+    "url": "https://github.com/paperclipai/paperclip/pull/3683",
+    "user": "Daradaal"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T18:06:55Z",
+    "is_pr": true,
+    "n": 3684,
+    "state": "open",
+    "title": "fix(api+ui): Server-side pagination for heartbeat runs",
+    "url": "https://github.com/paperclipai/paperclip/pull/3684",
+    "user": "alexgorbatchev"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T18:11:14Z",
+    "is_pr": true,
+    "n": 3685,
+    "state": "open",
+    "title": "feat: generate agent instruction bundle from role",
+    "url": "https://github.com/paperclipai/paperclip/pull/3685",
+    "user": "dranastos"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T18:32:28Z",
+    "is_pr": true,
+    "n": 3686,
+    "state": "open",
+    "title": "feat: show project chips on issue board cards",
+    "url": "https://github.com/paperclipai/paperclip/pull/3686",
+    "user": "levineam"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T18:35:51Z",
+    "is_pr": true,
+    "n": 3687,
+    "state": "open",
+    "title": "fix: convert Date to ISO string in listComments cursor query (fixes #3661)",
+    "url": "https://github.com/paperclipai/paperclip/pull/3687",
+    "user": "oraculoos"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T19:06:17Z",
+    "is_pr": true,
+    "n": 3688,
+    "state": "open",
+    "title": "fix(docker): update GitHub CLI GPG keyring SHA256 checksum",
+    "url": "https://github.com/paperclipai/paperclip/pull/3688",
+    "user": "neobones"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T19:42:27Z",
+    "is_pr": true,
+    "n": 3689,
+    "state": "open",
+    "title": "docs: add CI/CD and lockfile policy to contributing guide",
+    "url": "https://github.com/paperclipai/paperclip/pull/3689",
+    "user": "neobones"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T19:43:39Z",
+    "is_pr": false,
+    "n": 3690,
+    "state": "open",
+    "title": "Process adapter support for non-LLM CLI agents (Cortex Code CLI / Snowflake)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3690",
+    "user": "InsightStream-Dev"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T22:01:29Z",
+    "is_pr": true,
+    "n": 3692,
+    "state": "open",
+    "title": "feat(agent-runtime): rebase hermes local wrapper and heartbeat flow",
+    "url": "https://github.com/paperclipai/paperclip/pull/3692",
+    "user": "heomin86"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T23:12:37Z",
+    "is_pr": true,
+    "n": 3693,
+    "state": "open",
+    "title": "feat: add NanoClaw Gateway adapter for WhatsApp agent orchestration",
+    "url": "https://github.com/paperclipai/paperclip/pull/3693",
+    "user": "Franky4Fing3rs"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T23:29:56Z",
+    "is_pr": true,
+    "n": 3694,
+    "state": "open",
+    "title": "Fix stale execution lock cleanup",
+    "url": "https://github.com/paperclipai/paperclip/pull/3694",
+    "user": "TheConnMan"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-14T23:45:56Z",
+    "is_pr": true,
+    "n": 3695,
+    "state": "closed",
+    "title": "Add Delete Company button to Company Settings",
+    "url": "https://github.com/paperclipai/paperclip/pull/3695",
+    "user": "cpfarhood"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-14T23:54:20Z",
+    "is_pr": false,
+    "n": 3696,
+    "state": "open",
+    "title": "Regression: PR #626 fix for \"unexpected property 'paperclip'\" reverted by commit 91e040a6",
+    "url": "https://github.com/paperclipai/paperclip/issues/3696",
+    "user": "jus10rome"
   }
 ]
