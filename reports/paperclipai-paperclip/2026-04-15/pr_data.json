@@ -1200,19 +1200,19 @@
   },
   "3250": {
     "pr": {
-      "additions": 20764,
-      "changed_files": 45,
+      "additions": 18512,
+      "changed_files": 33,
       "closed_at": null,
-      "commits": 5,
+      "commits": 2,
       "created_at": "2026-04-10T00:52:30Z",
-      "deletions": 1,
+      "deletions": 0,
       "merged": false,
       "merged_at": null,
       "n": 3250,
       "review_comments": 5,
       "state": "open",
-      "title": "feat(memory): add memory adapter framework and example mempalace integration",
-      "updated_at": "2026-04-12T20:31:06Z",
+      "title": "feat(memory): add memory adapter framework and UI",
+      "updated_at": "2026-04-16T01:32:02Z",
       "user": "davison"
     },
     "reviews": [
@@ -1225,29 +1225,14 @@
     ],
     "commits": [
       {
-        "date": "2026-04-10T14:17:54Z",
-        "message": "feat(memory): add mempalace integration with memory adapter framework\n\nAdds a pluggable memory adapt",
-        "sha": "ab58efdce840eaee27fdc9e87ba85ea1bcf1a117"
+        "date": "2026-04-16T01:17:57Z",
+        "message": "feat(memory): add memory adapter framework and UI\n\nIntroduces the memory adapter framework for Paper",
+        "sha": "220f96053c69fe633469d6246b2a9f822df2744d"
       },
       {
-        "date": "2026-04-10T17:45:01Z",
-        "message": "fix(memory): remove per-agent/issue wing+room filters from mempalace search\n\nQueries were scoped to ",
-        "sha": "ba7519e0d41be7bdca35c8e9ccf8efe5fd20416f"
-      },
-      {
-        "date": "2026-04-11T05:17:48Z",
-        "message": "fix(docker): make entrypoint chown unconditional for rootless Podman\n\nThe chown was gated behind UID",
-        "sha": "95c20742bf9b4f7ebb9bd43cb96f9dd7c92c79fc"
-      },
-      {
-        "date": "2026-04-11T05:17:48Z",
-        "message": "fix(docs): correct memory architecture spec per QA review\n\nAddress two QA findings (RED-66):\n1. Secu",
-        "sha": "9910f2ef02e42679cb65fb805ca3443a9f4da67c"
-      },
-      {
-        "date": "2026-04-11T05:32:22Z",
-        "message": "ci: retrigger verify (flaky upstream postgres teardown)\n\nThe previous verify run failed due to an un",
-        "sha": "fb3115dfb5f90815c8f13f122406b186028333ea"
+        "date": "2026-04-16T01:31:57Z",
+        "message": "fix: correct migration snapshot lineage and enforce agent-scope binding on memory ops\n\nAddresses QA ",
+        "sha": "b85b1af74f36a359516d346bb10933cd117fdc92"
       }
     ]
   },
@@ -8085,6 +8070,648 @@
         "date": "2026-04-15T20:36:19Z",
         "message": "fix(auth): drop non-UUID x-paperclip-run-id header to avoid PATCH 500s\n\nactivity_log.run_id is a UUI",
         "sha": "e2f4b45fd0340ac48d999519b6460f09d5ddce22"
+      }
+    ]
+  },
+  "3761": {
+    "pr": {
+      "additions": 93,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:10:33Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3761,
+      "review_comments": 2,
+      "state": "open",
+      "title": "server: add assignee wake telemetry for non-invokable agents",
+      "updated_at": "2026-04-16T02:11:36Z",
+      "user": "schmelli"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:13:01Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T22:09:56Z",
+        "message": "server: add non-invokable assignee wake telemetry guard",
+        "sha": "3db58f707048ec08d1ec9f9dcd3cf750ee1f18ee"
+      }
+    ]
+  },
+  "3762": {
+    "pr": {
+      "additions": 2,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:42:08Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3762,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(openclaw-gateway): two-step close flow to avoid PATCH hang",
+      "updated_at": "2026-04-16T02:12:15Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:43:42Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T21:11:33Z",
+        "message": "fix(openclaw-gateway): use two-step close flow to avoid PATCH hang\n\nSplit issue completion into sepa",
+        "sha": "306d916c1822be0dcd0689f43a09fbd009051dad"
+      }
+    ]
+  },
+  "3763": {
+    "pr": {
+      "additions": 9,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:42:21Z",
+      "deletions": 5,
+      "merged": false,
+      "merged_at": null,
+      "n": 3763,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(server): avoid redundant UPDATE in PATCH with status+comment",
+      "updated_at": "2026-04-16T02:12:13Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:46:03Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T21:21:31Z",
+        "message": "fix(server): avoid redundant UPDATE in PATCH with status+comment\n\nWhen PATCH /api/issues/{id} receiv",
+        "sha": "d490a6bb9714fbb875f3b44b9e409a8d80d76386"
+      }
+    ]
+  },
+  "3764": {
+    "pr": {
+      "additions": 22,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:42:31Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3764,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(heartbeat): skip deferred wakeup promotion when issue reached terminal state",
+      "updated_at": "2026-04-16T02:12:12Z",
+      "user": "sparkeros"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-15T21:22:46Z",
+        "message": "fix(heartbeat): skip deferred wakeup promotion when issue reached terminal state\n\nWhen an agent mark",
+        "sha": "468b997dcc59f3525d81561b76c0969468382372"
+      }
+    ]
+  },
+  "3765": {
+    "pr": {
+      "additions": 432,
+      "changed_files": 10,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-15T22:42:46Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3765,
+      "review_comments": 2,
+      "state": "open",
+      "title": "feat(ui): database backup settings page under Instance Settings",
+      "updated_at": "2026-04-16T02:11:23Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:47:17Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T21:27:19Z",
+        "message": "feat(ui): add database backup settings to Instance Settings\n\nAdd a new \"Backups\" page under Instance",
+        "sha": "25ffef085564ed412685b6198d32d5d26f916e92"
+      },
+      {
+        "date": "2026-04-15T21:27:19Z",
+        "message": "fix(ui): clarify backup settings config file message\n\nExplain why backup settings need a config file",
+        "sha": "27b1edf280043e2241184b09c480c31a9f62dd5d"
+      }
+    ]
+  },
+  "3766": {
+    "pr": {
+      "additions": 30,
+      "changed_files": 3,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:42:58Z",
+      "deletions": 5,
+      "merged": false,
+      "merged_at": null,
+      "n": 3766,
+      "review_comments": 1,
+      "state": "open",
+      "title": "feat(openclaw-gateway): forward config.model + populate model list + NewIssueDialog support",
+      "updated_at": "2026-04-16T02:11:10Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:45:07Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T21:29:54Z",
+        "message": "feat(openclaw-gateway): forward model config + add model list, NewIssueDialog support\n\n- packages/ad",
+        "sha": "3c14b88f255ac03d78f398d514aa13ea11d624ba"
+      }
+    ]
+  },
+  "3767": {
+    "pr": {
+      "additions": 49,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:43:11Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3767,
+      "review_comments": 1,
+      "state": "open",
+      "title": "feat(heartbeat): proactive self-assignment toggle with scope selector",
+      "updated_at": "2026-04-16T02:10:03Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:47:10Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T21:34:04Z",
+        "message": "feat(heartbeat): proactive self-assignment toggle with scope selector\n\nAdds a new heartbeat policy o",
+        "sha": "eb3647e2f28f80a548a56d354161d0b4836ab603"
+      }
+    ]
+  },
+  "3768": {
+    "pr": {
+      "additions": 7,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:43:24Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3768,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(heartbeat): default intervalSec to 300, deep-merge runtimeConfig on PATCH",
+      "updated_at": "2026-04-16T02:10:58Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:46:29Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T21:35:56Z",
+        "message": "fix(heartbeat): default intervalSec to 300 and deep-merge runtimeConfig on PATCH\n\nTwo related fixes:",
+        "sha": "ffced2d82e5133365b63753ed43c8d46b586d389"
+      }
+    ]
+  },
+  "3769": {
+    "pr": {
+      "additions": 125,
+      "changed_files": 3,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:43:35Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3769,
+      "review_comments": 5,
+      "state": "open",
+      "title": "feat: notify human via Discord/Telegram when agent is blocked or needs help",
+      "updated_at": "2026-04-16T02:07:50Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:46:07Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T21:37:25Z",
+        "message": "feat: notify human via Discord/Telegram when agent is blocked or needs help\n\nAdds notification dispa",
+        "sha": "f4e20afa7588c54448b2107e3fb61c0eacd76dfa"
+      }
+    ]
+  },
+  "3770": {
+    "pr": {
+      "additions": 13412,
+      "changed_files": 7,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T22:43:50Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3770,
+      "review_comments": 1,
+      "state": "open",
+      "title": "feat(issues): add dueAt column and API support",
+      "updated_at": "2026-04-16T02:12:45Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-15T22:47:01Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T22:03:20Z",
+        "message": "feat(issues): add dueAt column and API support\n\nAdds an optional due date to issues. Nullable timest",
+        "sha": "e4a0a8ff73172e8c546448b529edf4a90415b876"
+      }
+    ]
+  },
+  "3771": {
+    "pr": {
+      "additions": 3196,
+      "changed_files": 117,
+      "closed_at": null,
+      "commits": 12,
+      "created_at": "2026-04-15T22:56:14Z",
+      "deletions": 8,
+      "merged": false,
+      "merged_at": null,
+      "n": 3771,
+      "review_comments": 0,
+      "state": "open",
+      "title": "Skip timer heartbeat for reactive agents with empty inbox",
+      "updated_at": "2026-04-16T02:13:29Z",
+      "user": "michaelkd01"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-08T05:58:04Z",
+        "message": "feat(web): add issue ID sort option to dashboard",
+        "sha": "ccf2330f3d1641f23969291422c92ffeaa7337e0"
+      },
+      {
+        "date": "2026-04-09T04:22:01Z",
+        "message": "ANY: configure execution policies for AnytimeInterview handoff chain\n\nAdd project-level defaultExecu",
+        "sha": "e6842d8101ab674db057a84e1ca7239c9428e042"
+      },
+      {
+        "date": "2026-04-09T05:35:56Z",
+        "message": "chore: version-control agent instruction templates with deploy script\n\nCo-Authored-By: Claude Opus 4",
+        "sha": "8ca5057c1c6a8cbf20c8375f6bdcd34cedc8148f"
+      },
+      {
+        "date": "2026-04-09T05:36:15Z",
+        "message": "fix: suppress plugin events for successful routine executions\n\nHeartbeat/routine executions generate",
+        "sha": "e2d4d6cf99157ce64c7da5957f47c15ebd1db826"
+      },
+      {
+        "date": "2026-04-09T05:36:15Z",
+        "message": "fix: suppress in_progress routine plugin events, add JSDoc",
+        "sha": "f098cdf9bac13da12fd270a1589d9b2b25fdc544"
+      },
+      {
+        "date": "2026-04-09T06:01:11Z",
+        "message": "fix: add --strict-mcp-config default to prevent MCP tool injection in agent sessions\n\nCo-Authored-By",
+        "sha": "2d50346540ad42b201165a3ca8d36e4c7fd28b6c"
+      },
+      {
+        "date": "2026-04-12T01:36:55Z",
+        "message": "fix: reaper retries runs with NULL process_pid instead of permanent failure\n\nWhen the claude_local a",
+        "sha": "7e52b247782cea83f7e120753a67cdd9dafc1ff9"
+      },
+      {
+        "date": "2026-04-12T01:57:15Z",
+        "message": "fix: adapter kills child process on terminal state + zombie cleanup cron\n\nLayer 1: Add cleanupChildP",
+        "sha": "e16b0e16e132a20793cfe068f22738e5df41c19e"
+      },
+      {
+        "date": "2026-04-12T13:27:20Z",
+        "message": "feat: quota-aware agent pausing - 90% weekly soft pause + hard failure detection\n\n- Add rate_limits ",
+        "sha": "11cd8d46cb7db06710c2e5e367b0b1199c37161b"
+      },
+      {
+        "date": "2026-04-15T03:38:44Z",
+        "message": "Merge upstream/master\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+        "sha": "002740709cd1e5e86f1868e819b32400b5db91b8"
+      },
+      {
+        "date": "2026-04-15T03:39:52Z",
+        "message": "Merge branch 'master' of https://github.com/michaelkd01/paperclip\n\n# Conflicts:\n#\tserver/src/service",
+        "sha": "33d9a275c888131f844d315b7bc52230867e470f"
+      },
+      {
+        "date": "2026-04-15T03:50:20Z",
+        "message": "feat: skip timer heartbeat for reactive agents with empty inbox\n\nImplements server-side inbox pre-ch",
+        "sha": "f8567c0c1622d7e9a84a8cbd2d0e8beac0618a1f"
+      }
+    ]
+  },
+  "3772": {
+    "pr": {
+      "additions": 289,
+      "changed_files": 8,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-15T23:59:55Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3772,
+      "review_comments": 3,
+      "state": "open",
+      "title": "feat(issue-relations): extend relation types + add REST endpoints",
+      "updated_at": "2026-04-16T02:08:18Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T00:04:01Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T23:59:35Z",
+        "message": "feat(issue-relations): extend relation types + add REST endpoints\n\nExtends upstream's issue_relation",
+        "sha": "6845dbd1d15752c92ad6bf7c4a08440bdf454642"
+      }
+    ]
+  },
+  "3774": {
+    "pr": {
+      "additions": 395,
+      "changed_files": 8,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-16T00:03:03Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3774,
+      "review_comments": 3,
+      "state": "open",
+      "title": "feat(issue-relations): auto-transition blocked dependents to todo on blocker done",
+      "updated_at": "2026-04-16T02:08:44Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T00:07:57Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T23:59:35Z",
+        "message": "feat(issue-relations): extend relation types + add REST endpoints\n\nExtends upstream's issue_relation",
+        "sha": "6845dbd1d15752c92ad6bf7c4a08440bdf454642"
+      },
+      {
+        "date": "2026-04-16T00:02:35Z",
+        "message": "feat(issue-relations): auto-transition blocked dependents to todo on blocker done\n\nStacks on feat/is",
+        "sha": "f52df35fa29287d67e357a7dc4f8b0ffe57be767"
+      }
+    ]
+  },
+  "3775": {
+    "pr": {
+      "additions": 550,
+      "changed_files": 12,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-16T00:06:19Z",
+      "deletions": 8,
+      "merged": false,
+      "merged_at": null,
+      "n": 3775,
+      "review_comments": 4,
+      "state": "open",
+      "title": "feat(issue-relations): IssueRelations UI component for multi-type relations",
+      "updated_at": "2026-04-16T02:09:08Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T00:10:46Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-15T23:59:35Z",
+        "message": "feat(issue-relations): extend relation types + add REST endpoints\n\nExtends upstream's issue_relation",
+        "sha": "6845dbd1d15752c92ad6bf7c4a08440bdf454642"
+      },
+      {
+        "date": "2026-04-16T00:06:03Z",
+        "message": "feat(issue-relations): add IssueRelations UI component for multi-type relations\n\nStacks on feat/issu",
+        "sha": "4f732bb0786cc9c77b4ae7798a246d6e0f5f661c"
+      }
+    ]
+  },
+  "3776": {
+    "pr": {
+      "additions": 152,
+      "changed_files": 6,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T00:22:59Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3776,
+      "review_comments": 3,
+      "state": "open",
+      "title": "fix: auto-recover agents from error status and harden opencode adapter",
+      "updated_at": "2026-04-16T02:07:10Z",
+      "user": "tommepham"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T00:26:14Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T00:22:32Z",
+        "message": "fix: auto-recover agents from error status and harden opencode adapter\n\n- Add agent-stale-cleanup se",
+        "sha": "395442470deaaf1fbda6a8a5bec8a5015761b250"
+      }
+    ]
+  },
+  "3779": {
+    "pr": {
+      "additions": 998,
+      "changed_files": 26,
+      "closed_at": "2026-04-16T02:13:56Z",
+      "commits": 6,
+      "created_at": "2026-04-16T01:48:14Z",
+      "deletions": 108,
+      "merged": true,
+      "merged_at": "2026-04-16T02:13:56Z",
+      "n": 3779,
+      "review_comments": 1,
+      "state": "closed",
+      "title": "Sync/master post pap1497 followups 2026 04 15",
+      "updated_at": "2026-04-16T02:13:56Z",
+      "user": "cryppadotta"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T01:56:42Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T01:42:47Z",
+        "message": "chore: add v2026.415.0 release changelog\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "b854f4ef33d7e9952faf5d5af6f3b972bf961146"
+      },
+      {
+        "date": "2026-04-16T01:43:19Z",
+        "message": "Mask stale issue active runs after completion",
+        "sha": "2b91848b301baf73a55d201fa9b25e1a38b0689c"
+      },
+      {
+        "date": "2026-04-16T01:43:19Z",
+        "message": "Add issue creator filters",
+        "sha": "5efedffa0ee9b6e35b54fc345db33144e6c81a8d"
+      },
+      {
+        "date": "2026-04-16T01:43:19Z",
+        "message": "Bound issue detail text scans",
+        "sha": "9bc1b9dc5be9074fd796b0d34c7cf66c5495783f"
+      },
+      {
+        "date": "2026-04-16T01:43:19Z",
+        "message": "wip: preserve master work before origin/master sync",
+        "sha": "4cbab271cf340a11344d6e748d2db716a2ab94df"
+      },
+      {
+        "date": "2026-04-16T01:47:00Z",
+        "message": "fix: reuse shared issue path parsing in router",
+        "sha": "396e76c398034eed4236c5baebbe2850d39dd8c0"
+      }
+    ]
+  },
+  "3781": {
+    "pr": {
+      "additions": 189,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T02:22:04Z",
+      "deletions": 62,
+      "merged": false,
+      "merged_at": null,
+      "n": 3781,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(approvals): wake requester on reject and request revision",
+      "updated_at": "2026-04-16T02:36:56Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T02:24:40Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T02:20:40Z",
+        "message": "fix(approvals): wake requester on reject and revision",
+        "sha": "2540e2dab58c76c7b85d33ea31f9c9e76377e238"
       }
     ]
   }

@@ -385,7 +385,7 @@
     "is_pr": true,
     "n": 3250,
     "state": "open",
-    "title": "feat(memory): add memory adapter framework and example mempalace integration",
+    "title": "feat(memory): add memory adapter framework and UI",
     "url": "https://github.com/paperclipai/paperclip/pull/3250",
     "user": "davison"
   },
@@ -2558,5 +2558,225 @@
     "title": "fix(auth): drop non-UUID x-paperclip-run-id header to avoid PATCH 500s",
     "url": "https://github.com/paperclipai/paperclip/pull/3758",
     "user": "100em100"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-15T21:36:53Z",
+    "is_pr": false,
+    "n": 3759,
+    "state": "open",
+    "title": "Chrome crashes when typing in comment editor (MutationObserver feedback loop)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3759",
+    "user": "vzert"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-15T21:42:28Z",
+    "is_pr": false,
+    "n": 3760,
+    "state": "open",
+    "title": "\"Windows: Cannot find module company - Hermes v0.4.4\"",
+    "url": "https://github.com/paperclipai/paperclip/issues/3760",
+    "user": "TommyZeigt-Projekt"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:10:33Z",
+    "is_pr": true,
+    "n": 3761,
+    "state": "open",
+    "title": "server: add assignee wake telemetry for non-invokable agents",
+    "url": "https://github.com/paperclipai/paperclip/pull/3761",
+    "user": "schmelli"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:42:08Z",
+    "is_pr": true,
+    "n": 3762,
+    "state": "open",
+    "title": "fix(openclaw-gateway): two-step close flow to avoid PATCH hang",
+    "url": "https://github.com/paperclipai/paperclip/pull/3762",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:42:21Z",
+    "is_pr": true,
+    "n": 3763,
+    "state": "open",
+    "title": "fix(server): avoid redundant UPDATE in PATCH with status+comment",
+    "url": "https://github.com/paperclipai/paperclip/pull/3763",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:42:31Z",
+    "is_pr": true,
+    "n": 3764,
+    "state": "open",
+    "title": "fix(heartbeat): skip deferred wakeup promotion when issue reached terminal state",
+    "url": "https://github.com/paperclipai/paperclip/pull/3764",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:42:46Z",
+    "is_pr": true,
+    "n": 3765,
+    "state": "open",
+    "title": "feat(ui): database backup settings page under Instance Settings",
+    "url": "https://github.com/paperclipai/paperclip/pull/3765",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:42:58Z",
+    "is_pr": true,
+    "n": 3766,
+    "state": "open",
+    "title": "feat(openclaw-gateway): forward config.model + populate model list + NewIssueDialog support",
+    "url": "https://github.com/paperclipai/paperclip/pull/3766",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:43:11Z",
+    "is_pr": true,
+    "n": 3767,
+    "state": "open",
+    "title": "feat(heartbeat): proactive self-assignment toggle with scope selector",
+    "url": "https://github.com/paperclipai/paperclip/pull/3767",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:43:24Z",
+    "is_pr": true,
+    "n": 3768,
+    "state": "open",
+    "title": "fix(heartbeat): default intervalSec to 300, deep-merge runtimeConfig on PATCH",
+    "url": "https://github.com/paperclipai/paperclip/pull/3768",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:43:35Z",
+    "is_pr": true,
+    "n": 3769,
+    "state": "open",
+    "title": "feat: notify human via Discord/Telegram when agent is blocked or needs help",
+    "url": "https://github.com/paperclipai/paperclip/pull/3769",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:43:50Z",
+    "is_pr": true,
+    "n": 3770,
+    "state": "open",
+    "title": "feat(issues): add dueAt column and API support",
+    "url": "https://github.com/paperclipai/paperclip/pull/3770",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T22:56:14Z",
+    "is_pr": true,
+    "n": 3771,
+    "state": "open",
+    "title": "Skip timer heartbeat for reactive agents with empty inbox",
+    "url": "https://github.com/paperclipai/paperclip/pull/3771",
+    "user": "michaelkd01"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-15T23:59:55Z",
+    "is_pr": true,
+    "n": 3772,
+    "state": "open",
+    "title": "feat(issue-relations): extend relation types + add REST endpoints",
+    "url": "https://github.com/paperclipai/paperclip/pull/3772",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T00:03:03Z",
+    "is_pr": true,
+    "n": 3774,
+    "state": "open",
+    "title": "feat(issue-relations): auto-transition blocked dependents to todo on blocker done",
+    "url": "https://github.com/paperclipai/paperclip/pull/3774",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T00:06:19Z",
+    "is_pr": true,
+    "n": 3775,
+    "state": "open",
+    "title": "feat(issue-relations): IssueRelations UI component for multi-type relations",
+    "url": "https://github.com/paperclipai/paperclip/pull/3775",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T00:22:59Z",
+    "is_pr": true,
+    "n": 3776,
+    "state": "open",
+    "title": "fix: auto-recover agents from error status and harden opencode adapter",
+    "url": "https://github.com/paperclipai/paperclip/pull/3776",
+    "user": "tommepham"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T00:46:47Z",
+    "is_pr": false,
+    "n": 3777,
+    "state": "open",
+    "title": "Key not allowed to access model - Haiku 4.5 - local claude-code",
+    "url": "https://github.com/paperclipai/paperclip/issues/3777",
+    "user": "varunachar"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T01:46:27Z",
+    "is_pr": false,
+    "n": 3778,
+    "state": "open",
+    "title": "Inbox: show parent-child grouping when parent is a routine_execution issue",
+    "url": "https://github.com/paperclipai/paperclip/issues/3778",
+    "user": "vzert"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-16T01:48:14Z",
+    "is_pr": true,
+    "n": 3779,
+    "state": "closed",
+    "title": "Sync/master post pap1497 followups 2026 04 15",
+    "url": "https://github.com/paperclipai/paperclip/pull/3779",
+    "user": "cryppadotta"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T01:55:32Z",
+    "is_pr": false,
+    "n": 3780,
+    "state": "open",
+    "title": "approval request-revision / reject do not wake the requesting agent",
+    "url": "https://github.com/paperclipai/paperclip/issues/3780",
+    "user": "mtshr639"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-16T02:22:04Z",
+    "is_pr": true,
+    "n": 3781,
+    "state": "open",
+    "title": "fix(approvals): wake requester on reject and request revision",
+    "url": "https://github.com/paperclipai/paperclip/pull/3781",
+    "user": "LeonSGP43"
   }
 ]
