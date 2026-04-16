@@ -2778,5 +2778,85 @@
     "title": "fix(approvals): wake requester on reject and request revision",
     "url": "https://github.com/paperclipai/paperclip/pull/3781",
     "user": "LeonSGP43"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T02:50:16Z",
+    "is_pr": true,
+    "n": 3783,
+    "state": "open",
+    "title": "fix(server): respect configured host when probing ports",
+    "url": "https://github.com/paperclipai/paperclip/pull/3783",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 8,
+    "created_at": "2026-04-16T03:01:21Z",
+    "is_pr": true,
+    "n": 3784,
+    "state": "open",
+    "title": "feat: implement multi-user access and invite flows",
+    "url": "https://github.com/paperclipai/paperclip/pull/3784",
+    "user": "cryppadotta"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T03:03:48Z",
+    "is_pr": true,
+    "n": 3785,
+    "state": "open",
+    "title": "fix(server): suppress blocked issue status wakeups",
+    "url": "https://github.com/paperclipai/paperclip/pull/3785",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T03:14:06Z",
+    "is_pr": true,
+    "n": 3786,
+    "state": "open",
+    "title": "fix(ui): keep env secret bindings intact",
+    "url": "https://github.com/paperclipai/paperclip/pull/3786",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-16T03:45:00Z",
+    "is_pr": true,
+    "n": 3787,
+    "state": "open",
+    "title": "fix(server): serialize issue comment cursor timestamp",
+    "url": "https://github.com/paperclipai/paperclip/pull/3787",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T04:04:06Z",
+    "is_pr": true,
+    "n": 3788,
+    "state": "open",
+    "title": "fix(openclaw-gateway): isolate issue strategy heartbeat sessions",
+    "url": "https://github.com/paperclipai/paperclip/pull/3788",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T04:17:09Z",
+    "is_pr": false,
+    "n": 3789,
+    "state": "open",
+    "title": "agent.run.finished / failed / cancelled events declared but never emitted",
+    "url": "https://github.com/paperclipai/paperclip/issues/3789",
+    "user": "devli13"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T04:48:56Z",
+    "is_pr": true,
+    "n": 3790,
+    "state": "open",
+    "title": "fix(routes): return 409 for routine checkout conflicts",
+    "url": "https://github.com/paperclipai/paperclip/pull/3790",
+    "user": "LeonSGP43"
   }
 ]

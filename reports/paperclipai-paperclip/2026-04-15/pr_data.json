@@ -8714,5 +8714,771 @@
         "sha": "2540e2dab58c76c7b85d33ea31f9c9e76377e238"
       }
     ]
+  },
+  "3783": {
+    "pr": {
+      "additions": 62,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-16T02:50:16Z",
+      "deletions": 4,
+      "merged": false,
+      "merged_at": null,
+      "n": 3783,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(server): respect configured host when probing ports",
+      "updated_at": "2026-04-16T04:47:23Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T02:52:26Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T02:48:28Z",
+        "message": "fix(server): respect configured host when probing ports",
+        "sha": "f8199c91568a273f4e3fb0bc2f3ca924280d4fc4"
+      },
+      {
+        "date": "2026-04-16T04:30:18Z",
+        "message": "test(server): align detect-port mocks with hostname probes",
+        "sha": "6a41722a2cd770ab3f717c83a2b6e6ce394a79d5"
+      }
+    ]
+  },
+  "3784": {
+    "pr": {
+      "additions": 26556,
+      "changed_files": 154,
+      "closed_at": null,
+      "commits": 127,
+      "created_at": "2026-04-16T03:01:21Z",
+      "deletions": 1467,
+      "merged": false,
+      "merged_at": null,
+      "n": 3784,
+      "review_comments": 7,
+      "state": "open",
+      "title": "feat: implement multi-user access and invite flows",
+      "updated_at": "2026-04-16T04:06:39Z",
+      "user": "cryppadotta"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T03:15:41Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T03:31:59Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T03:42:38Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T03:55:50Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "This is a large feature PR with a lot of surface area. Here are a few focused notes on bugs, security, and coverage gaps:\n\n**1. Invite landing auto-accept race condition (`InviteLanding.tsx`)**\nThe `u",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T04:05:28Z",
+        "user": "xkonjin"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-03-26T21:32:32Z",
+        "message": "Add project workspaces tab\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "8262855eb09462f0676104dcffa9a68bec1df87c"
+      },
+      {
+        "date": "2026-03-26T21:32:32Z",
+        "message": "Adjust workspace row columns\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "849aa66b38133a47aaba9c367cdb62165f9362d3"
+      },
+      {
+        "date": "2026-03-26T21:32:32Z",
+        "message": "Exclude default shared workspaces from tab\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "8ca39b6d2b1fcb40a851ed77b85e4fc2096f9825"
+      },
+      {
+        "date": "2026-03-26T21:38:17Z",
+        "message": "Polish workspace issue badges\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "52d00295ed10dade06b41103d7d2d8ef51b423ed"
+      },
+      {
+        "date": "2026-03-26T21:45:01Z",
+        "message": "Fix inbox swipe-to-archive click-through\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "8ef714e40af4879b037081ae37d2f455dbf2cc7d"
+      },
+      {
+        "date": "2026-03-26T21:45:29Z",
+        "message": "Add \"Today\" divider line in inbox between recent and older items\n\nShows a dark gray horizontal line ",
+        "sha": "44e445c2c037c7692b6d08dc01002dbd1a35b748"
+      },
+      {
+        "date": "2026-03-26T21:49:11Z",
+        "message": "Add mail-client keyboard shortcuts to inbox mine tab\n\nj/k navigate up/down, a to archive, U to mark ",
+        "sha": "1f902d482c6525238a9db25d625964cd0b25b634"
+      },
+      {
+        "date": "2026-03-26T21:56:12Z",
+        "message": "Add Paperclip commit metrics script\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "5b01ea46b1763272010fdf3bc063aa4509d34821"
+      },
+      {
+        "date": "2026-03-26T21:57:16Z",
+        "message": "Add y as inbox archive shortcut alongside a\n\nBoth a and y now archive the selected item in the mine ",
+        "sha": "e131f312b42cc681f4e7c45b96a7ca5ca9252fd1"
+      },
+      {
+        "date": "2026-03-26T22:06:14Z",
+        "message": "Restrict inbox keyboard shortcuts to mine tab only\n\nAll keyboard shortcuts (j/k/a/y/U/r/Enter) now o",
+        "sha": "3d7ca9b08c67caa1362bf1fdc64e755803c0554f"
+      },
+      {
+        "date": "2026-03-26T22:10:38Z",
+        "message": "Add workspace path copy control\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "a1e99a3d1d9bb35f49bb028e6abe1218a9a32e9f"
+      },
+      {
+        "date": "2026-03-26T22:14:48Z",
+        "message": "Tighten mine-only inbox swipe archive\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "00208feace18d21b7b2e467ebbefa24e36f73566"
+      },
+      {
+        "date": "2026-03-26T23:19:27Z",
+        "message": "Move 'Mark all as read' button to top-right of inbox header\n\nMoved the button out of the tabs wrappe",
+        "sha": "27c2285e8dde6e57ffbdda6b56b3b9cec7330d28"
+      },
+      {
+        "date": "2026-03-26T23:22:15Z",
+        "message": "Add filtered Paperclip commit exports\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "83308a8ffb4c018be6bd176e4425283794df6654"
+      },
+      {
+        "date": "2026-03-27T00:18:38Z",
+        "message": "fix: clamp mention dropdown position to viewport on mobile\n\nThe portal-rendered mention dropdown cou",
+        "sha": "1a0897a55981a6a5697ea3fa69e9aca119b1b6f9"
+      },
+      {
+        "date": "2026-03-27T00:26:37Z",
+        "message": "fix: prevent 'Mark all as read' from wrapping on mobile\n\nRestructured the inbox header layout to alw",
+        "sha": "af4a384bd3302a735a8d12e2ad94a17486e4acc3"
+      },
+      {
+        "date": "2026-03-27T01:06:29Z",
+        "message": "Add agent Mine inbox API surface\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "d434dc77c33745ba18457d35dd57661d7bdc3f5a"
+      },
+      {
+        "date": "2026-03-27T02:34:40Z",
+        "message": "Add cli/README.md with absolute image URLs for npm\n\nThe root README uses relative doc/assets/ paths ",
+        "sha": "f1964e511fe5324318dda9bfd8845daf95e90480"
+      },
+      {
+        "date": "2026-03-27T12:40:56Z",
+        "message": "Fix invisible keyboard selection highlight in inbox\n\nReplace ring-2 outline (clipped by overflow-hid",
+        "sha": "4ca3ae066f11d70edef65466f95748706d746bd7"
+      },
+      {
+        "date": "2026-03-27T12:54:26Z",
+        "message": "Style markdown links with underline and pointer cursor\n\nLinks in both rendered markdown (.paperclip-",
+        "sha": "1abc027cbef39cf645b8d64f418a63d6adf604be"
+      },
+      {
+        "date": "2026-03-27T13:02:26Z",
+        "message": "fix(ui): harden issue breadcrumb source routing\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "f4893cbde27c3f405a6212a3b86e6f5a99707fc7"
+      },
+      {
+        "date": "2026-03-28T14:46:34Z",
+        "message": "Add optimistic issue comment rendering\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "c1cec67597b854c9e8cbb1376b333c4beb7a6f73"
+      },
+      {
+        "date": "2026-03-28T14:51:58Z",
+        "message": "Add project workspace detail page\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "9e72d8ee099c6f5d967f521fb0330be07338e23b"
+      },
+      {
+        "date": "2026-03-28T15:04:46Z",
+        "message": "Harden optimistic comment IDs\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "5052a497e3f304bc86be2b2857164a5e6ffb4b9f"
+      },
+      {
+        "date": "2026-03-28T15:12:11Z",
+        "message": "Fix issue workspace detail links\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "91865ffd4766c5638dcc2782782c97e60d7de243"
+      },
+      {
+        "date": "2026-03-28T15:22:54Z",
+        "message": "Link workspace titles from project tab\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "9fd56ae6ccc3cdd39af34ab0f4244dbfcf05d7a3"
+      },
+      {
+        "date": "2026-03-28T15:34:36Z",
+        "message": "Add issue comment interrupt support\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "c52bd4870debb39f04cc418d7076e75ac4f5d3ea"
+      },
+      {
+        "date": "2026-03-28T16:14:45Z",
+        "message": "Fix dev watch tsx cli resolution",
+        "sha": "c8bb1382842beb15df4f91117bed4f49627ac4a3"
+      },
+      {
+        "date": "2026-03-28T16:25:25Z",
+        "message": "Improve queued comment thread UX\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "cc640e280db4f056e1059cced93b3e6f6e3f36b5"
+      },
+      {
+        "date": "2026-03-28T16:31:38Z",
+        "message": "Fix project workspace detail route loading\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "b35cabac0124377bdf171525d6756c6921029770"
+      },
+      {
+        "date": "2026-03-28T16:53:26Z",
+        "message": "Remove comment composer interrupt checkbox\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "8e98aff4ed20d8b45a7c81308bc4936b24ceb30c"
+      },
+      {
+        "date": "2026-03-28T16:53:31Z",
+        "message": "Fix execution workspace company routing\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "9551f6cecd5b63510191f3cae9e35dd3a736c412"
+      },
+      {
+        "date": "2026-03-28T17:15:34Z",
+        "message": "Improve execution workspace detail editing\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "76f33e8f9d3a2d63a83e768da3a3a5187c99e390"
+      },
+      {
+        "date": "2026-03-28T20:36:45Z",
+        "message": "Fix keyboard shortcuts using refs to avoid stale closures\n\nRefactored keyboard handler to use refs (",
+        "sha": "1240ffc452b04214591af476152596b41a7559b5"
+      },
+      {
+        "date": "2026-03-28T20:42:14Z",
+        "message": "Log resolved adapter command in run metadata\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "808ee658ddf780addf5016267690f31ec6d33fee"
+      },
+      {
+        "date": "2026-03-28T20:42:44Z",
+        "message": "Add idempotent local dev service management\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "30bfcd81f188d938d66adf841e228cd823d82043"
+      },
+      {
+        "date": "2026-03-28T20:45:44Z",
+        "message": "Fix inbox selection highlight to show on individual items\n\nReplace outline approach (blended with ca",
+        "sha": "e976231fc32142b19dc02a8e74d5f778f4acf244"
+      },
+      {
+        "date": "2026-03-28T20:52:55Z",
+        "message": "Auto-apply dev:once migrations\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "e8e08b6bd111cebef62a83e43d5897488c7f606c"
+      },
+      {
+        "date": "2026-03-28T21:15:20Z",
+        "message": "Add execution workspace close readiness and UI\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "73b85ce1d52e936d033ff646b833e62187debec6"
+      },
+      {
+        "date": "2026-03-28T21:24:23Z",
+        "message": "Fix mine inbox keyboard selection\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "509840f2848aa6c823a1309b5f78bb3250fe4d29"
+      },
+      {
+        "date": "2026-03-28T21:45:44Z",
+        "message": "Refine mine inbox shortcut behavior\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "fbfb7e0db60d34651d423cdcb3598ebe72cdace9"
+      },
+      {
+        "date": "2026-03-28T21:46:43Z",
+        "message": "Add workspace runtime controls\n\nExpose project and execution workspace runtime defaults, control end",
+        "sha": "4dc657975c031a35e8c66c3980195f3e77ab03f2"
+      },
+      {
+        "date": "2026-03-28T21:49:04Z",
+        "message": "Align inbox click selection styling\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "e90a500459d39475cb376384261e21f1508db377"
+      },
+      {
+        "date": "2026-03-28T22:02:13Z",
+        "message": "Align inbox non-issue selection styling\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "1dfc6c1071d2cd76d4fd508705e0fe4457952148"
+      },
+      {
+        "date": "2026-03-28T22:18:59Z",
+        "message": "Neutralize selected inbox accents\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "8dee4f17379ffdbff1b7088b90bb012d7b9c8a2a"
+      },
+      {
+        "date": "2026-03-28T22:38:34Z",
+        "message": "Fix execution workspace close messaging\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "f4dfdecba709bc3e7bda6e0a758f1782136963ed"
+      },
+      {
+        "date": "2026-03-28T22:39:09Z",
+        "message": "Harden runtime service env sanitization\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "333c0d4564311fdbdc4618b21d946c87f2436702"
+      },
+      {
+        "date": "2026-03-29T00:09:53Z",
+        "message": "Set inbox selection to fixed light gray\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "160affa3ba949f1c012ef09f116766c3de1b3405"
+      },
+      {
+        "date": "2026-03-29T00:16:19Z",
+        "message": "Restrict sidebar reordering to mouse input\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "38ede2c8a582da664054cdc369ca7346c477610c"
+      },
+      {
+        "date": "2026-03-29T00:19:49Z",
+        "message": "Fix shared workspace close semantics\n\nAllow shared execution workspace sessions to be archived with ",
+        "sha": "0e74757dcd377d93d55484a7bfc99c728b220c64"
+      },
+      {
+        "date": "2026-03-29T00:28:11Z",
+        "message": "Improve workspace detail mobile layouts\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "9a634146d05dc015e84330a1b15998f379b48e43"
+      },
+      {
+        "date": "2026-03-29T00:33:52Z",
+        "message": "Reduce run lifecycle toast noise\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "c7c417ae310718955c490ac04c826d31edf90308"
+      },
+      {
+        "date": "2026-03-29T02:04:56Z",
+        "message": "Fix execution workspace runtime control reuse\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "3a9ce907fc8431e1be0b75310bb7a46192552d2a"
+      },
+      {
+        "date": "2026-03-29T02:44:15Z",
+        "message": "Make onboarding reruns preserve existing config\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "a8a2518e70c16e73fe1a172cfdd2e20050922c6e"
+      },
+      {
+        "date": "2026-03-29T03:00:55Z",
+        "message": "Use exported tsx CLI entrypoint\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "f8d04767e8647780563c03e25b8d55f1dfcf8ac5"
+      },
+      {
+        "date": "2026-03-29T03:21:24Z",
+        "message": "Add linked issues row to execution workspace detail\n\nCo-Authored-By: Paperclip <noreply@paperclip.in",
+        "sha": "4bc615bc7329cbad1b7ec9afbe6478d600842782"
+      },
+      {
+        "date": "2026-03-29T15:49:49Z",
+        "message": "Clarify manual workspace runtime behavior\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "c5913f3300573894b3c1f12dda359d705ac0f024"
+      },
+      {
+        "date": "2026-03-29T16:05:59Z",
+        "message": "Clarify Claude transcript event categories\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "7013a3ee3de82ad4be408497f61c08862df72f58"
+      },
+      {
+        "date": "2026-03-30T11:40:08Z",
+        "message": "Add dark mode inbox selection color\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "80e402c8565ad80410ccb252b245a83d084106e4"
+      },
+      {
+        "date": "2026-03-30T12:07:10Z",
+        "message": "Fix routine modal scrolling\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "315cb44ac37b660238303807d8d29b2c29bbb0c2"
+      },
+      {
+        "date": "2026-03-30T12:34:19Z",
+        "message": "Add company roles and human member management\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "1eaa26a69b8e5d86a19e620fcb5979a06f996b51"
+      },
+      {
+        "date": "2026-03-30T13:18:20Z",
+        "message": "fix: restore paperclipai tsx script path",
+        "sha": "e159e30100a630e549078a3086e0fd6b32a82543"
+      },
+      {
+        "date": "2026-03-30T13:26:14Z",
+        "message": "Fix execution workspace reuse and slugify worktrees\n\nCo-Authored-By: Paperclip <noreply@paperclip.in",
+        "sha": "b737e4ddb3a3ee746af457ab8f284cccc3674a49"
+      },
+      {
+        "date": "2026-03-30T13:53:38Z",
+        "message": "docs: add manual @paperclipai/ui publish steps\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "a553c0636c6de9feb07c2bcbf6c83b3ebcfb77ca"
+      },
+      {
+        "date": "2026-03-30T17:44:26Z",
+        "message": "docs: clarify npm prerequisites for first ui publish\n\nCo-Authored-By: Paperclip <noreply@paperclip.i",
+        "sha": "edc19aec82c347350f339d28ac4fba4e0df91694"
+      },
+      {
+        "date": "2026-03-30T18:17:34Z",
+        "message": "Fix health DB connectivity probe\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "7946feb3db68bdec59f3d79b14fda9470ca980ce"
+      },
+      {
+        "date": "2026-03-30T18:17:51Z",
+        "message": "test: add company settings selectors\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "2434adb243d7be536dc57d265956187509083dae"
+      },
+      {
+        "date": "2026-03-30T18:20:31Z",
+        "message": "Add company name to invite summaries\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "561a09a956618129e239d4d0a4a96e5283c62846"
+      },
+      {
+        "date": "2026-03-30T18:25:37Z",
+        "message": "Fix optimistic comment draft clearing",
+        "sha": "4e8fc5f58a0da99591a37a8b37a848914e5d797d"
+      },
+      {
+        "date": "2026-03-30T18:32:23Z",
+        "message": "Finish multi-user QA follow-up fixes\n\n- add stable Company Settings test hooks\n- probe DB connectivi",
+        "sha": "d4b2af3c8e6d43d939dbb2baf61be557c9989436"
+      },
+      {
+        "date": "2026-03-30T19:08:44Z",
+        "message": "Preserve workspaces for follow-up issues\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "d6115d89509c57e203dc9362e8d7ac8fb1d9fc24"
+      },
+      {
+        "date": "2026-03-30T19:09:07Z",
+        "message": "Repair server workspace package links in worktrees\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing",
+        "sha": "8cc31735b1fa4daed2d38f887e1f5fbcfcd9e27b"
+      },
+      {
+        "date": "2026-03-30T19:17:34Z",
+        "message": "Merge master into PAP-989 worktree branch\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "b61c879c4346f3ae467e3fa11b1f893b63e0c7bf"
+      },
+      {
+        "date": "2026-03-30T20:06:27Z",
+        "message": "Add multi-user Playwright coverage\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "e049ac0fb1f82a7a0e9bd3e9ccb70172acc76be4"
+      },
+      {
+        "date": "2026-03-31T17:02:27Z",
+        "message": "Add authenticated multi-user E2E coverage\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "6d0522109992494cec9035fd4e3e1dc6bcbb673a"
+      },
+      {
+        "date": "2026-04-01T13:36:25Z",
+        "message": "Tighten authenticated company access\n\nRestrict normal board company access to explicit memberships, ",
+        "sha": "192674a1dbe5c3598155fbd9789e39c261a4c572"
+      },
+      {
+        "date": "2026-04-01T15:14:54Z",
+        "message": "Fix worktree auth seeding and repair persistence",
+        "sha": "0a11242c596e9e68a05845a4b990fdfec9e7f354"
+      },
+      {
+        "date": "2026-04-01T15:26:17Z",
+        "message": "Fix worktree provision fallback exit handling",
+        "sha": "b8e6ab2355474246b8fb1e89f515156e4b9f2ea5"
+      },
+      {
+        "date": "2026-04-09T19:39:21Z",
+        "message": "Merge remote-tracking branch 'public-gh/master' into PAP-989-multi-user-implementation-using-plan-fr",
+        "sha": "35251727f25c4634e6d3ce26e7925e86ed0dcdb5"
+      },
+      {
+        "date": "2026-04-10T14:22:20Z",
+        "message": "Use shared tabs for company settings",
+        "sha": "9779b0f16dcae8c48213f39b26376601252008e0"
+      },
+      {
+        "date": "2026-04-10T15:20:42Z",
+        "message": "Add sidebar company context menu",
+        "sha": "d2f40c10a47535d5d5a3b2621f584a1513d1d04a"
+      },
+      {
+        "date": "2026-04-10T15:23:53Z",
+        "message": "Emit agent_id in agent telemetry events",
+        "sha": "bf8b5da7c9b4212be137f94a5d1866fe59f15555"
+      },
+      {
+        "date": "2026-04-10T16:36:07Z",
+        "message": "Refine company access page layout",
+        "sha": "1a69dc8d16888f7f116d557b478e63dcc7ff35af"
+      },
+      {
+        "date": "2026-04-10T16:55:00Z",
+        "message": "Clarify implicit grants in company access",
+        "sha": "162eef9f812a3f6a71812e7d7468bbcbea12fa17"
+      },
+      {
+        "date": "2026-04-10T21:39:38Z",
+        "message": "Simplify company invites page",
+        "sha": "9842754a4a31db627bdeda59742d7f555bc7cf71"
+      },
+      {
+        "date": "2026-04-10T21:52:04Z",
+        "message": "Refine invite role selection UI",
+        "sha": "27401076d4ea2229630c7a1de54fbcfc0279fa52"
+      },
+      {
+        "date": "2026-04-10T21:58:41Z",
+        "message": "Expose created invite links",
+        "sha": "682ffe679597471397bd79e53f6d9c48c151aa89"
+      },
+      {
+        "date": "2026-04-11T13:12:54Z",
+        "message": "feat(access): add multi-user auth and access APIs",
+        "sha": "0c07a8235f73e73e9949fb67f2b8f1bf35fdb85b"
+      },
+      {
+        "date": "2026-04-11T13:13:10Z",
+        "message": "feat(ui): add profile, access, and invite management flows",
+        "sha": "38d2bf632621e21c44f5505274dbc3eee7ec044e"
+      },
+      {
+        "date": "2026-04-11T13:14:23Z",
+        "message": "test(access): align invite-create stub with branding query",
+        "sha": "999c5bc8cbe15f30903578be12e24958847ba8cd"
+      },
+      {
+        "date": "2026-04-11T14:12:41Z",
+        "message": "Merge remote-tracking branch 'public-gh/master' into PAP-989-multi-user-implementation-using-plan-fr",
+        "sha": "e6fd9d29dbbc2673c2fbc12509606744222c82f4"
+      },
+      {
+        "date": "2026-04-11T15:44:15Z",
+        "message": "Fix invite logo fallback and storage checks",
+        "sha": "38a2c91483915155461b027902166c2dc1bf205e"
+      },
+      {
+        "date": "2026-04-11T16:11:02Z",
+        "message": "Improve invite post-join UX: show inviter name, approval URL, and auto-redirect\n\n- Add invitedByUser",
+        "sha": "b42796490b62c03d75e638920112656c3503af1a"
+      },
+      {
+        "date": "2026-04-11T16:17:07Z",
+        "message": "Add join request badge to access sidebar",
+        "sha": "0fe666b72e47fed745d5d4c5c714dcabaa305b11"
+      },
+      {
+        "date": "2026-04-11T16:27:53Z",
+        "message": "Tighten outsider access to board surfaces",
+        "sha": "0676224bea3495ad974017304850d8d71a84cc21"
+      },
+      {
+        "date": "2026-04-11T16:34:59Z",
+        "message": "Fix inbox approvals for new users",
+        "sha": "683896abce9a6ba3a3a89525113a96c3c0c02b0c"
+      },
+      {
+        "date": "2026-04-12T02:19:53Z",
+        "message": "Deduplicate human join requests by requester",
+        "sha": "50c20eebb034b277cd6c1ba611b176b1cbf6dc69"
+      },
+      {
+        "date": "2026-04-13T12:47:32Z",
+        "message": "Prevent members from consuming invite links",
+        "sha": "9604dc447e7ac56bc8ea95b917c78d09770ef87b"
+      },
+      {
+        "date": "2026-04-13T12:49:21Z",
+        "message": "feat: paginate company invite history",
+        "sha": "2a3910190f86d82bc4dfead1df4990e88eb5485c"
+      },
+      {
+        "date": "2026-04-13T12:49:47Z",
+        "message": "Improve invite auth clarity\n\nCo-Authored-By: Paperclip <noreply@paperclip.ing>",
+        "sha": "089d73e2f487439b2a80a34211d42da1acec6c16"
+      }
+    ]
+  },
+  "3785": {
+    "pr": {
+      "additions": 152,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T03:03:48Z",
+      "deletions": 17,
+      "merged": false,
+      "merged_at": null,
+      "n": 3785,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(server): suppress blocked issue status wakeups",
+      "updated_at": "2026-04-16T04:04:17Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T03:07:39Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T03:01:58Z",
+        "message": "fix(server): suppress blocked issue status wakeups",
+        "sha": "dbb5d10bef7507e34b37a66f22aaefbb05fb064c"
+      }
+    ]
+  },
+  "3786": {
+    "pr": {
+      "additions": 205,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T03:14:06Z",
+      "deletions": 11,
+      "merged": false,
+      "merged_at": null,
+      "n": 3786,
+      "review_comments": 3,
+      "state": "open",
+      "title": "fix(ui): keep env secret bindings intact",
+      "updated_at": "2026-04-16T04:04:17Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T03:19:47Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T03:10:39Z",
+        "message": "fix(ui): keep env secret bindings intact",
+        "sha": "042e7f833fdfed787f7862c8cb2e81104086dc69"
+      }
+    ]
+  },
+  "3787": {
+    "pr": {
+      "additions": 5,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T03:45:00Z",
+      "deletions": 4,
+      "merged": false,
+      "merged_at": null,
+      "n": 3787,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(server): serialize issue comment cursor timestamp",
+      "updated_at": "2026-04-16T04:06:11Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T03:48:36Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "**Root cause** \u2014 Passing a JS Date object directly into a Drizzle/sql template literal can cause driver-specific serialization issues (e.g., inconsistent timezone handling). Serializing to an ISO stri",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T04:05:28Z",
+        "user": "xkonjin"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T03:43:49Z",
+        "message": "fix(server): serialize issue comment cursor timestamp",
+        "sha": "6201f759f21cb3a2abff2ec44962a09d7ffa355a"
+      }
+    ]
+  },
+  "3788": {
+    "pr": {
+      "additions": 25,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-16T04:04:06Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3788,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(openclaw-gateway): isolate issue strategy heartbeat sessions",
+      "updated_at": "2026-04-16T04:29:08Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T04:06:20Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T04:03:04Z",
+        "message": "fix(openclaw-gateway): isolate issue strategy heartbeat sessions",
+        "sha": "76cbfa425b7d0eaed2e7ddcc98726c14b7bc5f1f"
+      },
+      {
+        "date": "2026-04-16T04:14:45Z",
+        "message": "test(openclaw-gateway): include session key regression in vitest",
+        "sha": "f787c91b8ec21e1749072a3bd9399be7d08c4ee5"
+      }
+    ]
+  },
+  "3790": {
+    "pr": {
+      "additions": 14,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T04:48:56Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3790,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(routes): return 409 for routine checkout conflicts",
+      "updated_at": "2026-04-16T04:57:46Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T04:52:18Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T04:46:58Z",
+        "message": "fix(routes): return 409 for routine checkout conflicts",
+        "sha": "cf8c4b42b42be7f3d4d1f271d48abbd7397fadb2"
+      }
+    ]
   }
 }
