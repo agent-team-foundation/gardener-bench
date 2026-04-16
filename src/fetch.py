@@ -8,18 +8,27 @@ import json
 import os
 import subprocess
 import sys
+import time
 from datetime import datetime
 
 
-def gh_api(endpoint, jq_filter=None):
+def gh_api(endpoint, jq_filter=None, retries=3, backoff=2):
+    """Run `gh api` with retry + exponential backoff for transient failures."""
     cmd = ["gh", "api", endpoint]
     if jq_filter:
         cmd += ["--jq", jq_filter]
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if result.returncode != 0:
-        print(f"Error: gh api {endpoint}: {result.stderr}", file=sys.stderr)
-        return None
-    return result.stdout.strip()
+    last_err = ""
+    for attempt in range(retries):
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode == 0:
+            return result.stdout.strip()
+        last_err = result.stderr
+        # Transient failure — backoff and retry
+        if attempt < retries - 1:
+            wait = backoff ** attempt
+            time.sleep(wait)
+    print(f"Error: gh api {endpoint} failed after {retries} attempts: {last_err}", file=sys.stderr)
+    return None
 
 
 def gh_api_json(endpoint):
@@ -139,6 +148,17 @@ def main():
     pr_data = {}
     for n in pr_nums:
         pr_data[n] = fetch_pr_data(repo, n)
+
+    # Validate + repair: any PR with empty data gets re-fetched
+    missing = [n for n, d in pr_data.items() if not d.get("pr", {}).get("state")]
+    if missing:
+        print(f"  {len(missing)} PRs had empty data, retrying...")
+        for n in missing:
+            pr_data[n] = fetch_pr_data(repo, n)
+        still_missing = [n for n, d in pr_data.items() if not d.get("pr", {}).get("state")]
+        if still_missing:
+            print(f"  WARNING: {len(still_missing)} PRs still missing after retry: {still_missing[:5]}...")
+
     with open(os.path.join(out_dir, "pr_data.json"), "w") as f:
         json.dump(pr_data, f, indent=2)
 
@@ -147,6 +167,14 @@ def main():
     threads = {}
     for n in targets_nums:
         threads[n] = fetch_thread_comments(repo, n)
+
+    # Validate: if ALL threads are empty, we likely hit an API outage — retry
+    total_thread_comments = sum(len(v) for v in threads.values())
+    if targets_nums and total_thread_comments == 0:
+        print("  All threads empty — likely API flake. Retrying...")
+        for n in targets_nums:
+            threads[n] = fetch_thread_comments(repo, n)
+
     with open(os.path.join(out_dir, "threads.json"), "w") as f:
         json.dump(threads, f, indent=2)
 
@@ -157,6 +185,20 @@ def main():
         pd = pr_data[n]["pr"]
         if pd.get("state") == "closed" and not pd.get("merged"):
             closers[n] = get_closer(repo, n)
+
+    # Validate: closers should usually have values (unless all closed PRs have null actors)
+    expected_closers = sum(
+        1 for n in pr_nums
+        if pr_data[n]["pr"].get("state") == "closed" and not pr_data[n]["pr"].get("merged")
+    )
+    empty_closers = sum(1 for v in closers.values() if not v)
+    # If >50% of expected closers are empty, likely a flake — retry empty ones
+    if expected_closers > 0 and empty_closers / expected_closers > 0.5:
+        print(f"  {empty_closers}/{expected_closers} closers empty — retrying...")
+        for n in list(closers.keys()):
+            if not closers[n]:
+                closers[n] = get_closer(repo, n)
+
     with open(os.path.join(out_dir, "closers.json"), "w") as f:
         json.dump(closers, f, indent=2)
 
