@@ -1680,7 +1680,7 @@
     "user": "Daradaal"
   },
   {
-    "comments": 5,
+    "comments": 6,
     "created_at": "2026-04-14T11:43:38Z",
     "is_pr": true,
     "n": 3640,
@@ -1960,7 +1960,7 @@
     "user": "AmplifyWhy"
   },
   {
-    "comments": 7,
+    "comments": 8,
     "created_at": "2026-04-14T16:22:55Z",
     "is_pr": true,
     "n": 3672,
@@ -2640,11 +2640,11 @@
     "user": "sparkeros"
   },
   {
-    "comments": 2,
+    "comments": 3,
     "created_at": "2026-04-15T22:43:11Z",
     "is_pr": true,
     "n": 3767,
-    "state": "open",
+    "state": "closed",
     "title": "feat(heartbeat): proactive self-assignment toggle with scope selector",
     "url": "https://github.com/paperclipai/paperclip/pull/3767",
     "user": "sparkeros"
@@ -2858,5 +2858,525 @@
     "title": "fix(routes): return 409 for routine checkout conflicts",
     "url": "https://github.com/paperclipai/paperclip/pull/3790",
     "user": "LeonSGP43"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T05:41:54Z",
+    "is_pr": false,
+    "n": 3791,
+    "state": "open",
+    "title": "Allow desiredSkills to exclude bundled skills (required: true override)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3791",
+    "user": "ambigos1"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T05:42:02Z",
+    "is_pr": false,
+    "n": 3792,
+    "state": "open",
+    "title": "Per-agent GEMINI_CLI_HOME isolation for extensions and skills",
+    "url": "https://github.com/paperclipai/paperclip/issues/3792",
+    "user": "ambigos1"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T05:42:11Z",
+    "is_pr": false,
+    "n": 3793,
+    "state": "open",
+    "title": "Task-aware skill injection for adapters",
+    "url": "https://github.com/paperclipai/paperclip/issues/3793",
+    "user": "ambigos1"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T05:42:17Z",
+    "is_pr": false,
+    "n": 3794,
+    "state": "open",
+    "title": "Context budget telemetry per heartbeat run",
+    "url": "https://github.com/paperclipai/paperclip/issues/3794",
+    "user": "ambigos1"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T06:25:28Z",
+    "is_pr": true,
+    "n": 3795,
+    "state": "open",
+    "title": "feat(VIB-58): infrastructure health UI + server proxy",
+    "url": "https://github.com/paperclipai/paperclip/pull/3795",
+    "user": "tmartin2113"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-16T07:50:41Z",
+    "is_pr": true,
+    "n": 3796,
+    "state": "open",
+    "title": "fix(heartbeat): emit documented plugin run lifecycle events",
+    "url": "https://github.com/paperclipai/paperclip/pull/3796",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T08:04:59Z",
+    "is_pr": false,
+    "n": 3797,
+    "state": "open",
+    "title": "Research digest 2026-04-16: OpenClaw instability + plan-mode surge, Paperclip governance hardening",
+    "url": "https://github.com/paperclipai/paperclip/issues/3797",
+    "user": "drumnation"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T08:35:23Z",
+    "is_pr": true,
+    "n": 3798,
+    "state": "open",
+    "title": "fix(db): use calendar month boundaries for backup retention",
+    "url": "https://github.com/paperclipai/paperclip/pull/3798",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T08:57:04Z",
+    "is_pr": false,
+    "n": 3799,
+    "state": "open",
+    "title": "Skill import drops non-markdown files when source is the skill root directory",
+    "url": "https://github.com/paperclipai/paperclip/issues/3799",
+    "user": "aidyfeng"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T09:01:43Z",
+    "is_pr": true,
+    "n": 3800,
+    "state": "open",
+    "title": "fix(claude-local): use direct 4.5 model aliases",
+    "url": "https://github.com/paperclipai/paperclip/pull/3800",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T09:19:48Z",
+    "is_pr": true,
+    "n": 3801,
+    "state": "open",
+    "title": "fix(skills): preserve root skill file inventory",
+    "url": "https://github.com/paperclipai/paperclip/pull/3801",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T09:21:38Z",
+    "is_pr": false,
+    "n": 3802,
+    "state": "open",
+    "title": "Codex workspace-write sandbox blocks loopback \u2014 agents silently can't reach PAP API; no UI toggle",
+    "url": "https://github.com/paperclipai/paperclip/issues/3802",
+    "user": "inbusco"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T09:23:26Z",
+    "is_pr": false,
+    "n": 3803,
+    "state": "open",
+    "title": "`jq` required by shipped `paperclip` skill but missing from base image \u2014 multi-line comments fail or get \"smooshed\"",
+    "url": "https://github.com/paperclipai/paperclip/issues/3803",
+    "user": "inbusco"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T09:39:26Z",
+    "is_pr": false,
+    "n": 3804,
+    "state": "open",
+    "title": "[INFRA] Agent stuck in running state >10min \u2014 reaper issue",
+    "url": "https://github.com/paperclipai/paperclip/issues/3804",
+    "user": "AmplifyWhy"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T09:39:29Z",
+    "is_pr": false,
+    "n": 3805,
+    "state": "open",
+    "title": "[INFRA] Agent stuck in running state >10min \u2014 reaper issue",
+    "url": "https://github.com/paperclipai/paperclip/issues/3805",
+    "user": "AmplifyWhy"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-16T10:01:53Z",
+    "is_pr": true,
+    "n": 3806,
+    "state": "open",
+    "title": "Show issue ref and status icon in breadcrumbs and properties",
+    "url": "https://github.com/paperclipai/paperclip/pull/3806",
+    "user": "Micsi"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T10:07:28Z",
+    "is_pr": true,
+    "n": 3807,
+    "state": "open",
+    "title": "fix(docker): install jq in base image",
+    "url": "https://github.com/paperclipai/paperclip/pull/3807",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T10:08:11Z",
+    "is_pr": true,
+    "n": 3808,
+    "state": "open",
+    "title": "fix: proactive session rotation + role-based max turns",
+    "url": "https://github.com/paperclipai/paperclip/pull/3808",
+    "user": "mv50000"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T10:32:04Z",
+    "is_pr": true,
+    "n": 3809,
+    "state": "open",
+    "title": "fix(ui): stop recreating markdown mention observers",
+    "url": "https://github.com/paperclipai/paperclip/pull/3809",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T13:23:34Z",
+    "is_pr": false,
+    "n": 3811,
+    "state": "open",
+    "title": "Cost aggregation endpoints cast SUM back to INT4, overflow for any bucket > 2.15B tokens (500 on /costs/by-project)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3811",
+    "user": "btilus"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T13:33:54Z",
+    "is_pr": true,
+    "n": 3812,
+    "state": "open",
+    "title": "docs: productize local Hermes Paperclip workflow",
+    "url": "https://github.com/paperclipai/paperclip/pull/3812",
+    "user": "breakneo"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T14:08:09Z",
+    "is_pr": false,
+    "n": 3813,
+    "state": "open",
+    "title": "codex_local adapter flagged as nativeContextManagement='confirmed' \u2014 sessions never rotate, prompt grows unbounded",
+    "url": "https://github.com/paperclipai/paperclip/issues/3813",
+    "user": "btilus"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T14:14:06Z",
+    "is_pr": true,
+    "n": 3814,
+    "state": "open",
+    "title": "fix(ui): guard missing issue chat metadata",
+    "url": "https://github.com/paperclipai/paperclip/pull/3814",
+    "user": "LeonSGP43"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T14:38:23Z",
+    "is_pr": false,
+    "n": 3816,
+    "state": "open",
+    "title": "Execute vault migration scripts from security-hardening branch",
+    "url": "https://github.com/paperclipai/paperclip/issues/3816",
+    "user": "grabault"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T14:38:53Z",
+    "is_pr": false,
+    "n": 3817,
+    "state": "open",
+    "title": "Agent completion comments can be attributed to the user and retrigger the assignee (causing status drift, duplicate comments, and agent run loops)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3817",
+    "user": "Sam-Lam-Varadise"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T15:38:26Z",
+    "is_pr": false,
+    "n": 3819,
+    "state": "open",
+    "title": "Heartbeat release fails to clear `checkoutRunId` \u2014 causes silent agent stalls",
+    "url": "https://github.com/paperclipai/paperclip/issues/3819",
+    "user": "hansmon"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T15:42:07Z",
+    "is_pr": false,
+    "n": 3820,
+    "state": "open",
+    "title": "UI shows \"Waiting for output\" on `blocked` issues \u2014 state confusion",
+    "url": "https://github.com/paperclipai/paperclip/issues/3820",
+    "user": "hansmon"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T15:42:09Z",
+    "is_pr": false,
+    "n": 3821,
+    "state": "open",
+    "title": "Pending approvals are not discoverable in the UI (no sidebar / badge / dashboard)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3821",
+    "user": "hansmon"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T15:42:10Z",
+    "is_pr": false,
+    "n": 3822,
+    "state": "open",
+    "title": "Parent-issue assignees not auto-woken on child status changes (`blocked`/`done`/`cancelled`)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3822",
+    "user": "hansmon"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T15:51:42Z",
+    "is_pr": true,
+    "n": 3823,
+    "state": "open",
+    "title": "fix: include server port in derived auth trusted origins",
+    "url": "https://github.com/paperclipai/paperclip/pull/3823",
+    "user": "Helmi"
+  },
+  {
+    "comments": 4,
+    "created_at": "2026-04-16T16:27:12Z",
+    "is_pr": false,
+    "n": 3824,
+    "state": "open",
+    "title": "fix: routine heartbeat recovery can loop on issues_open_routine_execution_uq after v2026.416.0",
+    "url": "https://github.com/paperclipai/paperclip/issues/3824",
+    "user": "DeadlySilent"
+  },
+  {
+    "comments": 5,
+    "created_at": "2026-04-16T16:27:29Z",
+    "is_pr": true,
+    "n": 3825,
+    "state": "open",
+    "title": "fix(routines): recover from stale routine execution lock conflicts",
+    "url": "https://github.com/paperclipai/paperclip/pull/3825",
+    "user": "DeadlySilent"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T16:40:17Z",
+    "is_pr": true,
+    "n": 3826,
+    "state": "closed",
+    "title": "fix: add ssh client and jq to production image",
+    "url": "https://github.com/paperclipai/paperclip/pull/3826",
+    "user": "rbarinov"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T17:11:48Z",
+    "is_pr": false,
+    "n": 3829,
+    "state": "open",
+    "title": "heartbeat-runs endpoint 500s when result_json->>'result' has multibyte UTF-8 at byte-500 boundary (SQL_ASCII cluster + left(text, 500))",
+    "url": "https://github.com/paperclipai/paperclip/issues/3829",
+    "user": "bscottdavis"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T17:12:07Z",
+    "is_pr": false,
+    "n": 3830,
+    "state": "open",
+    "title": "GET /issues/:id/comments?after=<uuid> returns 500: TypeError when Date is passed as postgres.js bind param",
+    "url": "https://github.com/paperclipai/paperclip/issues/3830",
+    "user": "bscottdavis"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T17:12:24Z",
+    "is_pr": false,
+    "n": 3831,
+    "state": "open",
+    "title": "PATCH /agents/me returns 404 (silently drops every agent self-update)",
+    "url": "https://github.com/paperclipai/paperclip/issues/3831",
+    "user": "bscottdavis"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T17:24:36Z",
+    "is_pr": false,
+    "n": 3832,
+    "state": "open",
+    "title": "[Bug] Server always binds to 0.0.0.0 on IPv6-only deployments \u2014 ALL_INTERFACES_BIND_HOST hardcoded in @paperclipai/shared",
+    "url": "https://github.com/paperclipai/paperclip/issues/3832",
+    "user": "Plectar"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T17:40:44Z",
+    "is_pr": false,
+    "n": 3833,
+    "state": "open",
+    "title": "hermes_local adapter: AGENTS.md instructions not injected into agent context",
+    "url": "https://github.com/paperclipai/paperclip/issues/3833",
+    "user": "kainos46"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T17:51:11Z",
+    "is_pr": true,
+    "n": 3834,
+    "state": "open",
+    "title": "fix: coalesce stale queued execution locks",
+    "url": "https://github.com/paperclipai/paperclip/pull/3834",
+    "user": "mystickcal"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T19:48:23Z",
+    "is_pr": false,
+    "n": 3836,
+    "state": "open",
+    "title": "Build Polymarket 5-min trading bot core with paper trading harness",
+    "url": "https://github.com/paperclipai/paperclip/issues/3836",
+    "user": "UltimYT4445"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T19:58:05Z",
+    "is_pr": true,
+    "n": 3837,
+    "state": "open",
+    "title": "feat(ui): bulk pause/resume all agents per company",
+    "url": "https://github.com/paperclipai/paperclip/pull/3837",
+    "user": "Tr1ckyMag1ca1"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T20:02:09Z",
+    "is_pr": true,
+    "n": 3838,
+    "state": "open",
+    "title": "feat(ui): collapsible sidebar with icon-only mode and zen reading",
+    "url": "https://github.com/paperclipai/paperclip/pull/3838",
+    "user": "akhater"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T20:43:50Z",
+    "is_pr": false,
+    "n": 3839,
+    "state": "open",
+    "title": "[integration] Aevum MCP Server \u2014 causal DAG + Landauer cost tracking for Paperclip agents",
+    "url": "https://github.com/paperclipai/paperclip/issues/3839",
+    "user": "kwailapt"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T20:51:42Z",
+    "is_pr": true,
+    "n": 3840,
+    "state": "open",
+    "title": "feat: template gallery",
+    "url": "https://github.com/paperclipai/paperclip/pull/3840",
+    "user": "bdervishi"
+  },
+  {
+    "comments": 3,
+    "created_at": "2026-04-16T21:04:08Z",
+    "is_pr": false,
+    "n": 3841,
+    "state": "open",
+    "title": "bug: UTF-8 encoding error when listing issues with multi-byte characters near description truncation boundary",
+    "url": "https://github.com/paperclipai/paperclip/issues/3841",
+    "user": "wfrank2509"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T21:07:05Z",
+    "is_pr": true,
+    "n": 3842,
+    "state": "open",
+    "title": "feat: cost-monitoring reconciliation L1+L2+L3 (subscription billing fix)",
+    "url": "https://github.com/paperclipai/paperclip/pull/3842",
+    "user": "lathonez"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T22:06:19Z",
+    "is_pr": false,
+    "n": 3845,
+    "state": "open",
+    "title": "bug: GET /skills returns 500 due to duplicate key race in upsertImportedSkills",
+    "url": "https://github.com/paperclipai/paperclip/issues/3845",
+    "user": "wfrank2509"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T22:36:01Z",
+    "is_pr": false,
+    "n": 3846,
+    "state": "open",
+    "title": "GET /api/companies/{id}/issues?parentIssueId=<id> ignores the filter",
+    "url": "https://github.com/paperclipai/paperclip/issues/3846",
+    "user": "InsightStream-Dev"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-16T22:42:28Z",
+    "is_pr": true,
+    "n": 3847,
+    "state": "open",
+    "title": "feat(heartbeat): skipIfNoActionableAssignments \u2014 suppress idle timer wakes when no actionable work is queued",
+    "url": "https://github.com/paperclipai/paperclip/pull/3847",
+    "user": "sparkeros"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-16T23:05:51Z",
+    "is_pr": false,
+    "n": 3848,
+    "state": "open",
+    "title": "Codex apapter not supporting other models anymore..",
+    "url": "https://github.com/paperclipai/paperclip/issues/3848",
+    "user": "phillseboa"
+  },
+  {
+    "comments": 1,
+    "created_at": "2026-04-17T00:42:33Z",
+    "is_pr": false,
+    "n": 3849,
+    "state": "open",
+    "title": "Title: DELETE /api/agents/:id and DELETE /api/companies/:id fail with FK violation on cost_events",
+    "url": "https://github.com/paperclipai/paperclip/issues/3849",
+    "user": "kr8vkaos"
+  },
+  {
+    "comments": 2,
+    "created_at": "2026-04-17T01:04:03Z",
+    "is_pr": true,
+    "n": 3850,
+    "state": "open",
+    "title": "fix(hermes): spawn Hermes with --yolo by default",
+    "url": "https://github.com/paperclipai/paperclip/pull/3850",
+    "user": "vishnukool"
   }
 ]

@@ -3710,8 +3710,21 @@
       "updated_at": "2026-04-13T21:41:13Z",
       "user": "fearless-labs1"
     },
-    "reviews": [],
-    "commits": []
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-13T12:28:04Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-13T12:25:56Z",
+        "message": "Update Dockerfile",
+        "sha": "1790c5b77e4de140b13e7bac067c17d26aa0a9fe"
+      }
+    ]
   },
   "3581": {
     "pr": {
@@ -4474,10 +4487,10 @@
   },
   "3595": {
     "pr": {
-      "additions": 272,
-      "changed_files": 24,
+      "additions": 276,
+      "changed_files": 27,
       "closed_at": null,
-      "commits": 3,
+      "commits": 4,
       "created_at": "2026-04-13T19:47:30Z",
       "deletions": 7,
       "merged": false,
@@ -4486,7 +4499,7 @@
       "review_comments": 3,
       "state": "open",
       "title": "feat(issues): add scheduledFor date field with auto-backlog and cron transition",
-      "updated_at": "2026-04-15T20:51:52Z",
+      "updated_at": "2026-04-16T20:42:28Z",
       "user": "kbecking"
     },
     "reviews": [
@@ -4505,19 +4518,24 @@
     ],
     "commits": [
       {
-        "date": "2026-04-15T20:49:45Z",
+        "date": "2026-04-16T20:32:06Z",
         "message": "feat(issues): add native scheduledFor field with auto-backlog and cron job\n\n- Add `scheduled_for` nu",
-        "sha": "a4af1d3f5b0e437d76c1b03a0f42f50a3e6b375c"
+        "sha": "b719364435c70f592802141612a52ae44da100a4"
       },
       {
-        "date": "2026-04-15T20:49:53Z",
+        "date": "2026-04-16T20:33:42Z",
         "message": "fix: address reviewer feedback on scheduledFor PR\n\n- Fix P1: applyStatusSideEffects referenced out-o",
-        "sha": "c42767d0fd5a66abb9fbaafc5d1880eb0051f85b"
+        "sha": "0a65f99ba06d3e730f60e0cf96d0ad3dd81ea0df"
       },
       {
-        "date": "2026-04-15T20:49:53Z",
+        "date": "2026-04-16T20:33:42Z",
         "message": "fix(tests): correct create() call signature and Date serialization in scheduledFor tests\n\n- Pass com",
-        "sha": "1d1c60e66e70a5fca5db5a46a33178bfa3b57dfe"
+        "sha": "3b3a3922168931c0272ba50317029026bf3ae0ee"
+      },
+      {
+        "date": "2026-04-16T20:42:17Z",
+        "message": "fix: add scheduledFor to issueListSelect and test fixtures\n\nThe rebase onto upstream master introduc",
+        "sha": "ed4832708e44403131c4127f4a26d025d875de80"
       }
     ]
   },
@@ -4835,7 +4853,7 @@
       "review_comments": 3,
       "state": "open",
       "title": "feat(plugins): add agent.tool.pre_execute and post_execute events",
-      "updated_at": "2026-04-16T19:04:19Z",
+      "updated_at": "2026-04-16T19:46:07Z",
       "user": "cpfarhood"
     },
     "reviews": [
@@ -5511,19 +5529,19 @@
   },
   "3672": {
     "pr": {
-      "additions": 38549,
+      "additions": 38567,
       "changed_files": 191,
       "closed_at": null,
-      "commits": 37,
+      "commits": 42,
       "created_at": "2026-04-14T16:22:55Z",
-      "deletions": 3787,
+      "deletions": 3788,
       "merged": false,
       "merged_at": null,
       "n": 3672,
       "review_comments": 0,
       "state": "open",
       "title": "feat(i18n): add a production-ready multilingual internationalization framework",
-      "updated_at": "2026-04-16T19:14:36Z",
+      "updated_at": "2026-04-16T20:04:43Z",
       "user": "LeonSGP43"
     },
     "reviews": [],
@@ -5712,6 +5730,31 @@
         "date": "2026-04-16T19:14:19Z",
         "message": "fix(i18n): normalize locale lookup before translation",
         "sha": "3db5b2afce982ddc449e7fcf921f82a25768011d"
+      },
+      {
+        "date": "2026-04-16T19:17:31Z",
+        "message": "fix(i18n): widen translation params and formatter inputs",
+        "sha": "a7a87b0bc34b5f425eb4e91ddd455d24bea48478"
+      },
+      {
+        "date": "2026-04-16T19:23:25Z",
+        "message": "fix(cli): remove duplicate board auth translator binding",
+        "sha": "e575ff48d3f2760f18d01755b53957afd554a721"
+      },
+      {
+        "date": "2026-04-16T19:34:29Z",
+        "message": "fix(i18n): support standalone renders without locale provider",
+        "sha": "7d068bb23c599899dbb998e0ae0c9368891b9794"
+      },
+      {
+        "date": "2026-04-16T19:39:59Z",
+        "message": "fix(i18n): align standalone translator type aliases",
+        "sha": "e65a0563754c4a3c1e460425bb83f4a720037341"
+      },
+      {
+        "date": "2026-04-16T19:52:30Z",
+        "message": "fix(i18n): fallback locale hooks and runtime labels",
+        "sha": "7086be80ce8eeb45af949c4b3a26429e376bca97"
       }
     ]
   },
@@ -7635,7 +7678,7 @@
       "review_comments": 3,
       "state": "open",
       "title": "server infrastructure for observability plugin",
-      "updated_at": "2026-04-16T07:29:58Z",
+      "updated_at": "2026-04-16T19:41:45Z",
       "user": "henrikrexed"
     },
     "reviews": [
@@ -7714,7 +7757,7 @@
       "review_comments": 4,
       "state": "open",
       "title": "add Ollama agent adapter for tool-calling models",
-      "updated_at": "2026-04-16T07:33:07Z",
+      "updated_at": "2026-04-16T19:42:47Z",
       "user": "henrikrexed"
     },
     "reviews": [
@@ -7757,7 +7800,7 @@
       "review_comments": 6,
       "state": "open",
       "title": "Pr/observability plugin",
-      "updated_at": "2026-04-16T12:08:55Z",
+      "updated_at": "2026-04-16T19:43:51Z",
       "user": "henrikrexed"
     },
     "reviews": [
@@ -8510,7 +8553,7 @@
     "pr": {
       "additions": 49,
       "changed_files": 2,
-      "closed_at": null,
+      "closed_at": "2026-04-17T01:32:00Z",
       "commits": 1,
       "created_at": "2026-04-15T22:43:11Z",
       "deletions": 0,
@@ -8518,9 +8561,9 @@
       "merged_at": null,
       "n": 3767,
       "review_comments": 1,
-      "state": "open",
+      "state": "closed",
       "title": "feat(heartbeat): proactive self-assignment toggle with scope selector",
-      "updated_at": "2026-04-16T02:10:03Z",
+      "updated_at": "2026-04-17T01:32:00Z",
       "user": "sparkeros"
     },
     "reviews": [
@@ -9004,7 +9047,7 @@
       "review_comments": 8,
       "state": "open",
       "title": "feat: implement multi-user access and invite flows",
-      "updated_at": "2026-04-16T13:17:03Z",
+      "updated_at": "2026-04-16T19:45:22Z",
       "user": "cryppadotta"
     },
     "reviews": [
@@ -9721,6 +9764,813 @@
         "date": "2026-04-16T04:46:58Z",
         "message": "fix(routes): return 409 for routine checkout conflicts",
         "sha": "cf8c4b42b42be7f3d4d1f271d48abbd7397fadb2"
+      }
+    ]
+  },
+  "3795": {
+    "pr": {
+      "additions": 339,
+      "changed_files": 8,
+      "closed_at": null,
+      "commits": 4,
+      "created_at": "2026-04-16T06:25:28Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3795,
+      "review_comments": 0,
+      "state": "open",
+      "title": "feat(VIB-58): infrastructure health UI + server proxy",
+      "updated_at": "2026-04-16T19:46:35Z",
+      "user": "tmartin2113"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-16T13:56:07Z",
+        "message": "feat(VIB-58): add infrastructure health proxy route to server\n\nCo-Authored-By: Claude Opus 4.6 (1M c",
+        "sha": "2fba274fa08800ec2271dd9794d2c17d8f09fac4"
+      },
+      {
+        "date": "2026-04-16T13:56:07Z",
+        "message": "feat(VIB-58): add infrastructure health API client and types\n\nCo-Authored-By: Claude Opus 4.6 (1M co",
+        "sha": "9fc1df1524aef6220756a65743c4b1e4aae3aae7"
+      },
+      {
+        "date": "2026-04-16T13:57:02Z",
+        "message": "feat(VIB-58): add Infrastructure health page under Company section\n\nCo-Authored-By: Claude Opus 4.6 ",
+        "sha": "ef582954bcc4bf80bf85105ac32542db85f9f678"
+      },
+      {
+        "date": "2026-04-16T14:06:34Z",
+        "message": "feat(VIB-58): gate infrastructure health behind PAPERCLIP_HEALTH_URL\n\n- Rename VIBE_HEALTH_URL to ge",
+        "sha": "09a71e4af55dff1707cd4fcd06e157bccbc3a857"
+      }
+    ]
+  },
+  "3796": {
+    "pr": {
+      "additions": 338,
+      "changed_files": 3,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-16T07:50:41Z",
+      "deletions": 6,
+      "merged": false,
+      "merged_at": null,
+      "n": 3796,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(heartbeat): emit documented plugin run lifecycle events",
+      "updated_at": "2026-04-16T19:47:36Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T07:54:18Z",
+        "user": "greptile-apps[bot]"
+      },
+      {
+        "body": "Nice, focused fix for heartbeat plugin event coverage. The test suite is comprehensive and the extraction of `emitPluginEvent()` cleans up the activity log service nicely.\n\nA few notes:\n\n1. **Test tim",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T08:06:22Z",
+        "user": "xkonjin"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T07:48:51Z",
+        "message": "fix(heartbeat): emit plugin run lifecycle events",
+        "sha": "f089772273c539cf0f9925378395fd39285b07b4"
+      },
+      {
+        "date": "2026-04-16T08:08:54Z",
+        "message": "test(heartbeat): clean up company skills in plugin event tests",
+        "sha": "504c897cbada8f4caf15e69781c8720373478835"
+      },
+      {
+        "date": "2026-04-16T08:13:19Z",
+        "message": "fix(heartbeat): normalize timeout plugin failure status",
+        "sha": "3166559cb7f5e35bb591739721d507220752871f"
+      }
+    ]
+  },
+  "3798": {
+    "pr": {
+      "additions": 25,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T08:35:23Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3798,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(db): use calendar month boundaries for backup retention",
+      "updated_at": "2026-04-16T19:48:21Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T08:38:27Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T08:34:32Z",
+        "message": "fix(db): use calendar month backup retention",
+        "sha": "b70267faf526985f4dc8740e08f6de9475944a47"
+      }
+    ]
+  },
+  "3800": {
+    "pr": {
+      "additions": 2,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T09:01:43Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3800,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(claude-local): use direct 4.5 model aliases",
+      "updated_at": "2026-04-16T19:49:01Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-16T09:00:51Z",
+        "message": "fix(claude-local): use direct 4.5 model aliases",
+        "sha": "05e0a9b090cd283cfe76eb12c4dbc13c6c58cebb"
+      }
+    ]
+  },
+  "3801": {
+    "pr": {
+      "additions": 35,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-16T09:19:48Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3801,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(skills): preserve root skill file inventory",
+      "updated_at": "2026-04-16T19:49:43Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T09:23:37Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T09:18:57Z",
+        "message": "fix(skills): preserve root skill file inventory",
+        "sha": "bbb927d9aa2841880206f6154dd3d0cca4f8fc0e"
+      },
+      {
+        "date": "2026-04-16T09:59:10Z",
+        "message": "test(skills): classify references inventory correctly",
+        "sha": "919c7e565b0e39201e01a9f65786b7f9f74b33f3"
+      }
+    ]
+  },
+  "3806": {
+    "pr": {
+      "additions": 132,
+      "changed_files": 6,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-16T10:01:53Z",
+      "deletions": 7,
+      "merged": false,
+      "merged_at": null,
+      "n": 3806,
+      "review_comments": 0,
+      "state": "open",
+      "title": "Show issue ref and status icon in breadcrumbs and properties",
+      "updated_at": "2026-04-16T19:50:42Z",
+      "user": "Micsi"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-16T08:00:37Z",
+        "message": "Show issue ref and status icon in breadcrumbs and properties",
+        "sha": "c4194cfb1563969994c711ce548a5717c7865213"
+      },
+      {
+        "date": "2026-04-16T10:16:14Z",
+        "message": "Fix breadcrumb equality check for status updates",
+        "sha": "8aed3a4421f243ae094094408513f752803a5177"
+      }
+    ]
+  },
+  "3807": {
+    "pr": {
+      "additions": 1,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T10:07:28Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3807,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(docker): install jq in base image",
+      "updated_at": "2026-04-16T19:47:15Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-16T10:06:02Z",
+        "message": "fix(docker): install jq in base image",
+        "sha": "20aa633bd15213cee82b911fbc70d82dcdce3abd"
+      }
+    ]
+  },
+  "3808": {
+    "pr": {
+      "additions": 17,
+      "changed_files": 5,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-16T10:08:11Z",
+      "deletions": 16,
+      "merged": false,
+      "merged_at": null,
+      "n": 3808,
+      "review_comments": 3,
+      "state": "open",
+      "title": "fix: proactive session rotation + role-based max turns",
+      "updated_at": "2026-04-16T19:47:28Z",
+      "user": "mv50000"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T10:11:59Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T10:25:47Z",
+        "message": "fix: ensure --max-turns is always passed to Claude Code\n\nWhen maxTurnsPerRun was unset or 0, the fla",
+        "sha": "6f741e7ac74683e7dbbba66b300da8e1fe367c9b"
+      },
+      {
+        "date": "2026-04-16T10:25:47Z",
+        "message": "perf: proactive session rotation to avoid Haiku compaction costs\n\nEnable Paperclip-managed session r",
+        "sha": "92e722fdacf481b3af6ff228fa3014da832c4dbf"
+      }
+    ]
+  },
+  "3809": {
+    "pr": {
+      "additions": 95,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-16T10:32:04Z",
+      "deletions": 9,
+      "merged": false,
+      "merged_at": null,
+      "n": 3809,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(ui): stop recreating markdown mention observers",
+      "updated_at": "2026-04-16T19:47:36Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T10:35:31Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T10:31:08Z",
+        "message": "fix(ui): stop recreating markdown mention observers",
+        "sha": "ebfe098fe4d0a974c169dcb9d4bb1638db5a9445"
+      },
+      {
+        "date": "2026-04-16T12:34:42Z",
+        "message": "test(ui): stabilize markdown observer regression",
+        "sha": "c2f69dbfd85768e03b20cc1d2e72fc7a5999192d"
+      },
+      {
+        "date": "2026-04-16T13:11:59Z",
+        "message": "test(ui): narrow markdown observer regression assertion",
+        "sha": "e233b9180f7e2fe7b5bccb6df146965c109985d4"
+      }
+    ]
+  },
+  "3812": {
+    "pr": {
+      "additions": 1177,
+      "changed_files": 8,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T13:33:54Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3812,
+      "review_comments": 2,
+      "state": "open",
+      "title": "docs: productize local Hermes Paperclip workflow",
+      "updated_at": "2026-04-16T19:47:44Z",
+      "user": "breakneo"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T13:36:55Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T13:30:11Z",
+        "message": "docs: productize local Hermes Paperclip workflow",
+        "sha": "45aee5225b2adce470c36a2e6512c586b51658b6"
+      }
+    ]
+  },
+  "3814": {
+    "pr": {
+      "additions": 38,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T14:14:06Z",
+      "deletions": 5,
+      "merged": false,
+      "merged_at": null,
+      "n": 3814,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix(ui): guard missing issue chat metadata",
+      "updated_at": "2026-04-16T19:47:52Z",
+      "user": "LeonSGP43"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T14:16:36Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T14:06:11Z",
+        "message": "fix(ui): guard missing issue chat metadata",
+        "sha": "c87c421c4ffd2b55985bc9a94793e84ff547164f"
+      }
+    ]
+  },
+  "3823": {
+    "pr": {
+      "additions": 147,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T15:51:42Z",
+      "deletions": 2,
+      "merged": false,
+      "merged_at": null,
+      "n": 3823,
+      "review_comments": 1,
+      "state": "open",
+      "title": "fix: include server port in derived auth trusted origins",
+      "updated_at": "2026-04-16T19:48:00Z",
+      "user": "Helmi"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T15:54:35Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T15:49:34Z",
+        "message": "fix: include server port in derived auth trusted origins\n\nderiveAuthTrustedOrigins built origins wit",
+        "sha": "ba78087d9143a4c1c4865595d3d584202876cfe5"
+      }
+    ]
+  },
+  "3825": {
+    "pr": {
+      "additions": 254,
+      "changed_files": 6,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-16T16:27:29Z",
+      "deletions": 35,
+      "merged": false,
+      "merged_at": null,
+      "n": 3825,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix(routines): recover from stale routine execution lock conflicts",
+      "updated_at": "2026-04-16T23:56:12Z",
+      "user": "DeadlySilent"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T16:32:23Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T16:25:52Z",
+        "message": "fix(routines): recover from stale routine execution lock conflicts",
+        "sha": "2f9eac2188016c66f28ec6ea823ce232fc7bd9cf"
+      },
+      {
+        "date": "2026-04-16T21:38:48Z",
+        "message": "fix(routines): prevent duplicate open routine issues",
+        "sha": "5a2412e3f51807524004f8d56d4be96c20dbbd37"
+      },
+      {
+        "date": "2026-04-16T21:55:26Z",
+        "message": "fix(issues): block non-privileged agent issue creation",
+        "sha": "b131b0ffd697371f2d49698b8aa12fbe7c665102"
+      }
+    ]
+  },
+  "3826": {
+    "pr": {
+      "additions": 3,
+      "changed_files": 1,
+      "closed_at": "2026-04-16T22:11:55Z",
+      "commits": 1,
+      "created_at": "2026-04-16T16:40:17Z",
+      "deletions": 0,
+      "merged": true,
+      "merged_at": "2026-04-16T22:11:55Z",
+      "n": 3826,
+      "review_comments": 0,
+      "state": "closed",
+      "title": "fix: add ssh client and jq to production image",
+      "updated_at": "2026-04-16T22:11:55Z",
+      "user": "rbarinov"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-16T16:39:06Z",
+        "message": "fix: add ssh client and jq to production image",
+        "sha": "45004be2e9e2be5a0b828ebbddbcc926a66b259c"
+      }
+    ]
+  },
+  "3834": {
+    "pr": {
+      "additions": 366,
+      "changed_files": 4,
+      "closed_at": null,
+      "commits": 3,
+      "created_at": "2026-04-16T17:51:11Z",
+      "deletions": 6,
+      "merged": false,
+      "merged_at": null,
+      "n": 3834,
+      "review_comments": 2,
+      "state": "open",
+      "title": "fix: coalesce stale queued execution locks",
+      "updated_at": "2026-04-16T23:57:15Z",
+      "user": "mystickcal"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T17:56:08Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T17:49:56Z",
+        "message": "fix: coalesce stale queued execution locks",
+        "sha": "2a7d7e2d7c943aa8c104c52df171982db29a0fef"
+      },
+      {
+        "date": "2026-04-16T18:53:02Z",
+        "message": "test: cover cleared execution lock ownership result",
+        "sha": "1013e87b6243e0cfc44ff648ac7770ec9019d3b8"
+      },
+      {
+        "date": "2026-04-16T23:27:59Z",
+        "message": "fix(heartbeat): reap runs when tracked child already exited\n\nreapOrphanedRuns previously skipped any",
+        "sha": "480d75df987ed80aad98870624f7fcb781387743"
+      }
+    ]
+  },
+  "3837": {
+    "pr": {
+      "additions": 138,
+      "changed_files": 3,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T19:58:05Z",
+      "deletions": 8,
+      "merged": false,
+      "merged_at": null,
+      "n": 3837,
+      "review_comments": 2,
+      "state": "open",
+      "title": "feat(ui): bulk pause/resume all agents per company",
+      "updated_at": "2026-04-16T23:58:01Z",
+      "user": "Tr1ckyMag1ca1"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T20:01:35Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T19:55:34Z",
+        "message": "feat(ui): bulk pause/resume all agents per company\n\nAdds \"Pause All Agents\" / \"Resume All Agents\" ac",
+        "sha": "ebcb82a1d1c23ec18d77c608208af155c3829ccf"
+      }
+    ]
+  },
+  "3838": {
+    "pr": {
+      "additions": 490,
+      "changed_files": 9,
+      "closed_at": null,
+      "commits": 2,
+      "created_at": "2026-04-16T20:02:09Z",
+      "deletions": 236,
+      "merged": false,
+      "merged_at": null,
+      "n": 3838,
+      "review_comments": 2,
+      "state": "open",
+      "title": "feat(ui): collapsible sidebar with icon-only mode and zen reading",
+      "updated_at": "2026-04-16T23:58:51Z",
+      "user": "akhater"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T20:12:29Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T20:01:48Z",
+        "message": "feat(ui): collapsible sidebar with icon-only mode and zen reading\n\nAdd a collapsible sidebar for des",
+        "sha": "052030a5807288c9b098b497e3921dfed826ca5c"
+      },
+      {
+        "date": "2026-04-16T20:28:29Z",
+        "message": "fix: address Greptile review feedback\n\n- InstanceSidebar: add collapsed mode (was hardcoded w-60, bl",
+        "sha": "eef97aa9332b83bf74e9c438cd14391a279355c8"
+      }
+    ]
+  },
+  "3840": {
+    "pr": {
+      "additions": 850,
+      "changed_files": 23,
+      "closed_at": null,
+      "commits": 13,
+      "created_at": "2026-04-16T20:51:42Z",
+      "deletions": 3,
+      "merged": false,
+      "merged_at": null,
+      "n": 3840,
+      "review_comments": 3,
+      "state": "open",
+      "title": "feat: template gallery",
+      "updated_at": "2026-04-16T23:59:49Z",
+      "user": "bdervishi"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T20:57:13Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T11:58:23Z",
+        "message": "chore: start templates-gallery feature",
+        "sha": "c7a8fea1a5023f9de8f839eda3b8fe083f1cbcd8"
+      },
+      {
+        "date": "2026-04-16T12:36:49Z",
+        "message": "feat(shared): add template registry schema and types",
+        "sha": "bf2098ab421d88b4d8d091738126a52653a40c36"
+      },
+      {
+        "date": "2026-04-16T12:40:35Z",
+        "message": "feat(docs): seed templates registry with four curated companies",
+        "sha": "72cdc82f97ae625d03e5cf4054d56fab9ac197fa"
+      },
+      {
+        "date": "2026-04-16T13:02:56Z",
+        "message": "feat(server): add template registry loader with caching",
+        "sha": "c3b519d29d421238734d6d3b9f67067b4356d771"
+      },
+      {
+        "date": "2026-04-16T13:08:43Z",
+        "message": "feat(server): GET /api/templates/companies endpoint",
+        "sha": "65e89a341d0b5d5c24bd0fc75490b4f56e6170e3"
+      },
+      {
+        "date": "2026-04-16T13:11:17Z",
+        "message": "feat(server): POST /api/templates/companies/install endpoint",
+        "sha": "d8134dc011a1a27d88241896e8a04da692e645d0"
+      },
+      {
+        "date": "2026-04-16T13:13:27Z",
+        "message": "feat(server): POST /api/templates/refresh admin-only cache invalidate",
+        "sha": "a2e625f4f333ee0095a856f9776c0afb77054293"
+      },
+      {
+        "date": "2026-04-16T14:59:24Z",
+        "message": "feat(server): mount /api/templates router",
+        "sha": "2da2bb1c2f454bd2f91c663c4db7844c9e3e949c"
+      },
+      {
+        "date": "2026-04-16T15:26:13Z",
+        "message": "feat(ui): templates API client",
+        "sha": "97ba269036b24afde0e92e374c9b89d8cc634a76"
+      },
+      {
+        "date": "2026-04-16T15:53:49Z",
+        "message": "feat(ui): CompanyCard component for template gallery\n\nAdds CompanyCard component with install button",
+        "sha": "070709fc061722224068dcc0eeeb21dc5712a403"
+      },
+      {
+        "date": "2026-04-16T15:57:38Z",
+        "message": "feat(ui): TemplatesPage with install flow",
+        "sha": "2282f6bb92557bc85b57f8831ece26a1caa77072"
+      },
+      {
+        "date": "2026-04-16T16:01:54Z",
+        "message": "feat(ui): register templates route and nav link",
+        "sha": "2647fcbad1f733167a89b02e90924e88154f073f"
+      },
+      {
+        "date": "2026-04-16T20:47:08Z",
+        "message": "test(e2e): smoke test for template gallery install",
+        "sha": "43f35e0763c1a0e092c5b5ec9bd3ee783623316d"
+      }
+    ]
+  },
+  "3842": {
+    "pr": {
+      "additions": 496,
+      "changed_files": 17,
+      "closed_at": null,
+      "commits": 4,
+      "created_at": "2026-04-16T21:07:05Z",
+      "deletions": 7,
+      "merged": false,
+      "merged_at": null,
+      "n": 3842,
+      "review_comments": 4,
+      "state": "open",
+      "title": "feat: cost-monitoring reconciliation L1+L2+L3 (subscription billing fix)",
+      "updated_at": "2026-04-17T00:01:04Z",
+      "user": "lathonez"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T21:12:51Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T21:06:45Z",
+        "message": "feat: cost-monitoring reconciliation L1+L2+L3 (UPLA-34)\n\n## What changed\n\n**L1 \u2014 capture cacheCreati",
+        "sha": "5b146aab17e72792942605772bd435cf75ecb985"
+      },
+      {
+        "date": "2026-04-16T21:09:41Z",
+        "message": "feat: add --exclude-dynamic-system-prompt-sections for prompt cache reuse (UPLA-36)\n\nAdd `--exclude-",
+        "sha": "e2425c60cb29a8100d7996390d4b20815967d59a"
+      },
+      {
+        "date": "2026-04-16T21:43:36Z",
+        "message": "fix(billing): address CTO review iteration 1 blockers (UPLA-34)\n\n- Extract shared pricing to package",
+        "sha": "41449727df32f3b46d262fda6e76aed1f10a02c0"
+      },
+      {
+        "date": "2026-04-16T21:50:19Z",
+        "message": "chore: add TODO for unverified Anthropic Admin API pagination param\n\nReviewer flagged that the `page",
+        "sha": "068eaef3c6ef2cfa30e96b858d3f1d747596ec83"
+      }
+    ]
+  },
+  "3847": {
+    "pr": {
+      "additions": 33,
+      "changed_files": 2,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-16T22:42:28Z",
+      "deletions": 0,
+      "merged": false,
+      "merged_at": null,
+      "n": 3847,
+      "review_comments": 2,
+      "state": "open",
+      "title": "feat(heartbeat): skipIfNoActionableAssignments \u2014 suppress idle timer wakes when no actionable work is queued",
+      "updated_at": "2026-04-17T00:01:43Z",
+      "user": "sparkeros"
+    },
+    "reviews": [
+      {
+        "body": "",
+        "state": "COMMENTED",
+        "submitted_at": "2026-04-16T22:49:14Z",
+        "user": "greptile-apps[bot]"
+      }
+    ],
+    "commits": [
+      {
+        "date": "2026-04-16T22:41:51Z",
+        "message": "feat(heartbeat): skipIfNoActionableAssignments \u2014 suppress idle timer wakes when no actionable work i",
+        "sha": "6258b4770b86e8543871c2790ed33644baa652ad"
+      }
+    ]
+  },
+  "3850": {
+    "pr": {
+      "additions": 18,
+      "changed_files": 1,
+      "closed_at": null,
+      "commits": 1,
+      "created_at": "2026-04-17T01:04:03Z",
+      "deletions": 1,
+      "merged": false,
+      "merged_at": null,
+      "n": 3850,
+      "review_comments": 0,
+      "state": "open",
+      "title": "fix(hermes): spawn Hermes with --yolo by default",
+      "updated_at": "2026-04-17T01:11:28Z",
+      "user": "vishnukool"
+    },
+    "reviews": [],
+    "commits": [
+      {
+        "date": "2026-04-17T01:03:36Z",
+        "message": "fix(hermes): spawn Hermes with --yolo by default\n\nHermes agents run as non-interactive subprocesses ",
+        "sha": "2f4faf6b71df6c8a63da277d9a91c17a8fc77f4b"
       }
     ]
   }
