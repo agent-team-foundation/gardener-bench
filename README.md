@@ -1,10 +1,29 @@
 # gardener-bench
 
 [![Live Dashboard](https://img.shields.io/badge/dashboard-live-blue)](https://gardener-report.pages.dev)
+[![Accuracy](https://img.shields.io/badge/accuracy-84.6%25-brightgreen)](reports/paperclipai-paperclip/2026-04-17/accuracy.json)
 
 Verdict accuracy benchmarking and feedback dashboard for [repo-gardener](https://github.com/agent-team-foundation/repo-gardener).
 
 **Live dashboard:** https://gardener-report.pages.dev
+
+## Latest results
+
+As of **2026-04-17** on [paperclipai/paperclip](https://github.com/paperclipai/paperclip):
+
+| Metric | Value |
+|---|---|
+| Verdict accuracy | **84.6%** |
+| Scorable PRs | 13 |
+| Correct | 11 |
+| Partial | 0 |
+| Wrong | 2 |
+| Pending (still open) | 189 |
+| Author-withdrawn | 29 |
+| Governance-closed | 3 |
+| Total PRs observed | 231 |
+
+Raw data: [`reports/paperclipai-paperclip/2026-04-17/accuracy.json`](reports/paperclipai-paperclip/2026-04-17/accuracy.json).
 
 ## What this does
 
